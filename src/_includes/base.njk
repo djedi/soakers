@@ -1,19 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
-{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
-{%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}
+<html lang="zxx">
   <head>
-    <!-- Generated from the 11ty Netlify Jumpstart: https://github.com/5t3ph/11ty-netlify-jumpstart -->
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css" />
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="fonts/flaticon.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="css/meanmenu.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Title -->
+    {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
     <title>{{pageTitle}}</title>
-    <meta
+    {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+        <meta
       name="description"
       content="{{pageDescription}}"
     />
-    <link rel="icon" href="{{ '/favicon.png' | url }}" />
-    <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <meta name="twitter:card" content="summary_large_image" />
     {% if meta.twitterUsername %}
     <meta name="twitter:creator" content="@{{ meta.twitterUsername }}" />
@@ -46,27 +85,469 @@
     />
   </head>
   <body>
+
+    <!-- Start Preloader -->
+    <div class="preloader">
+      <div class="preloader-wave"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start Heder Area -->
+    <header class="header-area top-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-9">
+            <div class="header-left">
+              <ul>
+                <li>
+                  <i class="fas fa-clock"></i>
+                  TUE - SAT (10:00 AM - 5:00 PM)
+                </li>
+                <li>
+                  <a
+                    href="https://www.google.com/maps/place/Soakers/@40.6253922,-111.89205,17z/data=!3m1!4b1!4m5!3m4!1s0x875289b056796419:0xf788862c01f371e2!8m2!3d40.6253922!4d-111.8898613"
+                    target="_blank"
+                  >
+                    <i class="fas fa-map-marker-alt"></i>
+                    6905 S STATE ST, MIDVALE, UT 84047
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+18018387727">
+                    <i class="fas fa-phone-alt"></i>
+                    +1 801 838 SPAS (7727)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="social-icon">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/Soakers-210242449012689"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Soakers" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <!-- <li>
+                  <a href="http://www.youtube.com/utahsoakers" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Heder Area -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area">
+      <!-- Menu For Mobile Device -->
+      <div class="mobile-nav">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <!-- Menu For Desktop Device -->
+      <div class="main-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="Logo" />
+            </a>
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">
+                    Home
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link active">
+                        Home One
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index-two.html" class="nav-link"> Home Two </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Pages
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="appointments.html" class="nav-link">
+                        Book Appointments
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="instructor.html" class="nav-link">
+                        Instructor
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="courses.html" class="nav-link"> Courses </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pricing.html" class="nav-link"> Pricing </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="testimonials.html" class="nav-link">
+                        Testimonials
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="terms-condition.html" class="nav-link">
+                        Terms & Conditions
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="privacy-policy.html" class="nav-link">
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="404.html" class="nav-link"> 404 Page </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="faq.html" class="nav-link"> FAQ </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="login.html" class="nav-link"> Log In </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" class="nav-link"> Register </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Services
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="services.html" class="nav-link"> Services </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="service-details.html" class="nav-link">
+                        Service Details
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="gallery.html" class="nav-link"> Gallery </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    News
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="news.html" class="nav-link"> News </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="news-details.html" class="nav-link">
+                        News Details
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Shop
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="shop.html" class="nav-link"> Shop </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="cart.html" class="nav-link"> Cart </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="checkout.html" class="nav-link"> Checkout </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="shop-details.html" class="nav-link">
+                        Shop Details
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link"> Contact </a>
+                </li>
+              </ul>
+
+              <!-- <div class="other-side">
+                <div class="search-area">
+                  <div class="other-option">
+                    <div class="search-item">
+                      <a href="#" class="search-btn">
+                        <i class="flaticon-magnifying-glass"></i>
+                      </a>
+                      <i class="close-btn fas fa-times"></i>
+                      <div class="search-overlay search-popup">
+                        <div class="search-box">
+                          <form class="search-form">
+                            <input
+                              class="search-input"
+                              name="search"
+                              placeholder="Search"
+                              type="text"
+                            />
+                            <button class="search-button" type="submit">
+                              <i class="flaticon-magnifying-glass"></i>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="search-text">Search</div> -->
+
+                <!-- <div class="cart-area">
+                  <a class="cart-icon" href="cart.html">
+                    <i class="flaticon-shopping-cart"></i>
+                    <p>Cart <span>(2)</span></p>
+                  </a>
+                </div> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Area -->
+
+
+
+
+
     {{ content | safe }}
 
-    <footer class="tdbc-background--secondary">
-      <div class="tdbc-container tdbc-text-align-center">
-        <div class="tdbc-row tdbc-ink--light tdbc-mx-auto">
-          <p class="tdbc-mb-none">&copy; {% year %} {{ meta.siteName }} • {% packageVersion %}</p>
-          <span class="tdbc-row tdbc-row--center-content">
-            <a
-              href="https://twitter.com/{{ meta.twitterUsername }}/"
-              class="tdbc-icon-button tdbc-ink--light"
-              aria-label="Twitter"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28" aria-hidden="true" focusable="false">
-                <path
-                  d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"
-                ></path>
-              </svg>
-            </a>
-          </span>
+
+
+
+    <!-- Footer Area -->
+    <footer class="footer-area">
+      <div class="footer-top pt-100 pb-70">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="footer-content">
+                <div class="footer-conten-title">
+                  <a href="index.html"
+                    ><img src="img/logo.png" alt="Logo"
+                    style="margin-left: 15px; background-color: #ffffff; box-shadow: 0 0 10px 15px #ffffff;"
+                  /></a>
+                  <p>
+                  
+                  </p>
+                </div>
+
+                <!-- <div class="newsleter-area">
+                  <h3>Join Newsletter</h3>
+                  <form class="newsletter-form" data-toggle="validator">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      name="EMAIL"
+                      required
+                      autocomplete="off"
+                    />
+
+                    <button class="subscribe-btn" type="submit">
+                      Subscribe
+                    </button>
+
+                    <div id="validator-newsletter" class="form-result"></div>
+                  </form>
+                </div> -->
+
+                <div class="footer-social">
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <!-- <li>
+                      <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="fab fa-pinterest"></i>
+                      </a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-6">
+              <div class="footer-list">
+                <h3>Our Service</h3>
+                <ul>
+                  <li>
+                    <a href="services.html">Swimming Service</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-list ml-50">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li>
+                    <a href="faq.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="services.html">Services</a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="terms-condition.html">Terms &amp; Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-list">
+                <h3>Contacts</h3>
+                <ul>
+                  <li>
+                    <a href="tel:+1818387727">
+                      <i class="fas fa-mobile-alt"></i>
+                      +1 801 838 SPAS (7727)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:service@soakers.biz">
+                      <i class="far fa-envelope"></i>
+                      service@soakers.biz
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    6905 S State St, Midvale, UT 84047
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="bottom-list">
+                <ul>
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="services.html">Services</a>
+                  </li>
+                  <li>
+                    <a href="gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="news.html">News</a>
+                  </li>
+                  <li>
+                    <a href="shop.html">Shop</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="bottom-text">
+                <p>
+                  Copyright ©<script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                  </script> Soakers, LLC. All Rights Reserved.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- Footer Area End -->
+
+    <!-- Jquery Min JS -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- Popper Min JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Min JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="js/meanmenu.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Ajaxchimp Min JS -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <!-- Form Validator Min JS -->
+    <script src="js/form-validator.min.js"></script>
+    <!-- Contact Form JS -->
+    <script src="js/contact-form-script.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
   </body>
 </html>
