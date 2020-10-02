@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.min.css" />
     <!-- Animate Min CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
     <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="fonts/flaticon.css" />
+    <link rel="stylesheet" href="/fonts/flaticon.css" />
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
     <!-- Meanmenu CSS -->
-    <link rel="stylesheet" href="css/meanmenu.css" />
+    <link rel="stylesheet" href="/css/meanmenu.css" />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
 
     <!-- Title -->
     {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
@@ -156,207 +156,16 @@
     </header>
     <!-- End Heder Area -->
 
-    <!-- Start Navbar Area -->
-    <div class="navbar-area">
-      <!-- Menu For Mobile Device -->
-      <div class="mobile-nav">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="Logo" />
-        </a>
-      </div>
+    {% include 'nav-header.njk' %}
 
-      <!-- Menu For Desktop Device -->
-      <div class="main-nav">
-        <div class="container">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="Logo" />
-            </a>
-            <div
-              class="collapse navbar-collapse mean-menu"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                  <a href="#" class="nav-link active">
-                    Home
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link active">
-                        Home One
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="index-two.html" class="nav-link"> Home Two </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    Pages
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a href="appointments.html" class="nav-link">
-                        Book Appointments
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="instructor.html" class="nav-link">
-                        Instructor
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="courses.html" class="nav-link"> Courses </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="pricing.html" class="nav-link"> Pricing </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="testimonials.html" class="nav-link">
-                        Testimonials
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="terms-condition.html" class="nav-link">
-                        Terms & Conditions
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="privacy-policy.html" class="nav-link">
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="404.html" class="nav-link"> 404 Page </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="faq.html" class="nav-link"> FAQ </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="login.html" class="nav-link"> Log In </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="register.html" class="nav-link"> Register </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="about.html" class="nav-link"> About </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    Services
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a href="services.html" class="nav-link"> Services </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="service-details.html" class="nav-link">
-                        Service Details
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="gallery.html" class="nav-link"> Gallery </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    News
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a href="news.html" class="nav-link"> News </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="news-details.html" class="nav-link">
-                        News Details
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    Shop
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a href="shop.html" class="nav-link"> Shop </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="cart.html" class="nav-link"> Cart </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="checkout.html" class="nav-link"> Checkout </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="shop-details.html" class="nav-link">
-                        Shop Details
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="contact.html" class="nav-link"> Contact </a>
-                </li>
-              </ul>
 
-              <!-- <div class="other-side">
-                <div class="search-area">
-                  <div class="other-option">
-                    <div class="search-item">
-                      <a href="#" class="search-btn">
-                        <i class="flaticon-magnifying-glass"></i>
-                      </a>
-                      <i class="close-btn fas fa-times"></i>
-                      <div class="search-overlay search-popup">
-                        <div class="search-box">
-                          <form class="search-form">
-                            <input
-                              class="search-input"
-                              name="search"
-                              placeholder="Search"
-                              type="text"
-                            />
-                            <button class="search-button" type="submit">
-                              <i class="flaticon-magnifying-glass"></i>
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-                <div class="search-text">Search</div> -->
-
-                <!-- <div class="cart-area">
-                  <a class="cart-icon" href="cart.html">
-                    <i class="flaticon-shopping-cart"></i>
-                    <p>Cart <span>(2)</span></p>
-                  </a>
-                </div> -->
-              </div>
-            </div>
-          </nav>
-        </div>
+    <!-- Content Area End -->
+    <div class="content-area pt-100">
+      <div class="container">
+        {{ content | safe }}
       </div>
     </div>
-    <!-- End Navbar Area -->
-
-
-
-
-
-    {{ content | safe }}
-
+    <!-- Content Area End -->
 
 
 
@@ -369,7 +178,7 @@
               <div class="footer-content">
                 <div class="footer-conten-title">
                   <a href="index.html"
-                    ><img src="img/logo.png" alt="Logo"
+                    ><img src="/img/logo.png" alt="Logo"
                     style="margin-left: 15px; background-color: #ffffff; box-shadow: 0 0 10px 15px #ffffff;"
                   /></a>
                   <p>
@@ -528,26 +337,26 @@
     <!-- Footer Area End -->
 
     <!-- Jquery Min JS -->
-    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="/js/jquery-3.5.0.min.js"></script>
     <!-- Popper Min JS -->
-    <script src="js/popper.min.js"></script>
+    <script src="/js/popper.min.js"></script>
     <!-- Bootstrap Min JS -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <!-- Owl Carousel JS -->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
     <!-- Magnific Popup JS -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
     <!-- Meanmenu JS -->
-    <script src="js/meanmenu.js"></script>
+    <script src="/js/meanmenu.js"></script>
     <!-- Wow JS -->
-    <script src="js/wow.min.js"></script>
+    <script src="/js/wow.min.js"></script>
     <!-- Ajaxchimp Min JS -->
-    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="/js/jquery.ajaxchimp.min.js"></script>
     <!-- Form Validator Min JS -->
-    <script src="js/form-validator.min.js"></script>
+    <script src="/js/form-validator.min.js"></script>
     <!-- Contact Form JS -->
-    <script src="js/contact-form-script.js"></script>
+    <script src="/js/contact-form-script.js"></script>
     <!-- Custom JS -->
-    <script src="js/custom.js"></script>
+    <script src="/js/custom.js"></script>
   </body>
 </html>
