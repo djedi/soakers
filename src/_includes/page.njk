@@ -1,18 +1,22 @@
 ---
 layout: base.njk
 ---
-{% include 'sitenav.njk' %}
 
-<header class="tdbc-hero">
-  <div class="tdbc-container">
+
+
+<section class="title-area">
+  <div class="container">
     <h1 class="tdbc-ink--primary tdbc-mb-none">{{ title }}</h1>
     <h2 class="tdbc-lead tdbc-content-maxlength tdbc-ink--gray tdbc-mt-md tdbc-mx-auto">
       {{ description }}
     </h2>
   </div>
-</header>
-<main class="tdbc-container">
-  <article class="tdbc-mx-auto">
+</section>
+
+<section class="content-area pt-100">
+  <div class="container">
     {{ content | safe }}
-  </article>
-</main>
+
+    {% include 'sitenav.njk' %}
+  </div>
+</section>

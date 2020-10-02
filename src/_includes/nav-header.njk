@@ -19,27 +19,38 @@
             id="navbarSupportedContent"
         >
             <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-                <a href="#" class="nav-link active">
-                Home
-                <i class="fas fa-chevron-right"></i>
-                </a>
-                <ul class="dropdown-menu">
+            {% for ni in nav.pages %}
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active">
-                    Home One
+                    {% if ni.slug %}
+                    <a href="/{{ ni.slug }}" class="nav-link">
+                    {% else %}
+                    <a href="{{ ni.href }}" target="_blank" class="nav-link">
+                    {% endif %}
+                        {{ ni.name }}
+                        {% if ni.pages %}
+                        <i class="fas fa-chevron-right"></i>
+                        {% endif %}
                     </a>
+                    {% if ni.pages %}
+                        <ul class="dropdown-menu">
+                    {% endif %}
+                    {% for l2 in ni.pages %}
+                        <li class="nav-item">
+                            {% if l2.slug %}
+                            <a href="/{{ l2.slug }}" class="nav-link">
+                            {% else %}
+                            <a href="{{ l2.href }}" target="_blank" class="nav-link">
+                            {% endif %}
+                                {{ l2.name }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                    {% if ni.pages %}
+                        </ul>
+                    {% endif %}
                 </li>
-                <li class="nav-item">
-                    <a href="index-two.html" class="nav-link"> Home Two </a>
-                </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="">
-                    Spa Models
-                </a>
-            </li>
+            {% endfor %}
+
             <li class="nav-item">
                 <a href="#" class="nav-link">
                 Pages
