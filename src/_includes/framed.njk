@@ -1,0 +1,40 @@
+{% extends 'base.njk' %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+    <iframe id="preview-frame" src="https://artesianspas.com/" frameborder="0" width="100%" id="framed"></iframe>
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block postbody %}
+    <script>
+      // URL param
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      console.log(urlParams);
+      const iFrameSource = urlParams.get('url');
+      console.log('iFrameSource', iFrameSource);
+      $('iframe').attr('src', iFrameSource);
+
+      //function to fix height of iframe!
+      var calcHeight = function() {
+        $('iframe').height($(window).height());
+      }
+
+      $(document).ready(function() {
+        console.error('doc ready');
+        calcHeight();
+      });
+
+      $(window).resize(function() {
+        calcHeight();
+      }).load(function() {
+        console.error('window load');
+        calcHeight();
+      });
+    </script>
+{% endblock %}
+
+

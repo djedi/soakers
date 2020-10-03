@@ -83,6 +83,7 @@
       title="RSS Feed for {{ meta.siteName }}"
       href="/feed/"
     />
+    {% block posthead %}{% endblock %}
   </head>
   <body>
 
@@ -93,6 +94,7 @@
     <!-- End Preloader -->
 
     <!-- Start Heder Area -->
+    {% block header %}
     <header class="header-area top-header">
       <div class="container">
         <div class="row align-items-center">
@@ -154,18 +156,21 @@
         </div>
       </div>
     </header>
-    <!-- End Heder Area -->
+    {% endblock %}
+    <!-- End Header Area -->
 
     {% include 'nav-header.njk' %}
 
 
 
+    {% block content %}
     {{ content | safe }}
-
+    {% endblock %}
 
 
 
     <!-- Footer Area -->
+    {% block footer %}
     <footer class="footer-area">
       <div class="footer-top pt-100 pb-70">
         <div class="container">
@@ -173,7 +178,7 @@
             <div class="col-lg-4 col-sm-6">
               <div class="footer-content">
                 <div class="footer-conten-title">
-                  <a href="index.html"
+                  <a href="/"
                     ><img src="/img/logo.png" alt="Logo"
                     style="margin-left: 15px; background-color: #ffffff; box-shadow: 0 0 10px 15px #ffffff;"
                   /></a>
@@ -330,6 +335,7 @@
         </div>
       </div>
     </footer>
+    {% endblock %}
     <!-- Footer Area End -->
 
     <!-- Jquery Min JS -->
@@ -354,5 +360,6 @@
     <script src="/js/contact-form-script.js"></script>
     <!-- Custom JS -->
     <script src="/js/custom.js"></script>
+    {% block postbody %}{% endblock %}
   </body>
 </html>
