@@ -13,25 +13,22 @@
       // URL param
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      console.log(urlParams);
       const iFrameSource = urlParams.get('url');
-      console.log('iFrameSource', iFrameSource);
       $('iframe').attr('src', iFrameSource);
 
       //function to fix height of iframe!
       var calcHeight = function() {
-        $('iframe').height($(window).height());
+        const navHeight = $('.navbar-area').height();
+        $('iframe').height($(window).height() - navHeight);
       }
 
       $(document).ready(function() {
-        console.error('doc ready');
         calcHeight();
       });
 
       $(window).resize(function() {
         calcHeight();
       }).load(function() {
-        console.error('window load');
         calcHeight();
       });
     </script>
