@@ -21,14 +21,10 @@
             <ul class="navbar-nav m-auto">
             {% for ni in nav.pages %}
                 <li class="nav-item">
-                    {% if ni.slug %}
-                    <a href="/{{ ni.slug }}" class="nav-link">
-                    {% else %}
-                    <a href="/framed/?url={{ ni.href }}" class="nav-link">
-                    {% endif %}
+                    <a href="{% if ni.framed %}/framed/?url={% endif %}{{ ni.href }}" class="nav-link"{% if ni.newTab %} target="_blank"{% endif %}>
                         {{ ni.name }}
                         {% if ni.pages %}
-                        <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-right"></i>
                         {% endif %}
                     </a>
                     {% if ni.pages %}
@@ -36,11 +32,7 @@
                     {% endif %}
                     {% for l2 in ni.pages %}
                         <li class="nav-item">
-                            {% if l2.slug %}
-                            <a href="/{{ l2.slug }}" class="nav-link">
-                            {% else %}
-                            <a href="/framed/?url={{ l2.href }}" class="nav-link">
-                            {% endif %}
+                            <a href="{% if l2.framed %}/framed/?url={% endif %}{{ l2.href }}" class="nav-link"{% if l2.newTab %} target="_blank"{% endif %}>
                                 {{ l2.name }}
                             </a>
                         </li>
@@ -51,7 +43,7 @@
                 </li>
             {% endfor %}
 
-            <li class="nav-item">
+            {# <li class="nav-item">
                 <a href="#" class="nav-link">
                 Pages
                 <i class="fas fa-chevron-right"></i>
@@ -165,7 +157,7 @@
             <li class="nav-item">
                 <a href="contact.html" class="nav-link"> Contact </a>
             </li>
-            </ul>
+            </ul> #}
 
             <!-- <div class="other-side">
             <div class="search-area">
