@@ -66,8 +66,6 @@ module.exports = {
       ],
     },
     { name: "Design Your Spa", href: "https://artesianspas.com/design-your-spa/", framed: true },
-    { name: "Saunas", href: "https://www.helosaunas.com/", framed: true },
-    { name: "Desert Steel", href: "https://desertsteel.net/", newTab: true },
-    { name: "Saber Grills", href: "https://www.sabergrills.com/", newTab: true },
+    { name: "Saunas", href: "https://www.healthmatesauna.com/", framed: true },
   ],
 };
