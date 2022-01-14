@@ -3,7 +3,7 @@
 {% block header %}{% endblock %}
 
 {% block content %}
-    <iframe id="preview-frame" title="Soakers Affiliated" src="https://artesianspas.com/" frameborder="0" width="100%" id="framed"></iframe>
+    <iframe title="Soakers Affiliated" src="/blank/" frameborder="0" width="100%" id="framed"></iframe>
 {% endblock %}
 
 {% block footer %}{% endblock %}
@@ -14,7 +14,18 @@
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const iFrameSource = urlParams.get('url');
-      $('iframe').attr('src', iFrameSource);
+
+      const iframe = document.getElementById('framed');
+      console.log(iframe)
+      iframe.onload = () => {
+        console.log('iframe loaded');
+      }
+      iframe.onerror = (err) => {
+        console.log('there was an error loading the iframe', err);
+        window.location.href=iFrameSource;
+      }
+      iframe.src = iFrameSource;
+
 
       //function to fix height of iframe!
       var calcHeight = function() {
