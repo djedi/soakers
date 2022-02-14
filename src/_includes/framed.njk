@@ -1,46 +1,81 @@
 {% extends 'base.njk' %}
 
 {% block content %}
-    <iframe title="Soakers Affiliated" src="/blank/" frameborder="0" width="100%" id="framed"></iframe>
+  <iframe title="Soakers Affiliated" src="/blank/" frameborder="0" width="100%" id="framed"></iframe>
+
+  <div id="redirect">
+    <p>Your are being redirected to Artesian Spas website so we can give you the most up-to-date information.</p>
+
+    <p>We will redirect you to <a href="#" id="redirect-href" target="_blank"></a> in... 
+    <span id="redirect-timer">7</span></p>
+  </div>
 {% endblock %}
 
 {% block footer %}{% endblock %}
 
 {% block postbody %}
-    <script>
-      // URL param
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const iFrameSource = urlParams.get('url');
+  <script>
+    // URL param
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const iFrameSource = urlParams.get('url');
 
+    if (iFrameSource.includes('artesianspas.com')) {
+      // Because of cloudflare and incompitent staff, we just need to redirect
+      let $redirectHref = $('#redirect-href');
+      $redirectHref.attr('href', iFrameSource);
+      $redirectHref.text(iFrameSource);
+      $redirectHref.click(() => {
+        clearInterval(redirectInterval);
+        window
+          .history
+          .back();
+      })
+
+      const REDIRECT_SECONDS = 7;
+      let seconds = REDIRECT_SECONDS;
+      const redirectInterval = setInterval(() => {
+        $('#redirect-timer').text(seconds);
+        seconds -= 1;
+        if (seconds < 0) {
+          clearInterval(redirectInterval);
+          window.location.href = iFrameSource;
+        }
+      }, 1000)
+    } else {
       const iframe = document.getElementById('framed');
-      console.log(iframe)
       iframe.onload = () => {
         console.log('iframe loaded');
       }
       iframe.onerror = (err) => {
         console.log('there was an error loading the iframe', err);
-        window.location.href=iFrameSource;
+        window.location.href = iFrameSource;
       }
       iframe.src = iFrameSource;
 
-
       //function to fix height of iframe!
-      var calcHeight = function() {
+      var calcHeight = function () {
         const navHeight = $('.navbar-area').height();
         $('iframe').height($(window).height() - navHeight);
       }
 
-      $(document).ready(function() {
+      $(document).ready(function () {
         calcHeight();
       });
 
-      $(window).resize(function() {
-        calcHeight();
-      }).load(function() {
-        calcHeight();
-      });
-    </script>
+      $(window)
+        .resize(function () {
+          calcHeight();
+        })
+        .load(function () {
+          calcHeight();
+        });
+    }
+  </script>
+
+  <style>
+    #redirect {
+      text-align: center;
+    }
+  </style>
 {% endblock %}
-
-
