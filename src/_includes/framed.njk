@@ -20,7 +20,14 @@
     const urlParams = new URLSearchParams(queryString);
     const iFrameSource = urlParams.get('url');
 
-    if (iFrameSource.includes('artesianspas.com')) {
+    const redirectDomains = ['artesianspas.com', 'southseasspas.com', 'thegardenspas.com', 'tidalfit.com']
+    let showRedirect = false;
+    redirectDomains.forEach(d => {
+      if (iFrameSource.includes(d)) {
+        showRedirect = true;
+      }
+    })
+    if (showRedirect) {
       // Because of cloudflare and incompitent staff, we just need to redirect
       let $redirectHref = $('#redirect-href');
       $redirectHref.attr('href', iFrameSource);
@@ -43,6 +50,7 @@
         }
       }, 1000)
     } else {
+      $('#redirect').hide();
       const iframe = document.getElementById('framed');
       iframe.onload = () => {
         console.log('iframe loaded');
