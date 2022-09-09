@@ -67,5 +67,10 @@ module.exports = {
     },
     { name: "Design Your Spa", href: "https://artesianspas.com/design-your-spa/", framed: true },
     { name: "Saunas", href: "https://www.healthmatesauna.com/", framed: true },
+    {
+      name: "Financing",
+      href: "https://provider.macu.com/V0wxMFNzeTVYKlNLRkF3ZnptU1M1QVc0T0FIc0o3NUhjN3IzTjRlbXlmRmdKNnZUZGJnczVjR3ZjbDZLSVlzZmNQeWdiNU81N0lIVklTMipTbjNtTTQxYml2KlNzd2Zta1pSVXpPb0pJeHpGTTRQMGd1NTVmQVVMQjdQSXAyYldzRTk=",
+      framed: true,
+    },
   ],
 };
