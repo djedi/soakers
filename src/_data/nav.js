@@ -14,6 +14,31 @@ module.exports = {
         { name: "South Seas Spas", href: "http://southseasspas.com/", framed: true },
         { name: "Garden Spas", href: "http://thegardenspas.com/", framed: true },
         { name: "Swim Spas", href: "https://tidalfit.com/", framed: true },
+        {
+          name: "Nordic Luxury",
+          href: "https://www.nordichottubs.com/hot-tubs/luxury-series-hot-tubs/",
+          framed: true,
+        },
+        {
+          name: "Nordic Sport",
+          href: "https://www.nordichottubs.com/hot-tubs/sport-edition-hot-tubs/",
+          framed: true,
+        },
+        {
+          name: "Nordic Modern",
+          href: "https://www.nordichottubs.com/hot-tubs/sport-edition-hot-tubs/",
+          framed: true,
+        },
+        {
+          name: "Nordic Classic",
+          href: "https://www.nordichottubs.com/hot-tubs/classic-series-hot-tubs/",
+          framed: true,
+        },
+        {
+          name: "Nordic ALL-IN-110V",
+          href: "https://www.nordichottubs.com/hot-tubs/all-in-110v-series-hot-tubs/",
+          framed: true,
+        },
       ],
     },
     {
