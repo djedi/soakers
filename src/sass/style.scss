@@ -1049,14 +1049,18 @@ Home Slider
   }
 }
 .slider-bg1 {
-  background-image: url(../img/home-1/slider1.jpg);
+  background-image: url(../img/home-1/slider1.webp);
 }
 .slider-bg2 {
-  background-image: url(../img/home-1/slider2.jpg);
+  background-image: url(../img/home-1/slider2.webp);
 }
 .slider-bg3 {
-  background-image: url(../img/home-1/slider3.jpg);
+  background-image: url(../img/home-1/slider3.webp);
 }
+/* JPEG fallback for older browsers */
+.no-webp .slider-bg1 { background-image: url(../img/home-1/slider1.jpg); }
+.no-webp .slider-bg2 { background-image: url(../img/home-1/slider2.jpg); }
+.no-webp .slider-bg3 { background-image: url(../img/home-1/slider3.jpg); }
 /*=================================
  Gallery Images
 ===================================*/
