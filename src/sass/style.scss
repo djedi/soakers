@@ -1068,6 +1068,85 @@ Home Slider
   width: 100%;
   height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-view:hover .gallery-img {
+  transform: scale(1.05);
+}
+.gallery-view {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/*=================================
+ Testimonial Cards
+===================================*/
+.testimonial-carousel .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.testimonial-carousel .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
+}
+
+/*=================================
+ Mobile Improvements
+===================================*/
+@media only screen and (max-width: 767px) {
+  .slider-text {
+    padding: 20px 25px !important;
+  }
+  .slider-text h1 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px;
+  }
+  .slider-text p {
+    font-size: 14px !important;
+    line-height: 1.5;
+    margin-top: 8px !important;
+  }
+  .gallery-img {
+    height: 200px;
+  }
+  .testimonial-carousel .card {
+    min-height: 280px !important;
+  }
+  .testimonial-carousel .card-text {
+    font-size: 14px;
+  }
+  /* Tap-friendly buttons */
+  .default-btn1 {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Better spacing for touch */
+  .footer-list ul li {
+    padding: 8px 0;
+  }
+  .footer-list ul li a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  /* CTA section mobile */
+  section[style*="f27127"] h2 {
+    font-size: 22px !important;
+  }
+  section[style*="f27127"] .default-btn1 {
+    display: block;
+    margin: 8px auto !important;
+    max-width: 280px;
+  }
+}
+
+/* Tablet improvements */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gallery-img {
+    height: 220px;
+  }
 }
 
 /*=================================
