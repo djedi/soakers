@@ -4,7 +4,7 @@
   <iframe title="Soakers Affiliated" src="/blank/" frameborder="0" width="100%" id="framed"></iframe>
 
   <div id="redirect">
-    <p>Your are being redirected to Artesian Spas website so we can give you the most up-to-date information.</p>
+    <p>You are being redirected to the manufacturer's website so we can give you the most up-to-date information.</p>
 
     <p>We will redirect you to <a href="#" id="redirect-href" target="_blank"></a> in... 
     <span id="redirect-timer">7</span></p>
@@ -20,7 +20,7 @@
     const urlParams = new URLSearchParams(queryString);
     const iFrameSource = urlParams.get('url');
 
-    const redirectDomains = ['artesianspas.com', 'southseasspas.com', 'thegardenspas.com', 'tidalfit.com']
+    const redirectDomains = ['artesianspas.com', 'southseasspas.com', 'thegardenspas.com', 'tidalfit.com', 'covana.com', 'nordichottubs.com']
     let showRedirect = false;
     redirectDomains.forEach(d => {
       if (iFrameSource.includes(d)) {

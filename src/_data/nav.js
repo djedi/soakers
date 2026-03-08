@@ -63,7 +63,7 @@ module.exports = {
 					framed: true,
 				},
 				{
-					name: "Quality Contruction",
+					name: "Quality Construction",
 					href: "https://artesianspas.com/spa-features/quality-construction/",
 					framed: true,
 				},
@@ -139,6 +139,14 @@ module.exports = {
 			name: "Financing",
 			href: "https://provider.macu.com/V0wxMFNzeTVYKlNLRkF3ZnptU1M1QVc0T0FIc0o3NUhjN3IzTjRlbXlmRmdKNnZUZGJnczVjR3ZjbDZLSVlzZmNQeWdiNU81N0lIVklTMipTbjNtTTQxYml2KlNzd2Zta1pSVXpPb0pJeHpGTTRQMGd1NTVmQVVMQjdQSXAyYldzRTk=",
 			framed: false,
+		},
+		{
+			name: "About",
+			href: "/about/",
+		},
+		{
+			name: "Contact",
+			href: "/contact/",
 		},
 	],
 };
