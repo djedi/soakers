@@ -58,16 +58,6 @@ module.exports = {
 			href: "#",
 			pages: [
 				{
-					name: "Covana",
-					href: "https://covana.com/",
-					framed: true,
-				},
-				{
-					name: "Covers",
-					href: "https://artesianspas.com/spa-accessories/covers/",
-					framed: true,
-				},
-				{
 					name: "Health & Wellness",
 					href: "https://artesianspas.com/spa-features/health-wellness/",
 					framed: true,
@@ -88,7 +78,7 @@ module.exports = {
 					framed: true,
 				},
 				{
-					name: "Innovative Technoloyg",
+					name: "Innovative Technology",
 					href: "https://artesianspas.com/spa-features/innovative-technology/",
 					framed: true,
 				},
@@ -109,8 +99,33 @@ module.exports = {
 			href: "#",
 			pages: [
 				{
+					name: "Covana",
+					href: "https://covana.com/",
+					framed: true,
+				},
+				{
+					name: "Covers",
+					href: "https://artesianspas.com/spa-accessories/covers/",
+					framed: true,
+				},
+				{
+					name: "Cover Lifters",
+					href: "https://artesianspas.com/spa-accessories/cover-lifters/",
+					framed: true,
+				},
+				{
 					name: "Steps",
 					href: "https://artesianspas.com/spa-accessories/steps/",
+					framed: true,
+				},
+				{
+					name: "Handrails",
+					href: "https://artesianspas.com/spa-accessories/handrails/",
+					framed: true,
+				},
+				{
+					name: "Pillows",
+					href: "https://artesianspas.com/spa-accessories/pillows/",
 					framed: true,
 				},
 			],
