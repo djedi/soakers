@@ -1058,6 +1058,15 @@ Home Slider
   background-image: url(../img/home-1/slider3.jpg);
 }
 /*=================================
+ Gallery Images
+===================================*/
+.gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/*=================================
  Home Slider End 
 ===================================*/
 

@@ -4,11 +4,41 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
 const packageVersion = require("./package.json").version;
+
+async function imageShortcode(src, alt, sizes = "100vw", widths = [400, 800], cssClass = "") {
+  let inputPath = src.startsWith("/") ? path.join("src", src) : src;
+  let metadata = await Image(inputPath, {
+    widths: widths,
+    formats: ["webp", "jpeg"],
+    outputDir: "./public/img/optimized/",
+    urlPath: "/img/optimized/",
+    filenameFormat: function (id, src, width, format) {
+      const name = path.basename(src, path.extname(src));
+      return `${name}-${width}w.${format}`;
+    },
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  };
+  if (cssClass) {
+    imageAttributes.class = cssClass;
+  }
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   eleventyConfig.addWatchTarget("./src/sass/");
 
