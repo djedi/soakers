@@ -118,6 +118,28 @@
         }
     });
 
+    // Testimonial Carousel (Google Reviews)
+    $('.testimonial-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        responsive:{
+            0:{
+                items: 1
+            },
+            768:{
+                items: 2
+            },
+            1000:{
+                items: 3
+            }
+        }
+    });
+
     // Testimonial Slider
     $('.testimonial-slider').owlCarousel({
         items: 1,
