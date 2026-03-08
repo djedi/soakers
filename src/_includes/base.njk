@@ -80,8 +80,9 @@
       name="og:description"
       content="{{pageDescription}}"
     />
-    <meta property="og:image" content="{{pageSocialImg}}" />
-    <meta name="twitter:image" content="{{pageSocialImg}}" />
+    {%- set socialImg %}{% if pageSocialImg %}{{ pageSocialImg }}{% else %}/img/gallery/storefront.jpg{% endif %}{% endset -%}
+    <meta property="og:image" content="{{socialImg}}" />
+    <meta name="twitter:image" content="{{socialImg}}" />
 
     <link
       rel="alternate"
@@ -137,21 +138,7 @@
                     <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
-                <li>
-                  <a href="https://twitter.com/Soakers" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <!-- <li>
-                  <a href="http://www.youtube.com/utahsoakers" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li> -->
+                <!-- Removed inactive social profiles -->
               </ul>
             </div>
           </div>
@@ -246,7 +233,7 @@
                 <h3>Contacts</h3>
                 <ul>
                   <li>
-                    <a href="tel:+1818387727">
+                    <a href="tel:+18018387727">
                       <i class="fas fa-mobile-alt"></i>
                       +1 801 838 SPAS (7727)
                     </a>
