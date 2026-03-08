@@ -1,34 +1,120 @@
 ---
 title: "About Soakers"
 description: "Family-owned hot tub dealership in Midvale, Utah. Authorized dealer for Artesian Spas, Nordic Hot Tubs, TidalFit Swim Spas, and Covana."
+layout: base.njk
+permalink: /about/
 ---
 
-## Your Local Hot Tub Experts
+<!-- Hero Banner -->
+<section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
+  <div class="container text-center">
+    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">About Soakers</h1>
+    <p style="font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+      Family-owned. Customer-focused. Your neighborhood hot tub experts since day one.
+    </p>
+  </div>
+</section>
 
-Soakers is a family-owned hot tub dealership located in Midvale, Utah. We're passionate about helping families find the perfect spa for their home — whether you're looking for relaxation, hydrotherapy, or a backyard upgrade the whole family can enjoy.
+<!-- Story Section -->
+<section class="pt-100 pb-70">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4">
+        <img src="/img/gallery/storefront.jpg" alt="Soakers storefront in Midvale, Utah" class="img-fluid rounded shadow" style="width:100%;">
+      </div>
+      <div class="col-lg-6 mb-4">
+        <h2>Your Local Hot Tub Experts</h2>
+        <p style="font-size: 16px; line-height: 1.8;">
+          Soakers is a family-owned hot tub dealership located in Midvale, Utah. We're passionate about helping 
+          families find the perfect spa for their home — whether you're looking for relaxation, hydrotherapy, 
+          or a backyard upgrade the whole family can enjoy.
+        </p>
+        <p style="font-size: 16px; line-height: 1.8;">
+          We don't just sell hot tubs — we service them too. Our team is here to help you with maintenance, 
+          repairs, and keeping your spa running at its best for years to come.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-## What We Offer
+<!-- Brands Section -->
+<section class="pb-70" style="background-color: #f8f9fa;">
+  <div class="container pt-70">
+    <div class="text-center mb-50">
+      <h2>Brands We Carry</h2>
+      <p>We're an authorized dealer for the industry's best hot tub and swim spa brands.</p>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <div class="card-body">
+            <h4 style="color: #f27127;">Artesian Spas</h4>
+            <p>Island Spas and Elite series with industry-leading customization and the patented DIRECTFLOW Personal Control® System.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <div class="card-body">
+            <h4 style="color: #f27127;">Nordic Hot Tubs</h4>
+            <p>Luxury, Sport, Modern, Classic, and ALL-IN-110V series. Quality craftsmanship at every price point.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <div class="card-body">
+            <h4 style="color: #f27127;">TidalFit Swim Spas</h4>
+            <p>A pool, hot tub, and aquatic gym all-in-one. Less cost, less space, less maintenance than a full pool.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <div class="card-body">
+            <h4 style="color: #f27127;">South Seas Spas</h4>
+            <p>Quality spas at accessible price points. Great value without compromising on features.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <div class="card-body">
+            <h4 style="color: #f27127;">Garden Spas</h4>
+            <p>Compact, efficient spas for any space. Perfect when you want a hot tub without a huge footprint.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <div class="card-body">
+            <h4 style="color: #f27127;">Covana</h4>
+            <p>The only automated spa gazebo on the market. Transforms from a cover to a beautiful gazebo at the push of a button.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-- **Artesian Spas** — Island Spas and Elite series with industry-leading customization
-- **Nordic Hot Tubs** — Luxury, Sport, Modern, Classic, and ALL-IN-110V series
-- **TidalFit Swim Spas** — Pool, hot tub, and aquatic gym all-in-one
-- **South Seas Spas** — Quality spas at accessible price points
-- **Garden Spas** — Compact, efficient spas for any space
-- **Covana** — The only automated spa gazebo on the market
-
-## Sales & Service
-
-We don't just sell hot tubs — we service them too. Our team is here to help you with maintenance, repairs, and keeping your spa running at its best for years to come.
-
-## Visit Our Showroom
-
-Come see our spas in person and find the one that's right for you.
-
-**Soakers**
-6905 S State St, Suite A
-Midvale, UT 84047
-
-**Phone:** [801-838-SPAS (7727)](tel:+18018387727)
-**Email:** [service@soakers.biz](mailto:service@soakers.biz)
-
-**Hours:** Monday – Saturday, 10:00 AM – 5:00 PM
+<!-- Visit CTA -->
+<section class="pt-70 pb-70" style="background-color: #f27127; color: white;">
+  <div class="container text-center">
+    <h2 style="color: white; margin-bottom: 15px;">Come See Us!</h2>
+    <p style="font-size: 18px; max-width: 500px; margin: 0 auto 10px; color: rgba(255,255,255,0.9);">
+      <strong>6905 S State St, Suite A, Midvale, UT 84047</strong>
+    </p>
+    <p style="font-size: 16px; color: rgba(255,255,255,0.85); margin-bottom: 25px;">
+      Monday – Saturday, 10:00 AM – 5:00 PM
+    </p>
+    <div>
+      <a href="tel:+18018387727" class="default-btn1" style="background: white; color: #f27127; margin: 5px;">
+        <i class="fas fa-phone-alt"></i> 801-838-SPAS
+      </a>
+      <a href="/contact/" class="default-btn1" style="border: 2px solid white; background: transparent; color: white; margin: 5px;">
+        Get Directions
+      </a>
+    </div>
+  </div>
+</section>
