@@ -98,6 +98,8 @@ permalink: /about/
   </div>
 </section>
 
+{% include "testimonials.njk" %}
+
 <!-- Visit CTA -->
 <section class="pt-70 pb-70" style="background-color: #f27127; color: white;">
   <div class="container text-center">
