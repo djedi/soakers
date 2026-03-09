@@ -86,6 +86,59 @@
       href="/feed/"
     />
     {% block posthead %}{% endblock %}
+
+    <!-- LocalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HotTubStore",
+      "name": "Soakers",
+      "url": "https://soakers.biz",
+      "logo": "https://soakers.biz/img/logo.png",
+      "image": "https://soakers.biz/img/og.png",
+      "description": "Family-owned hot tub dealer in Midvale, UT. Authorized dealer for Artesian Spas, Nordic Hot Tubs, TidalFit Swim Spas, Covana, and more. Sales and service.",
+      "telephone": "+1-801-838-7727",
+      "email": "service@soakers.biz",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6905 S State St",
+        "addressLocality": "Midvale",
+        "addressRegion": "UT",
+        "postalCode": "84047",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.6253922,
+        "longitude": -111.8898613
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "17:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/soakersspas"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Hot Tubs & Swim Spas",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Artesian Spas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Nordic Hot Tubs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Island Spas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Garden Spas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "South Seas Spas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "TidalFit Swim Spas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Covana Automated Covers" } }
+        ]
+      }
+    }
+    </script>
   </head>
   <body>
 
