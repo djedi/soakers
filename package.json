@@ -47,14 +47,14 @@
     "stylelint-config-standard": "^24.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.1.0",
-    "stylelint-selector-bem-pattern": "^2.1.1"
+    "stylelint-selector-bem-pattern": "^2.1.1",
+    "chrome-aws-lambda": "10.1.0",
+    "puppeteer-core": "13.0.1"
   },
   "browserslist": [
     "last 2 versions"
   ],
   "dependencies": {
-    "@11ty/eleventy-img": "^6.0.4",
-    "chrome-aws-lambda": "10.1.0",
-    "puppeteer-core": "13.0.1"
+    "@11ty/eleventy-img": "^6.0.4"
   }
 }
