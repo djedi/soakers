@@ -28,7 +28,7 @@ permalink: /stereo-systems/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/stereo-systems/stereo-hero.png" alt="Hot tub stereo and speaker" class="img-fluid rounded shadow" />
+        <img src="/img/stereo-systems/stereo-hero.png" alt="Hot tub stereo and speaker" class="img-fluid rounded shadow" width="300" height="450" />
       </div>
     </div>
   </div>

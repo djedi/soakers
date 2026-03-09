@@ -25,7 +25,7 @@ permalink: /covers/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/covers/covers-hero.png" alt="Hot tub with All Seasons Shield Cover" class="img-fluid rounded shadow" />
+        <img src="/img/covers/covers-hero.png" alt="Hot tub with All Seasons Shield Cover" class="img-fluid rounded shadow" width="400" height="400" />
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@ permalink: /covers/
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/covers/vinyl-stone.jpg" alt="Stone vinyl cover" class="card-img-top" />
+          <img src="/img/covers/vinyl-stone.jpg" alt="Stone vinyl cover" class="card-img-top" width="2560" height="2048" />
           <div class="card-body">
             <h4 style="color: #f27127;">Stone</h4>
           </div>
@@ -52,7 +52,7 @@ permalink: /covers/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/covers/vinyl-black.jpg" alt="Black vinyl cover" class="card-img-top" />
+          <img src="/img/covers/vinyl-black.jpg" alt="Black vinyl cover" class="card-img-top" width="2560" height="2048" />
           <div class="card-body">
             <h4 style="color: #f27127;">Black</h4>
           </div>
@@ -60,7 +60,7 @@ permalink: /covers/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/covers/vinyl-pinot.jpg" alt="Pinot vinyl cover" class="card-img-top" />
+          <img src="/img/covers/vinyl-pinot.jpg" alt="Pinot vinyl cover" class="card-img-top" width="720" height="576" />
           <div class="card-body">
             <h4 style="color: #f27127;">Pinot</h4>
           </div>
@@ -89,7 +89,7 @@ permalink: /covers/
         </ul>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/covers/all-seasons-shield.jpg" alt="All Seasons Shield Cover in Midnight" class="img-fluid rounded shadow" />
+        <img src="/img/covers/all-seasons-shield.jpg" alt="All Seasons Shield Cover in Midnight" class="img-fluid rounded shadow" width="1044" height="768" />
       </div>
     </div>
   </div>
@@ -107,12 +107,12 @@ permalink: /covers/
     </div>
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/covers/hydraulic-lifter.jpg" alt="Hydraulic cover lifter" class="img-fluid rounded shadow" />
+        <img src="/img/covers/hydraulic-lifter.jpg" alt="Hydraulic cover lifter" class="img-fluid rounded shadow" width="1888" height="1458" />
         <h4 style="color: #f27127; margin-top: 15px;">Hydraulic Cover Lifter</h4>
         <p>Uses a hydraulic cylinder to assist with lifting the cover.</p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/covers/manual-lifter.jpg" alt="Manual cover lifter" class="img-fluid rounded shadow" />
+        <img src="/img/covers/manual-lifter.jpg" alt="Manual cover lifter" class="img-fluid rounded shadow" width="1888" height="1458" />
         <h4 style="color: #f27127; margin-top: 15px;">Manual Cover Lifter</h4>
         <p>Relies on manual lifting to remove and replace the cover.</p>
       </div>

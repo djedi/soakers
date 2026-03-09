@@ -29,7 +29,7 @@ permalink: /spa-models/island-spas/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/spa-models/island-spas/Grand-Bahama-Elite-500x500-1.png" alt="Island Spas Grand Bahama" class="img-fluid rounded shadow" />
+        <img src="/img/spa-models/island-spas/Grand-Bahama-Elite-500x500-1.png" alt="Island Spas Grand Bahama" class="img-fluid rounded shadow" width="500" height="500" />
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@ permalink: /spa-models/island-spas/
     <div class="row text-center">
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/island-spas/Bimini-Elite-500x500-1.png" alt="Bimini" class="card-img-top" />
+          <img src="/img/spa-models/island-spas/Bimini-Elite-500x500-1.png" alt="Bimini" class="card-img-top" width="500" height="500" />
           <div class="card-body">
             <h4 style="color: #f27127;">Bimini</h4>
           </div>
@@ -55,7 +55,7 @@ permalink: /spa-models/island-spas/
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/island-spas/Isla-Margarita-Elite-500x500-1.png" alt="Isla Margarita" class="card-img-top" />
+          <img src="/img/spa-models/island-spas/Isla-Margarita-Elite-500x500-1.png" alt="Isla Margarita" class="card-img-top" width="500" height="500" />
           <div class="card-body">
             <h4 style="color: #f27127;">Isla Margarita</h4>
           </div>
@@ -63,7 +63,7 @@ permalink: /spa-models/island-spas/
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/island-spas/Grand-Bahama-Elite-500x500-1.png" alt="Grand Bahama" class="card-img-top" />
+          <img src="/img/spa-models/island-spas/Grand-Bahama-Elite-500x500-1.png" alt="Grand Bahama" class="card-img-top" width="500" height="500" />
           <div class="card-body">
             <h4 style="color: #f27127;">Grand Bahama</h4>
           </div>
@@ -71,7 +71,7 @@ permalink: /spa-models/island-spas/
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/island-spas/Grand-Cayman-Elite-500x500-1.png" alt="Grand Cayman" class="card-img-top" />
+          <img src="/img/spa-models/island-spas/Grand-Cayman-Elite-500x500-1.png" alt="Grand Cayman" class="card-img-top" width="500" height="500" />
           <div class="card-body">
             <h4 style="color: #f27127;">Grand Cayman</h4>
           </div>
@@ -79,7 +79,7 @@ permalink: /spa-models/island-spas/
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/island-spas/Captiva-Elite-500x500-1.png" alt="Captiva" class="card-img-top" />
+          <img src="/img/spa-models/island-spas/Captiva-Elite-500x500-1.png" alt="Captiva" class="card-img-top" width="500" height="500" />
           <div class="card-body">
             <h4 style="color: #f27127;">Captiva</h4>
           </div>
@@ -87,7 +87,7 @@ permalink: /spa-models/island-spas/
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/island-spas/Antigua-Elite-500x500-1.png" alt="Antigua" class="card-img-top" />
+          <img src="/img/spa-models/island-spas/Antigua-Elite-500x500-1.png" alt="Antigua" class="card-img-top" width="500" height="500" />
           <div class="card-body">
             <h4 style="color: #f27127;">Antigua</h4>
           </div>
@@ -95,7 +95,7 @@ permalink: /spa-models/island-spas/
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/island-spas/Nevix-Luxury-500x500-1.png" alt="Nevis" class="card-img-top" />
+          <img src="/img/spa-models/island-spas/Nevix-Luxury-500x500-1.png" alt="Nevis" class="card-img-top" width="500" height="500" />
           <div class="card-body">
             <h4 style="color: #f27127;">Nevis</h4>
           </div>
@@ -103,7 +103,7 @@ permalink: /spa-models/island-spas/
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/island-spas/Santa-Cruz-Essential-500x500-1.png" alt="Santa Cruz" class="card-img-top" />
+          <img src="/img/spa-models/island-spas/Santa-Cruz-Essential-500x500-1.png" alt="Santa Cruz" class="card-img-top" width="500" height="500" />
           <div class="card-body">
             <h4 style="color: #f27127;">Santa Cruz</h4>
           </div>

@@ -25,7 +25,7 @@ permalink: /hydrotherapy-jets/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/jets/artesian-elite-jets.jpg" alt="Artesian Elite Jets" class="img-fluid rounded shadow" />
+        <img src="/img/jets/artesian-elite-jets.jpg" alt="Artesian Elite Jets" class="img-fluid rounded shadow" width="3786" height="2500" />
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@ permalink: /hydrotherapy-jets/
     </div>
     <div class="row align-items-center mb-5">
       <div class="col-lg-6 mb-4">
-        <img src="/img/jets/jets-hero.jpg" alt="Artesian Elite Jets" class="img-fluid rounded shadow" />
+        <img src="/img/jets/jets-hero.jpg" alt="Artesian Elite Jets" class="img-fluid rounded shadow" width="300" height="240" />
       </div>
       <div class="col-lg-6 mb-4">
         <div class="mb-4">
@@ -84,7 +84,7 @@ permalink: /hydrotherapy-jets/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/jets/helix-jets.jpg" alt="Helix Jets" class="img-fluid rounded shadow" />
+        <img src="/img/jets/helix-jets.jpg" alt="Helix Jets" class="img-fluid rounded shadow" width="800" height="600" />
       </div>
     </div>
   </div>
@@ -95,7 +95,7 @@ permalink: /hydrotherapy-jets/
   <div class="container pt-70">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/jets/footblasters.jpg" alt="Footblaster Jets" class="img-fluid rounded shadow" />
+        <img src="/img/jets/footblasters.jpg" alt="Footblaster Jets" class="img-fluid rounded shadow" width="800" height="600" />
       </div>
       <div class="col-lg-6 mb-4">
         <h2>Footblasters</h2>
@@ -120,7 +120,7 @@ permalink: /hydrotherapy-jets/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/jets/clear-led-footblasters.gif" alt="Clear LED Dual Footblasters" class="img-fluid rounded shadow" />
+        <img src="/img/jets/clear-led-footblasters.gif" alt="Clear LED Dual Footblasters" class="img-fluid rounded shadow" width="480" height="360" />
       </div>
     </div>
   </div>
@@ -131,7 +131,7 @@ permalink: /hydrotherapy-jets/
   <div class="container pt-70">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/jets/neck-jets.jpg" alt="Neck Jets" class="img-fluid rounded shadow" />
+        <img src="/img/jets/neck-jets.jpg" alt="Neck Jets" class="img-fluid rounded shadow" width="2048" height="1307" />
       </div>
       <div class="col-lg-6 mb-4">
         <h2>Neck Jets</h2>

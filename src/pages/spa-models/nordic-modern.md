@@ -29,7 +29,7 @@ permalink: /spa-models/nordic-modern/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_EncoreMS_White_2793_OVRHD-SQ-MED.jpg" alt="Nordic Encore MS" class="img-fluid rounded shadow" />
+        <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_EncoreMS_White_2793_OVRHD-SQ-MED.jpg" alt="Nordic Encore MS" class="img-fluid rounded shadow" width="800" height="800" />
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@ permalink: /spa-models/nordic-modern/
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_EncoreMS_White_2793_OVRHD-SQ-MED.jpg" alt="Encore MS" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_EncoreMS_White_2793_OVRHD-SQ-MED.jpg" alt="Encore MS" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Encore MS</h4>
             <p class="text-muted">6-Person &middot; Square</p>
@@ -54,7 +54,7 @@ permalink: /spa-models/nordic-modern/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_JubileeMS_FrVan_2924_OVRHD_SQ_LG-NO-NLP-USE-THIS.jpg" alt="Jubilee MS" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_JubileeMS_FrVan_2924_OVRHD_SQ_LG-NO-NLP-USE-THIS.jpg" alt="Jubilee MS" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Jubilee MS</h4>
             <p class="text-muted">6-Person &middot; Square</p>
@@ -64,7 +64,7 @@ permalink: /spa-models/nordic-modern/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/RetreatMS_Glacier_Charcoal_490px.png" alt="Retreat MS" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/RetreatMS_Glacier_Charcoal_490px.png" alt="Retreat MS" class="card-img-top" width="490" height="490" />
           <div class="card-body">
             <h4 style="color: #f27127;">Retreat MS</h4>
             <p class="text-muted">5-Person &middot; Rectangle</p>
@@ -74,7 +74,7 @@ permalink: /spa-models/nordic-modern/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/StellaMS_White_Teak_3062_OVRHD-SQ.jpg" alt="Stella MS" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/StellaMS_White_Teak_3062_OVRHD-SQ.jpg" alt="Stella MS" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Stella MS</h4>
             <p class="text-muted">3-Person &middot; Rectangle</p>
@@ -84,7 +84,7 @@ permalink: /spa-models/nordic-modern/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_DAmourMS_FrVan_Mahog_3292_OVRHD_SQ_LG.jpg" alt="D'Amour MS" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_DAmourMS_FrVan_Mahog_3292_OVRHD_SQ_LG.jpg" alt="D'Amour MS" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">D'Amour MS</h4>
             <p class="text-muted">2-Person &middot; Heart/Triangle</p>
@@ -94,7 +94,7 @@ permalink: /spa-models/nordic-modern/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_BellaMS_White_2785_OVRHD-SQ-MED.jpg" alt="Bella MS" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_BellaMS_White_2785_OVRHD-SQ-MED.jpg" alt="Bella MS" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Bella MS</h4>
             <p class="text-muted">2-Person &middot; Rounded Rectangle</p>

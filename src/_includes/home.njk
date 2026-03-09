@@ -2,6 +2,10 @@
 description: Hot tub dealer in Midvale, UT. Artesian Spas, Nordic Hot Tubs, TidalFit Swim Spas, Covana & more. Sales and service.
 layout: base.njk
 ---
+{% block posthead %}
+    <!-- Preload LCP hero image -->
+    <link rel="preload" href="/img/home-1/slider2.webp" as="image" type="image/webp">
+{% endblock %}
 
 <!-- Home Slider -->
 <div class="home-slider">

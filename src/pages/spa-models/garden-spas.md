@@ -29,7 +29,7 @@ permalink: /spa-models/garden-spas/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Plume.png" alt="Garden Spas Plume" class="img-fluid rounded shadow" />
+        <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Plume.png" alt="Garden Spas Plume" class="img-fluid rounded shadow" width="500" height="477" />
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@ permalink: /spa-models/garden-spas/
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Wisteria.png" alt="Wisteria" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Wisteria.png" alt="Wisteria" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Wisteria</h4>
             <p class="text-muted">6-Person</p>
@@ -56,7 +56,7 @@ permalink: /spa-models/garden-spas/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Plume.png" alt="Plume" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Plume.png" alt="Plume" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Plume</h4>
             <p class="text-muted">5-Person</p>
@@ -65,7 +65,7 @@ permalink: /spa-models/garden-spas/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Hydrangea.png" alt="Hydrangea" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Hydrangea.png" alt="Hydrangea" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Hydrangea</h4>
             <p class="text-muted">4-Person</p>
@@ -74,7 +74,7 @@ permalink: /spa-models/garden-spas/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Camellia.png" alt="Camellia" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Camellia.png" alt="Camellia" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Camellia</h4>
             <p class="text-muted">4-Person</p>
@@ -83,7 +83,7 @@ permalink: /spa-models/garden-spas/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Iris.png" alt="Iris" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Iris.png" alt="Iris" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Iris</h4>
             <p class="text-muted">4-Person</p>
@@ -92,7 +92,7 @@ permalink: /spa-models/garden-spas/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Viola.png" alt="Viola" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Viola.png" alt="Viola" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Viola</h4>
             <p class="text-muted">3-Person</p>
@@ -101,7 +101,7 @@ permalink: /spa-models/garden-spas/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Forsythia.png" alt="Forsythia" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Forsythia.png" alt="Forsythia" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Forsythia</h4>
             <p class="text-muted">3-Person</p>
@@ -110,7 +110,7 @@ permalink: /spa-models/garden-spas/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Hibiscus.png" alt="Hibiscus" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Hibiscus.png" alt="Hibiscus" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Hibiscus</h4>
             <p class="text-muted">2-Person</p>
@@ -119,7 +119,7 @@ permalink: /spa-models/garden-spas/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Azalea.png" alt="Azalea" class="card-img-top" />
+          <img src="/img/spa-models/garden-spas/Artesian-Spas_Garden-Spas_Azalea.png" alt="Azalea" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Azalea</h4>
             <p class="text-muted">2-Person</p>

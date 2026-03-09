@@ -29,7 +29,7 @@ permalink: /spa-models/nordic-all-in-110v/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Retreat-110_Coastal_TOP_RETREAT110_PAGE.png" alt="Nordic Retreat ALL-IN-110V" class="img-fluid rounded shadow" />
+        <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Retreat-110_Coastal_TOP_RETREAT110_PAGE.png" alt="Nordic Retreat ALL-IN-110V" class="img-fluid rounded shadow" width="650" height="746" />
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@ permalink: /spa-models/nordic-all-in-110v/
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Retreat-110_Coastal_TOP_RETREAT110_PAGE.png" alt="Retreat ALL-IN-110V" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Retreat-110_Coastal_TOP_RETREAT110_PAGE.png" alt="Retreat ALL-IN-110V" class="card-img-top" width="650" height="746" />
           <div class="card-body">
             <h4 style="color: #f27127;">Retreat</h4>
             <p class="text-muted">5-Person &middot; Rectangle</p>
@@ -54,7 +54,7 @@ permalink: /spa-models/nordic-all-in-110v/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/Stella110_FV_Pecan_3086_OVRHD-SQ.jpg" alt="Stella ALL-IN-110V" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/Stella110_FV_Pecan_3086_OVRHD-SQ.jpg" alt="Stella ALL-IN-110V" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Stella</h4>
             <p class="text-muted">3-Person &middot; Rectangle</p>
@@ -64,7 +64,7 @@ permalink: /spa-models/nordic-all-in-110v/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_DAmour110_White_Pecan_3692_OVRHD-SQ-MED.jpg" alt="D'Amour ALL-IN-110V" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_DAmour110_White_Pecan_3692_OVRHD-SQ-MED.jpg" alt="D'Amour ALL-IN-110V" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">D'Amour</h4>
             <p class="text-muted">2-Person &middot; Heart/Triangle</p>
@@ -74,7 +74,7 @@ permalink: /spa-models/nordic-all-in-110v/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_WarriorXL110_Glacier_Charcoal_4128_OVRHD-SQ-MED.jpg" alt="Warrior XL ALL-IN-110V" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_WarriorXL110_Glacier_Charcoal_4128_OVRHD-SQ-MED.jpg" alt="Warrior XL ALL-IN-110V" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Warrior XL</h4>
             <p class="text-muted">6-Person &middot; Round</p>
@@ -84,7 +84,7 @@ permalink: /spa-models/nordic-all-in-110v/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/Crown110_Glacier_Mahog_3618_OVRHD-PS-SQ.jpg" alt="Crown ALL-IN-110V" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/Crown110_Glacier_Mahog_3618_OVRHD-PS-SQ.jpg" alt="Crown ALL-IN-110V" class="card-img-top" width="600" height="603" />
           <div class="card-body">
             <h4 style="color: #f27127;">Crown</h4>
             <p class="text-muted">6-Person &middot; Round</p>
@@ -94,7 +94,7 @@ permalink: /spa-models/nordic-all-in-110v/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_Sport110_White_2940_OVRHD-SQ-MED.jpg" alt="Sport ALL-IN-110V" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_Sport110_White_2940_OVRHD-SQ-MED.jpg" alt="Sport ALL-IN-110V" class="card-img-top" width="600" height="589" />
           <div class="card-body">
             <h4 style="color: #f27127;">Sport</h4>
             <p class="text-muted">5-Person &middot; Round</p>

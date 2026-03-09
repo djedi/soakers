@@ -139,7 +139,7 @@ eleventyExcludeFromCollections: true
 
 <div class="og-card">
   <div class="og-content">
-    <div class="og-logo"><img src="/img/logo-black.png" alt="Soakers"></div>
+    <div class="og-logo"><img src="/img/logo-black.png" alt="Soakers" width="3064" height="1072"></div>
     <div class="og-divider"></div>
     <div class="og-tagline">Your Neighborhood Hot Tub Experts</div>
     <div class="og-sub">Family-owned in Midvale, Utah &mdash; Sales, Service &amp; Supplies</div>

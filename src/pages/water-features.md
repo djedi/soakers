@@ -25,7 +25,7 @@ permalink: /water-features/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/water-features/water-features-hero.png" alt="Water Features" class="img-fluid rounded shadow" />
+        <img src="/img/water-features/water-features-hero.png" alt="Water Features" class="img-fluid rounded shadow" width="2039" height="1359" />
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@ permalink: /water-features/
   <div class="container pt-70">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/water-features/pillowfall.webp" alt="PillowFall Water Feature" class="img-fluid rounded shadow" />
+        <img src="/img/water-features/pillowfall.webp" alt="PillowFall Water Feature" class="img-fluid rounded shadow" width="1450" height="967" />
       </div>
       <div class="col-lg-6 mb-4">
         <h2>PillowFall</h2>
@@ -64,7 +64,7 @@ permalink: /water-features/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/water-features/cascade-falls.png" alt="Cascade Falls" class="img-fluid rounded shadow" />
+        <img src="/img/water-features/cascade-falls.png" alt="Cascade Falls" class="img-fluid rounded shadow" width="1450" height="967" />
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@ permalink: /water-features/
   <div class="container pt-70">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/water-features/allegrofall.jpg" alt="AllegroFall" class="img-fluid rounded shadow" />
+        <img src="/img/water-features/allegrofall.jpg" alt="AllegroFall" class="img-fluid rounded shadow" width="785" height="611" />
       </div>
       <div class="col-lg-6 mb-4">
         <h2>AllegroFall</h2>
@@ -103,7 +103,7 @@ permalink: /water-features/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/water-features/bellagiofalls.jpg" alt="BellagioFalls" class="img-fluid rounded shadow" />
+        <img src="/img/water-features/bellagiofalls.jpg" alt="BellagioFalls" class="img-fluid rounded shadow" width="800" height="600" />
       </div>
     </div>
   </div>

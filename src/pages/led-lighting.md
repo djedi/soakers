@@ -33,7 +33,7 @@ permalink: /led-lighting/
   <div class="container pt-70">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/led-lighting/midnight-glow.gif" alt="Midnight Glow LED" class="img-fluid rounded shadow" />
+        <img src="/img/led-lighting/midnight-glow.gif" alt="Midnight Glow LED" class="img-fluid rounded shadow" width="768" height="576" />
       </div>
       <div class="col-lg-6 mb-4">
         <h2>Midnight Glow LED</h2>
@@ -62,7 +62,7 @@ permalink: /led-lighting/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/led-lighting/elite-lighting-island.webp" alt="Island Elite Lighting" class="img-fluid rounded shadow" />
+        <img src="/img/led-lighting/elite-lighting-island.webp" alt="Island Elite Lighting" class="img-fluid rounded shadow" width="1450" height="967" />
       </div>
     </div>
   </div>
@@ -73,7 +73,7 @@ permalink: /led-lighting/
   <div class="container pt-70">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/led-lighting/kick-rail-led.gif" alt="Kick Rail LED" class="img-fluid rounded shadow" />
+        <img src="/img/led-lighting/kick-rail-led.gif" alt="Kick Rail LED" class="img-fluid rounded shadow" width="600" height="375" />
       </div>
       <div class="col-lg-6 mb-4">
         <h2>Kick Rail LED</h2>
@@ -105,7 +105,7 @@ permalink: /led-lighting/
         </ul>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/led-lighting/dynabrite.jpg" alt="DynaBrite LED lighting with BellagioFalls" class="img-fluid rounded shadow" />
+        <img src="/img/led-lighting/dynabrite.jpg" alt="DynaBrite LED lighting with BellagioFalls" class="img-fluid rounded shadow" width="800" height="600" />
       </div>
     </div>
   </div>
@@ -116,7 +116,7 @@ permalink: /led-lighting/
   <div class="container pt-70">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/led-lighting/dynastar.jpg" alt="DynaStar LED" class="img-fluid rounded shadow" />
+        <img src="/img/led-lighting/dynastar.jpg" alt="DynaStar LED" class="img-fluid rounded shadow" width="541" height="407" />
       </div>
       <div class="col-lg-6 mb-4">
         <h2>DynaStar&trade; LED</h2>
@@ -145,7 +145,7 @@ permalink: /led-lighting/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/led-lighting/multicolor-led.jpg" alt="10 Multicolor LED" class="img-fluid rounded shadow" />
+        <img src="/img/led-lighting/multicolor-led.jpg" alt="10 Multicolor LED" class="img-fluid rounded shadow" width="500" height="500" />
       </div>
     </div>
   </div>

@@ -29,7 +29,7 @@ permalink: /spa-models/artesian-elite/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="/img/spa-models/artesian-elite/Artesian-Elite_Lifestyle-1.png" alt="Artesian Elite Lifestyle" class="img-fluid rounded shadow" />
+        <img src="/img/spa-models/artesian-elite/Artesian-Elite_Lifestyle-1.png" alt="Artesian Elite Lifestyle" class="img-fluid rounded shadow" width="520" height="680" />
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@ permalink: /spa-models/artesian-elite/
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Pelican-Bay_Model-Page.png" alt="Pelican Bay" class="card-img-top" />
+          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Pelican-Bay_Model-Page.png" alt="Pelican Bay" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Pelican Bay</h4>
             <p class="text-muted">9-Person</p>
@@ -56,7 +56,7 @@ permalink: /spa-models/artesian-elite/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Piper-Glen_Model-Page.png" alt="Piper Glen" class="card-img-top" />
+          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Piper-Glen_Model-Page.png" alt="Piper Glen" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Piper Glen</h4>
             <p class="text-muted">7-Person</p>
@@ -65,7 +65,7 @@ permalink: /spa-models/artesian-elite/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Dove-Canyon_Model-Page.png" alt="Dove Canyon" class="card-img-top" />
+          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Dove-Canyon_Model-Page.png" alt="Dove Canyon" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Dove Canyon</h4>
             <p class="text-muted">6-Person</p>
@@ -74,7 +74,7 @@ permalink: /spa-models/artesian-elite/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Eagle-Crest_Model-Page.png" alt="Eagle Crest" class="card-img-top" />
+          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Eagle-Crest_Model-Page.png" alt="Eagle Crest" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Eagle Crest</h4>
             <p class="text-muted">6-Person</p>
@@ -83,7 +83,7 @@ permalink: /spa-models/artesian-elite/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Quail-Ridge_Model-Page.png" alt="Quail Ridge" class="card-img-top" />
+          <img src="/img/spa-models/artesian-elite/Artesian-Elite_Quail-Ridge_Model-Page.png" alt="Quail Ridge" class="card-img-top" width="500" height="477" />
           <div class="card-body">
             <h4 style="color: #f27127;">Quail Ridge</h4>
             <p class="text-muted">4-Person</p>

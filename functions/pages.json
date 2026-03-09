@@ -20,43 +20,8 @@
 	},
 
 	{
-   "title":"Rejuvenating&nbsp;Hydrotherapy&nbsp;Jets",
-   "slug":"rejuvenating-hydrotherapy-jets"
-	},
-
-	{
-   "title":"Hot Tub&nbsp;Water&nbsp;Features",
-   "slug":"hot-tub-water-features"
-	},
-
-	{
-   "title":"Hot Tub&nbsp;LED&nbsp;Lighting",
-   "slug":"hot-tub-led-lighting"
-	},
-
-	{
-   "title":"Hot Tub&nbsp;Stereo&nbsp;Systems",
-   "slug":"hot-tub-stereo-systems"
-	},
-
-	{
-   "title":"Protective Hot&nbsp;Tub&nbsp;Covers",
-   "slug":"protective-hot-tub-covers"
-	},
-
-	{
-   "title":"Hot Tub Steps: Safety&nbsp;&&nbsp;Style",
-   "slug":"hot-tub-steps-safety-and-style"
-	},
-
-	{
    "title":"Contact Us",
    "slug":"contact-us"
-	},
-
-	{
-   "title":"About Soakers",
-   "slug":"about-soakers"
 	},
 
 	{
@@ -65,13 +30,33 @@
 	},
 
 	{
-   "title":"Nordic Luxury Series&nbsp;Hot&nbsp;Tubs",
-   "slug":"nordic-luxury-series-hot-tubs"
+   "title":"Financing",
+   "slug":"financing"
 	},
 
 	{
-   "title":"Nordic Sport Edition&nbsp;Hot&nbsp;Tubs",
-   "slug":"nordic-sport-edition-hot-tubs"
+   "title":"Frequently&nbsp;Asked&nbsp;Questions",
+   "slug":"frequently-asked-questions"
+	},
+
+	{
+   "title":"About Soakers",
+   "slug":"about-soakers"
+	},
+
+	{
+   "title":"Covana Automated&nbsp;Spa&nbsp;Covers",
+   "slug":"covana-automated-spa-covers"
+	},
+
+	{
+   "title":"Garden Spas",
+   "slug":"garden-spas"
+	},
+
+	{
+   "title":"TidalFit Swim Spas &&nbsp;Exercise&nbsp;Pools",
+   "slug":"tidalfit-swim-spas-and-exercise-pools"
 	},
 
 	{
@@ -85,6 +70,26 @@
 	},
 
 	{
+   "title":"Nordic Sport Edition&nbsp;Hot&nbsp;Tubs",
+   "slug":"nordic-sport-edition-hot-tubs"
+	},
+
+	{
+   "title":"Island Spas&nbsp;by&nbsp;Artesian",
+   "slug":"island-spas-by-artesian"
+	},
+
+	{
+   "title":"Nordic Luxury Series&nbsp;Hot&nbsp;Tubs",
+   "slug":"nordic-luxury-series-hot-tubs"
+	},
+
+	{
+   "title":"Artesian Elite&nbsp;Hot&nbsp;Tubs",
+   "slug":"artesian-elite-hot-tubs"
+	},
+
+	{
    "title":"Nordic ALL-IN-110V Series&nbsp;Hot&nbsp;Tubs",
    "slug":"nordic-all-in-110v-series-hot-tubs"
 	},
@@ -95,32 +100,32 @@
 	},
 
 	{
-   "title":"Island Spas&nbsp;by&nbsp;Artesian",
-   "slug":"island-spas-by-artesian"
+   "title":"Protective Hot&nbsp;Tub&nbsp;Covers",
+   "slug":"protective-hot-tub-covers"
 	},
 
 	{
-   "title":"Artesian Elite&nbsp;Hot&nbsp;Tubs",
-   "slug":"artesian-elite-hot-tubs"
+   "title":"Rejuvenating&nbsp;Hydrotherapy&nbsp;Jets",
+   "slug":"rejuvenating-hydrotherapy-jets"
 	},
 
 	{
-   "title":"TidalFit Swim Spas &&nbsp;Exercise&nbsp;Pools",
-   "slug":"tidalfit-swim-spas-and-exercise-pools"
+   "title":"Hot Tub&nbsp;LED&nbsp;Lighting",
+   "slug":"hot-tub-led-lighting"
 	},
 
 	{
-   "title":"Garden Spas",
-   "slug":"garden-spas"
+   "title":"Hot Tub Steps: Safety&nbsp;&&nbsp;Style",
+   "slug":"hot-tub-steps-safety-and-style"
 	},
 
 	{
-   "title":"Financing",
-   "slug":"financing"
+   "title":"Hot Tub&nbsp;Stereo&nbsp;Systems",
+   "slug":"hot-tub-stereo-systems"
 	},
 
 	{
-   "title":"Covana Automated&nbsp;Spa&nbsp;Covers",
-   "slug":"covana-automated-spa-covers"
+   "title":"Hot Tub&nbsp;Water&nbsp;Features",
+   "slug":"hot-tub-water-features"
 	}
 ]

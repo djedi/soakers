@@ -29,7 +29,7 @@ permalink: /spa-models/nordic-classic/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Crown-XL_Eclipse_TOP_CROWNXL_PAGE.png" alt="Nordic Crown XL" class="img-fluid rounded shadow" />
+        <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Crown-XL_Eclipse_TOP_CROWNXL_PAGE.png" alt="Nordic Crown XL" class="img-fluid rounded shadow" width="800" height="800" />
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@ permalink: /spa-models/nordic-classic/
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Crown-XL_Eclipse_TOP_CROWNXL_PAGE.png" alt="Crown XL" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Crown-XL_Eclipse_TOP_CROWNXL_PAGE.png" alt="Crown XL" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Crown XL</h4>
             <p class="text-muted">6-Person &middot; Round</p>
@@ -54,7 +54,7 @@ permalink: /spa-models/nordic-classic/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_CrownCL_Glacier_Mahog_3618_OVRHD-SQ-MED.jpg" alt="Crown Classic" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_CrownCL_Glacier_Mahog_3618_OVRHD-SQ-MED.jpg" alt="Crown Classic" class="card-img-top" width="800" height="796" />
           <div class="card-body">
             <h4 style="color: #f27127;">Crown Classic</h4>
             <p class="text-muted">6-Person &middot; Round</p>
@@ -64,7 +64,7 @@ permalink: /spa-models/nordic-classic/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/Crown-II_Drift_TOP.png" alt="Crown II" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/Crown-II_Drift_TOP.png" alt="Crown II" class="card-img-top" width="2730" height="2739" />
           <div class="card-body">
             <h4 style="color: #f27127;">Crown II</h4>
             <p class="text-muted">5-Person &middot; Round</p>
@@ -74,7 +74,7 @@ permalink: /spa-models/nordic-classic/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_WarriorXL_Glacier_Cedar_3716_OVRHD-SQ-MED.jpg" alt="Warrior XL" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_WarriorXL_Glacier_Cedar_3716_OVRHD-SQ-MED.jpg" alt="Warrior XL" class="card-img-top" width="800" height="796" />
           <div class="card-body">
             <h4 style="color: #f27127;">Warrior XL</h4>
             <p class="text-muted">6-Person &middot; Round</p>
@@ -84,7 +84,7 @@ permalink: /spa-models/nordic-classic/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_ImpulseDP_Glacier_Char_3703_OVRHD-SQ-MED.jpg" alt="Impulse DP" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_ImpulseDP_Glacier_Char_3703_OVRHD-SQ-MED.jpg" alt="Impulse DP" class="card-img-top" width="800" height="796" />
           <div class="card-body">
             <h4 style="color: #f27127;">Impulse DP</h4>
             <p class="text-muted">5-Person &middot; Round</p>
@@ -94,7 +94,7 @@ permalink: /spa-models/nordic-classic/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/Impulse_White_Char_3612_OVRHD-SQ.jpg" alt="Impulse Classic" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/Impulse_White_Char_3612_OVRHD-SQ.jpg" alt="Impulse Classic" class="card-img-top" width="800" height="796" />
           <div class="card-body">
             <h4 style="color: #f27127;">Impulse Classic</h4>
             <p class="text-muted">5-Person &middot; Round</p>

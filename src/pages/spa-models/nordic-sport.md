@@ -29,7 +29,7 @@ permalink: /spa-models/nordic-sport/
         </p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
-        <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Encore-SE_Drift_TOP_ENCORESE_PAGE.png" alt="Nordic Encore SE" class="img-fluid rounded shadow" />
+        <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Encore-SE_Drift_TOP_ENCORESE_PAGE.png" alt="Nordic Encore SE" class="img-fluid rounded shadow" width="800" height="800" />
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@ permalink: /spa-models/nordic-sport/
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Encore-SE_Drift_TOP_ENCORESE_PAGE.png" alt="Encore SE" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Encore-SE_Drift_TOP_ENCORESE_PAGE.png" alt="Encore SE" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Encore SE</h4>
             <p class="text-muted">6-Person &middot; Square</p>
@@ -54,7 +54,7 @@ permalink: /spa-models/nordic-sport/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/JubileeSE_Glacier_Mahog_3681_OVRHD-SQ.jpg" alt="Jubilee SE" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/JubileeSE_Glacier_Mahog_3681_OVRHD-SQ.jpg" alt="Jubilee SE" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Jubilee SE</h4>
             <p class="text-muted">6-Person &middot; Square</p>
@@ -64,7 +64,7 @@ permalink: /spa-models/nordic-sport/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Retreat-SE_Drift_TOP_RETREATSE_PAGE.png" alt="Retreat SE" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Retreat-SE_Drift_TOP_RETREATSE_PAGE.png" alt="Retreat SE" class="card-img-top" width="800" height="909" />
           <div class="card-body">
             <h4 style="color: #f27127;">Retreat SE</h4>
             <p class="text-muted">5-Person &middot; Rectangle</p>
@@ -74,7 +74,7 @@ permalink: /spa-models/nordic-sport/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_StellaSE_FrVan_Mahog_3643_OVRHD_SQ_MED.jpg" alt="Stella SE" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_StellaSE_FrVan_Mahog_3643_OVRHD_SQ_MED.jpg" alt="Stella SE" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">Stella SE</h4>
             <p class="text-muted">3-Person &middot; Rectangle</p>
@@ -84,7 +84,7 @@ permalink: /spa-models/nordic-sport/
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100">
-          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_DAmourSE_Glacier_Mahog_3724_OVRHD-SQ-MED.jpg" alt="D'Amour SE" class="card-img-top" />
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_DAmourSE_Glacier_Mahog_3724_OVRHD-SQ-MED.jpg" alt="D'Amour SE" class="card-img-top" width="800" height="800" />
           <div class="card-body">
             <h4 style="color: #f27127;">D'Amour SE</h4>
             <p class="text-muted">2-Person &middot; Heart/Triangle</p>
