@@ -8,69 +8,14 @@
 
 ## Critical Priority
 
-### 1. Add LocalBusiness Structured Data (Schema.org)
-
-**Category:** SEO
-No JSON-LD structured data exists anywhere on the site. This is the single biggest SEO gap. Add `LocalBusiness` schema to `base.njk` with:
-
-- Business name, address, phone, email
-- Opening hours (Mon–Sat 10am–5pm)
-- Geo coordinates
-- Logo, price range, payment methods
-- `hasOfferCatalog` for spa brands
-
-**Impact:** Rich snippets in Google (hours, map pin, reviews), improved local pack ranking.
-
-### 2. Remove Test/Placeholder Pages from Sitemap
-
-**Category:** SEO
-The sitemap includes pages that should not be indexed:
-
-- `/helloworld/` — test page
-- `/blank/` — empty placeholder
-- `/framed/` — iframe utility page
-- `/og-preview/` — dev testing tool
-- `/404.html` — error page
-
-**Fix:** Add `eleventyExcludeFromCollections: true` to the frontmatter of these pages, or add a `noindex` meta tag. They currently dilute crawl budget and look unprofessional if indexed.
-
 ### 3. Add a Contact Form
 
 **Category:** Conversion / UX
 The contact page has no form — only phone, email, and address. Many visitors prefer filling out a form over calling or emailing directly. A simple Netlify Forms form (name, email, phone, message) would capture leads that are currently lost.
 
-### 4. Missing Content-Security-Policy Header
-
-**Category:** Security
-No CSP header is set. Add a `Content-Security-Policy` header to `netlify.toml` to prevent XSS and data injection. Start with a report-only policy, then tighten:
-
-```
-Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' analytics.redseam.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: maps.google.com *.googleapis.com; frame-src 'self' www.youtube.com www.google.com"
-```
-
-### 5. Conflicting X-Frame-Options Headers
-
-**Category:** Security
-`_headers` sets `X-Frame-Options: DENY` while `netlify.toml` sets `X-Frame-Options: SAMEORIGIN`. The `/framed/` page uses iframes, so DENY would break it. Remove the `_headers` file or reconcile the two to use `SAMEORIGIN` consistently.
-
 ---
 
 ## High Priority
-
-### 6. No `<noscript>` Fallbacks
-
-**Category:** Accessibility / SEO
-CSS deferred via `media="print" onload="this.media='all'"` has no `<noscript>` fallback. If JS is disabled, Font Awesome icons and animations never load. Add:
-
-```html
-<noscript><link rel="stylesheet" href="/css/fontawesome.css" /></noscript>
-<noscript><link rel="stylesheet" href="/css/animate.min.css" /></noscript>
-```
-
-### 7. jQuery 3.5.0 Is Outdated
-
-**Category:** Security / Performance
-jQuery 3.5.0 (released April 2020) has known XSS vulnerabilities patched in later versions. Either upgrade to 3.7+ or evaluate removing jQuery entirely — Bootstrap 5 does not require it, and the custom JS is minimal enough to rewrite in vanilla JS.
 
 ### 8. No Skip Navigation Link
 
