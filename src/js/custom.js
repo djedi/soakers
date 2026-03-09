@@ -2,8 +2,15 @@
     'use strict';
 
     // Mean Menu
-    jQuery('.mean-menu').meanmenu({ 
+    jQuery('.mean-menu').meanmenu({
         meanScreenWidth: "991"
+    });
+    // Add aria-expanded to the generated meanmenu toggle
+    var $meanToggle = $('.meanmenu-reveal');
+    $meanToggle.attr({ 'role': 'button', 'aria-label': 'Toggle navigation', 'aria-expanded': 'false' });
+    $meanToggle.on('click', function() {
+        var expanded = $(this).attr('aria-expanded') === 'true';
+        $(this).attr('aria-expanded', String(!expanded));
     });
 
     // Navbar Area
@@ -240,7 +247,7 @@
     });
 
     // Back To Top Js
-    $('body').append('<div id="toTop" class="top-btn"><i class="fas fa-chevron-up"></i></div>');
+    $('body').append('<div id="toTop" class="top-btn" role="button" aria-label="Back to top" tabindex="0"><i class="fas fa-chevron-up" aria-hidden="true"></i></div>');
     $(window).on('scroll',function () {
         if ($(this).scrollTop() != 0) {
             $('#toTop').fadeIn();
@@ -255,6 +262,16 @@
 
     // WOW JS
     new WOW().init();
+
+    // ARIA labels for Owl Carousel generated nav buttons and dots
+    $('.owl-prev').attr({ 'role': 'button', 'aria-label': 'Previous slide' });
+    $('.owl-next').attr({ 'role': 'button', 'aria-label': 'Next slide' });
+    $('.owl-dot').each(function(i) {
+        $(this).attr({ 'role': 'button', 'aria-label': 'Slide ' + (i + 1) });
+    });
+
+    // Gallery popup: mark triggers as opening a dialog
+    $('.gallery-view a').attr('aria-haspopup', 'dialog');
     
     // Preloader JS
     jQuery(window).on('load',function(){
