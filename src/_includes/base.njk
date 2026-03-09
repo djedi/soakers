@@ -17,9 +17,8 @@
     <link rel="stylesheet" href="/fonts/flaticon.css" />
     <!-- Site CSS (custom styles + responsive) -->
     <link rel="stylesheet" href="/css/style.css" />
-    <!-- Font Awesome CSS - deferred -->
-    <link rel="stylesheet" href="/css/fontawesome.css" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="/css/fontawesome.css" /></noscript>
+    <!-- Font Awesome (subset — 24 icons only) -->
+    <link rel="stylesheet" href="/fonts/fontawesome-subset.css" />
 
     <!-- Title -->
     {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
