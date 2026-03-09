@@ -1077,6 +1077,16 @@ Home Slider
   border-radius: 8px;
 }
 
+// eleventy-img wraps <img> in <picture> which is inline — make it block inside cards
+.card picture {
+  display: block;
+}
+
+// Prevent HTML height attributes from overriding fluid card images
+.card-img-top {
+  height: auto;
+}
+
 /*=================================
  Testimonial Cards
 ===================================*/
