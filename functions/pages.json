@@ -132,5 +132,15 @@
 	{
    "title":"Garden Spas",
    "slug":"garden-spas"
+	},
+
+	{
+   "title":"Financing",
+   "slug":"financing"
+	},
+
+	{
+   "title":"OG Preview",
+   "slug":"og-preview"
 	}
 ]
