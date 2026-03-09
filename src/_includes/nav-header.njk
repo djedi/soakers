@@ -21,7 +21,7 @@
             <ul class="navbar-nav m-auto">
             {% for ni in nav.pages %}
                 <li class="nav-item">
-                    <a href="{% if ni.framed %}/framed/?url={% endif %}{{ ni.href }}" class="nav-link"{% if ni.newTab %} target="_blank"{% endif %}>
+                    <a href="{% if ni.framed %}/framed/?url={% endif %}{{ ni.href }}" class="nav-link"{% if ni.newTab %} target="_blank" rel="noopener noreferrer"{% endif %}>
                         {{ ni.name }}
                         {% if ni.pages %}
                             <i class="fas fa-chevron-right"></i>
@@ -32,7 +32,7 @@
                     {% endif %}
                     {% for l2 in ni.pages %}
                         <li class="nav-item">
-                            <a href="{% if l2.framed %}/framed/?url={% endif %}{{ l2.href }}" class="nav-link"{% if l2.newTab %} target="_blank"{% endif %}>
+                            <a href="{% if l2.framed %}/framed/?url={% endif %}{{ l2.href }}" class="nav-link"{% if l2.newTab %} target="_blank" rel="noopener noreferrer"{% endif %}>
                                 {{ l2.name }}
                             </a>
                         </li>

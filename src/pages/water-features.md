@@ -117,7 +117,7 @@ permalink: /water-features/
       Learn more about all available water features from Artesian Spas.
     </p>
     <div>
-      <a href="https://artesianspas.com/features-and-accessories/water-features/" target="_blank" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+      <a href="https://artesianspas.com/features-and-accessories/water-features/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
         View on Artesian Spas <i class="fas fa-external-link-alt"></i>
       </a>
       <a href="/contact/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">

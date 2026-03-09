@@ -114,7 +114,7 @@ permalink: /spa-models/nordic-all-in-110v/
       View the full ALL-IN-110V lineup, download brochures, and find detailed specifications on the Nordic Hot Tubs website.
     </p>
     <div>
-      <a href="https://www.nordichottubs.com/hot-tubs/all-in-110v-series-hot-tubs/" target="_blank" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+      <a href="https://www.nordichottubs.com/hot-tubs/all-in-110v-series-hot-tubs/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
         View on Nordic Hot Tubs <i class="fas fa-external-link-alt"></i>
       </a>
       <a href="/contact/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
