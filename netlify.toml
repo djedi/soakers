@@ -2,6 +2,11 @@
   publish = "public"
   command = "npm run build"
 
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
 # Cache static assets (1 year) — filenames are content-hashed by eleventy-img
 [[headers]]
   for = "/img/optimized/*"
@@ -34,6 +39,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     X-Frame-Options = "SAMEORIGIN"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(self), payment=()"
     X-Content-Type-Options = "nosniff"
