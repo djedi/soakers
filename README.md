@@ -1,50 +1,35 @@
-# 11ty Netlify Jumpstart
+# Soakers
 
-> Created by Stephanie Eckles ([@5t3ph](https://twitter.com/5t3ph))
+Website for Soakers — a hot tub dealer in Midvale, UT. Built with [Eleventy](https://www.11ty.dev/) and [Sass](https://sass-lang.com/), hosted on [Netlify](https://www.netlify.com/).
 
-Visit [11ty-netlify-jumpstart.netlify.app](https://11ty-netlify-jumpstart.netlify.app/) for all the feature details - or go ahead and [generate a new repo from the template](https://github.com/5t3ph/11ty-netlify-jumpstart/generate) to view the information locally.
+## Prerequisites
 
-## Quick Start
+- Node.js 18+
 
-1. [Generate a repo from this template](https://github.com/5t3ph/11ty-netlify-jumpstart/generate)
-   which will copy this project into your own new repo.
+## Development
 
-1. Once cloned, run `npm install` to install 11ty and other dependencies. Then run `npm start` to run both 11ty and sass in watch
-   mode. Use `npm run build` to run a production version, which will also generate social share
-   preview images.
+Install dependencies:
 
-1. Open `src/_data/meta.js` and adjust the values to your details.
+```sh
+npm install
+```
 
-1. Review the [styling documentation](https://5t3ph.github.io/html-sass-jumpstart/) for the included minimal
-   Sass framework, particularly the theme variables, to quickly customize the starter.
+Start the dev server (Eleventy + Sass watch mode) at `http://localhost:8080`:
 
-1. Edit `_includes/home.njk` to change the home page - including changing the template type if desired -
-   and then create content within `_pages` using any templating format you prefer to add content.
+```sh
+npm start
+```
 
-1. Check out the [About page](https://11ty-netlify-jumpstart.netlify.app/about/) for expanded details on included features of this starter.
+## Build
 
-1. Review the [11ty documentation](https://11ty.dev) to more deeply apply customizations, including
-   adding custom data sources and reviewing what template languages are available.
+Run a production build (minified/autoprefixed CSS, optimized images):
 
-### Is Netlify hosting required?
+```sh
+npm run build
+```
 
-It's not required, but highly recommended, and is also how the build process is setup to run
-against.
+Output goes to the `public/` directory.
 
-## Development Scripts
+## Deploy
 
-**`npm start`**
-
-> Run 11ty with hot reload at localhost:8080
-
-**`npm run build`**
-
-> Production build includes minified, autoprefixed CSS and social preview image generation
-
-Use this as the "Publish command" if needed by hosting such as Netlify.
-
-## Feedback welcome!
-
-You can [file it as an issue](https://github.com/5t3ph/11ty-netlify-jumpstart/issues).
-
-[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/default-violet.png)](https://www.buymeacoffee.com/moderncss)
+Push to `main` — Netlify automatically builds and deploys.
