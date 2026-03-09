@@ -260,9 +260,6 @@
         return false;
     });
 
-    // WOW JS
-    new WOW().init();
-
     // ARIA labels for Owl Carousel generated nav buttons and dots
     $('.owl-prev').attr({ 'role': 'button', 'aria-label': 'Previous slide' });
     $('.owl-next').attr({ 'role': 'button', 'aria-label': 'Next slide' });
