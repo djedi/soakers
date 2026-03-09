@@ -184,31 +184,14 @@
     })(jQuery);
         
     // Subscribe form
-    $(".newsletter-form").validator().on("submit", function (event) {
-        if (event.isDefaultPrevented()) {
-            // Handle The Invalid Form...
+    $(".newsletter-form").on("submit", function (event) {
+        event.preventDefault();
+        var email = $(this).find('input[type="email"]').val();
+        if (!email) {
             formErrorSub();
             submitMSGSub(false, "Please enter your email correctly");
-        } else {
-            // Everything Looks Good!
-            event.preventDefault();
         }
     });
-    function callbackFunction (resp) {
-        if (resp.result === "success") {
-            formSuccessSub();
-        }
-        else {
-            formErrorSub();
-        }
-    }
-    function formSuccessSub(){
-        $(".newsletter-form")[0].reset();
-        submitMSGSub(true, "Thank you for subscribing!");
-        setTimeout(function() {
-            $("#validator-newsletter").addClass('hide');
-        }, 4000)
-    }
     function formErrorSub(){
         $(".newsletter-form").addClass("animated shake");
         setTimeout(function() {
@@ -223,12 +206,6 @@
         }
         $("#validator-newsletter").removeClass().addClass(msgClasses).text(msg);
     }
-        
-    // AJAX MailChimp
-    $(".newsletter-form").ajaxChimp({
-        url: "https://envy Theme.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
-        callback: callbackFunction
-    });
 
     // Input Plus & Minus Number JS
     $('.input-counter').each(function() {
