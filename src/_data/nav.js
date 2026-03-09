@@ -7,49 +7,43 @@ module.exports = {
 			pages: [
 				{
 					name: "Island Spas",
-					href: "https://artesianspas.com/island-spas/",
-					framed: true,
+					href: "/spa-models/island-spas/",
 				},
 				{
 					name: "South Seas Spas",
-					href: "http://southseasspas.com/",
-					framed: true,
+					href: "/spa-models/south-seas-spas/",
 				},
 				{
 					name: "Garden Spas",
-					href: "http://thegardenspas.com/",
-					framed: true,
+					href: "/spa-models/garden-spas/",
 				},
-				{ name: "Swim Spas", href: "https://tidalfit.com/", framed: true },
+				{
+					name: "Swim Spas",
+					href: "/spa-models/swim-spas/",
+				},
 				{
 					name: "Nordic Luxury",
-					href: "https://www.nordichottubs.com/hot-tubs/luxury-series-hot-tubs/",
-					framed: true,
+					href: "/spa-models/nordic-luxury/",
 				},
 				{
 					name: "Nordic Sport",
-					href: "https://www.nordichottubs.com/hot-tubs/sport-edition-hot-tubs/",
-					framed: true,
+					href: "/spa-models/nordic-sport/",
 				},
 				{
 					name: "Nordic Modern",
-					href: "https://www.nordichottubs.com/hot-tubs/sport-edition-hot-tubs/",
-					framed: true,
+					href: "/spa-models/nordic-modern/",
 				},
 				{
 					name: "Nordic Classic",
-					href: "https://www.nordichottubs.com/hot-tubs/classic-series-hot-tubs/",
-					framed: true,
+					href: "/spa-models/nordic-classic/",
 				},
 				{
 					name: "Nordic ALL-IN-110V",
-					href: "https://www.nordichottubs.com/hot-tubs/all-in-110v-series-hot-tubs/",
-					framed: true,
+					href: "/spa-models/nordic-all-in-110v/",
 				},
 				{
 					name: "Artesian Elite",
-					href: "https://artesianspas.com/artesian-elite/",
-					framed: true,
+					href: "/spa-models/artesian-elite/",
 				},
 			],
 		},
@@ -59,38 +53,23 @@ module.exports = {
 			pages: [
 				{
 					name: "Health & Wellness",
-					href: "https://artesianspas.com/spa-features/health-wellness/",
-					framed: true,
-				},
-				{
-					name: "Quality Construction",
-					href: "https://artesianspas.com/spa-features/quality-construction/",
-					framed: true,
+					href: "/health-wellness/",
 				},
 				{
 					name: "Hydrotherapy Jets",
-					href: "https://artesianspas.com/spa-features/hydrotherapy-jets/",
-					framed: true,
+					href: "/hydrotherapy-jets/",
 				},
 				{
 					name: "Water Features",
-					href: "https://artesianspas.com/spa-features/water-features/",
-					framed: true,
-				},
-				{
-					name: "Innovative Technology",
-					href: "https://artesianspas.com/spa-features/innovative-technology/",
-					framed: true,
+					href: "/water-features/",
 				},
 				{
 					name: "LED Lighting",
-					href: "https://artesianspas.com/spa-features/led-lighting/",
-					framed: true,
+					href: "/led-lighting/",
 				},
 				{
 					name: "Stereo Systems",
-					href: "https://artesianspas.com/spa-features/stereo-systems/",
-					framed: true,
+					href: "/stereo-systems/",
 				},
 			],
 		},
@@ -105,28 +84,11 @@ module.exports = {
 				},
 				{
 					name: "Covers",
-					href: "https://artesianspas.com/spa-accessories/covers/",
-					framed: true,
-				},
-				{
-					name: "Cover Lifters",
-					href: "https://artesianspas.com/spa-accessories/cover-lifters/",
-					framed: true,
+					href: "/covers/",
 				},
 				{
 					name: "Steps",
-					href: "https://artesianspas.com/spa-accessories/steps/",
-					framed: true,
-				},
-				{
-					name: "Handrails",
-					href: "https://artesianspas.com/spa-accessories/handrails/",
-					framed: true,
-				},
-				{
-					name: "Pillows",
-					href: "https://artesianspas.com/spa-accessories/pillows/",
-					framed: true,
+					href: "/steps/",
 				},
 			],
 		},

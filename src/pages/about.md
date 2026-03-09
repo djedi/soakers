@@ -9,7 +9,7 @@ permalink: /about/
 <section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
   <div class="container text-center">
     <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">About Soakers</h1>
-    <p style="font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+    <p style="font-size: 18px; color: white; max-width: 600px; margin: 0 auto;">
       Family-owned. Customer-focused. Your neighborhood hot tub experts since day one.
     </p>
   </div>
@@ -109,10 +109,10 @@ permalink: /about/
       Monday – Saturday, 10:00 AM – 5:00 PM
     </p>
     <div>
-      <a href="tel:+18018387727" class="default-btn1" style="background: white; color: #f27127; margin: 5px;">
+      <a href="tel:+18018387727" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
         <i class="fas fa-phone-alt"></i> 801-838-SPAS
       </a>
-      <a href="/contact/" class="default-btn1" style="border: 2px solid white; background: transparent; color: white; margin: 5px;">
+      <a href="/contact/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
         Get Directions
       </a>
     </div>

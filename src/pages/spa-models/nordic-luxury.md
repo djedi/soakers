@@ -1,0 +1,95 @@
+---
+title: "Nordic Luxury Series Hot Tubs"
+description: "Explore the Nordic Luxury Series — affordable luxury hot tubs featuring Nordic Star jets, No-Float loungers, and exceptional hydrotherapy."
+layout: base.njk
+permalink: /spa-models/nordic-luxury/
+---
+
+<!-- Hero Banner -->
+<section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
+  <div class="container text-center">
+    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Nordic Luxury Series</h1>
+    <p style="font-size: 18px; color: white; max-width: 650px; margin: 0 auto;">
+      Affordable luxury hot tubs that define relaxation — for you, your family, and friends
+    </p>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="pt-100 pb-70">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4">
+        <h2>Affordable Luxury</h2>
+        <p style="font-size: 16px; line-height: 1.8;">
+          Nordic's Luxury Series hot tubs deliver premium hydrotherapy at half the cost of competitors. Featuring corner captain's chairs, No-Float loungers, and Nordic Star jets that target your neck, back, hips, and feet — these spas are designed for complete relaxation.
+        </p>
+        <p style="font-size: 16px; line-height: 1.8;">
+          Easy to operate and simple to maintain, Luxury Series tubs are built for families who want the best hot tub experience without the premium price tag.
+        </p>
+      </div>
+      <div class="col-lg-6 mb-4 text-center">
+        <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_Rendezvous_FrVan_Teak_2962_OVRHD-SQ-MED.jpg" alt="Nordic Rendezvous LS" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Models -->
+<section class="pb-70" style="background-color: #f8f9fa;">
+  <div class="container pt-70">
+    <div class="text-center mb-50">
+      <h2>Luxury Series Models</h2>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2019/08/NORDIC_Rendezvous_FrVan_Teak_2962_OVRHD-SQ-MED.jpg" alt="Rendezvous LS" class="card-img-top" />
+          <div class="card-body">
+            <h4 style="color: #f27127;">Rendezvous LS</h4>
+            <p class="text-muted">8-Person &middot; Rectangle</p>
+            <p>Nordic's largest model — defines affordable luxury for up to 8 adults.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/06/Encore-LS_Drift_TOP.jpg" alt="Encore LS" class="card-img-top" />
+          <div class="card-body">
+            <h4 style="color: #f27127;">Encore LS</h4>
+            <p class="text-muted">6-Person &middot; Square</p>
+            <p>Corner captain's chairs and No-Float lounger with Nordic Star jets targeting neck, back, hips, and feet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="https://www.nordichottubs.com/wp-content/uploads/2020/08/Jubilee-LS_Eclipse_TOP_JUBILEE_PAGE.png" alt="Jubilee LS" class="card-img-top" />
+          <div class="card-body">
+            <h4 style="color: #f27127;">Jubilee LS</h4>
+            <p class="text-muted">6-Person &middot; Square</p>
+            <p>Sets the standard in affordable luxury — lavishes neck, back, and feet with hot water therapy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="pt-70 pb-70" style="background-color: #f27127; color: white;">
+  <div class="container text-center">
+    <h2 style="color: white; margin-bottom: 15px;">Explore Nordic Luxury Series</h2>
+    <p style="font-size: 18px; max-width: 600px; margin: 0 auto 25px; color: rgba(255,255,255,0.9);">
+      View the full Luxury Series lineup, download brochures, and find detailed specifications on the Nordic Hot Tubs website.
+    </p>
+    <div>
+      <a href="https://www.nordichottubs.com/hot-tubs/luxury-series-hot-tubs/" target="_blank" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+        View on Nordic Hot Tubs <i class="fas fa-external-link-alt"></i>
+      </a>
+      <a href="/contact/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+        Visit Our Showroom
+      </a>
+    </div>
+  </div>
+</section>

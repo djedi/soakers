@@ -9,7 +9,7 @@ permalink: /contact/
 <section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
   <div class="container text-center">
     <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Contact Us</h1>
-    <p style="font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+    <p style="font-size: 18px; color: white; max-width: 600px; margin: 0 auto;">
       Have questions about a hot tub, need service, or want to schedule a showroom visit? We'd love to hear from you.
     </p>
   </div>
@@ -34,7 +34,6 @@ permalink: /contact/
           </div>
         </div>
       </div>
-
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
           <div class="card-body">
@@ -50,7 +49,6 @@ permalink: /contact/
           </div>
         </div>
       </div>
-
       <div class="col-lg-4 col-md-12 mb-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
           <div class="card-body">
