@@ -35,6 +35,7 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(self), payment=()"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     # Report-only CSP — switch to Content-Security-Policy once verified clean in browser console
