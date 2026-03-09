@@ -4,6 +4,7 @@ description: "OpenGraph image preview"
 layout: base.njk
 permalink: /og-preview/
 excludeFromNav: true
+eleventyExcludeFromCollections: true
 ---
 
 <style>
