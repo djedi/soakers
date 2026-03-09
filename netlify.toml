@@ -37,6 +37,8 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # Report-only CSP — switch to Content-Security-Policy once verified clean in browser console
+    Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self' 'unsafe-inline' https://analytics.redseam.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.nordichottubs.com https://maps.googleapis.com https://maps.gstatic.com; frame-src 'self' https://maps.google.com https://www.youtube.com https://artesianspas.com https://tidalfit.com https://www.nordichottubs.com https://southseasspas.com https://thegardenspas.com https://covana.com; connect-src 'self' https://analytics.redseam.com; object-src 'none'; base-uri 'self'"
 
 # Redirects
 [[redirects]]
