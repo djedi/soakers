@@ -11,27 +11,18 @@
     <!-- Google Fonts (moved from CSS @import for faster loading) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="/css/magnific-popup.min.css" />
-    <!-- Animate Min CSS - deferred for performance -->
+    <!-- Vendor CSS (Bootstrap + Owl Carousel + Magnific Popup + Meanmenu) -->
+    <link rel="stylesheet" href="/css/vendor.css" />
+    <!-- Flaticon CSS (kept separate — font paths are relative) -->
+    <link rel="stylesheet" href="/fonts/flaticon.css" />
+    <!-- Site CSS (custom styles + responsive) -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Animate CSS - deferred -->
     <link rel="stylesheet" href="/css/animate.min.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="/css/animate.min.css" /></noscript>
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="/fonts/flaticon.css" />
-    <!-- Font Awesome CSS - deferred for performance -->
+    <!-- Font Awesome CSS - deferred -->
     <link rel="stylesheet" href="/css/fontawesome.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="/css/fontawesome.css" /></noscript>
-    <!-- Meanmenu CSS -->
-    <link rel="stylesheet" href="/css/meanmenu.css" />
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="/css/responsive.css" />
 
     <!-- Title -->
     {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
