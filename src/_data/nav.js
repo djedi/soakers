@@ -79,8 +79,7 @@ module.exports = {
 			pages: [
 				{
 					name: "Covana",
-					href: "https://covana.com/",
-					framed: true,
+					href: "/covana/",
 				},
 				{
 					name: "Covers",
