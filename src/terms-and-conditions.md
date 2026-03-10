@@ -1,5 +1,7 @@
 ---
 layout: page.njk
+title: "Terms and Conditions"
+description: "Terms and conditions for Soakers, LLC — your hot tub dealer in Midvale, UT."
 ---
 
 <h2><strong>Terms and Conditions</strong></h2>

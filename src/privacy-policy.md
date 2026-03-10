@@ -1,5 +1,7 @@
 ---
 layout: page.njk
+title: "Privacy Policy"
+description: "Privacy policy for Soakers, LLC — your hot tub dealer in Midvale, UT."
 ---
 
 <h1>Privacy Policy of Soakers, LLC.</h1>
