@@ -101,6 +101,10 @@ module.exports = {
 			href: "/financing/",
 		},
 		{
+			name: "Services",
+			href: "/services/",
+		},
+		{
 			name: "FAQ",
 			href: "/faq/",
 		},
