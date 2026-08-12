@@ -1,6 +1,14 @@
 [build]
   publish = "public"
+  # eleventy-img 7 requires node >=22; the build image's default (18) breaks
+  # sass 1.102's CJS shim (chokidar 4 is ESM-only, require(esm) needs >=22.12).
+  # A bare major ("22") is ignored by Netlify — use a full version.
   command = "npm run build"
+  # Deterministic install; keeps devDependencies (the whole toolchain lives there)
+  install_command = "npm ci --include=dev"
+
+[build.environment]
+  NODE_VERSION = "22.20.0"
 
 [[redirects]]
   from = "/*"
