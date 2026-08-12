@@ -9,11 +9,11 @@
     <link rel="preload" href="/fonts/josefin-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Vendor CSS (Bootstrap, purged at build) -->
-    <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/css/vendor.css?v={% assetHash '/css/vendor.css' %}" />
     <!-- Site CSS (custom styles + responsive) -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css?v={% assetHash '/css/style.css' %}" />
     <!-- Font Awesome (subset — icons used on the site only) -->
-    <link rel="stylesheet" href="/fonts/fontawesome-subset.css" />
+    <link rel="stylesheet" href="/fonts/fontawesome-subset.css?v={% assetHash '/fonts/fontawesome-subset.css' %}" />
 
     <!-- Title (output once so Nunjucks does not double-escape &) -->
     {%- if title -%}
@@ -281,7 +281,7 @@
     <!-- Footer End -->
 
     <!-- Custom JS (dependency-free) -->
-    <script src="/js/custom.js" defer></script>
+    <script src="/js/custom.js?v={% assetHash '/js/custom.js' %}" defer></script>
 
     <!-- Clicky Analytics -->
     <script async data-id="101502556" src="//static.getclicky.com/js"></script>
