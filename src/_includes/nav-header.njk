@@ -67,7 +67,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="nav-drop-{{ loop.index }}">
               {%- for l2 in ni.pages %}
-              <a class="dropdown-item" href="{{ l2.href }}">{{ l2.name }}</a>
+              <a class="dropdown-item" href="{{ l2.href }}"{% if l2.newTab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ l2.name }}{% if l2.newTab %} <i class="fas fa-external-link-alt fa-xs" aria-hidden="true"></i>{% endif %}</a>
               {%- endfor %}
             </div>
           </li>

@@ -45,6 +45,11 @@ module.exports = {
 					name: "Artesian Elite",
 					href: "/spa-models/artesian-elite/",
 				},
+				{
+					name: "Design Your Spa",
+					href: "https://artesianspas.com/design-your-spa/",
+					newTab: true,
+				},
 			],
 		},
 		{
@@ -90,11 +95,6 @@ module.exports = {
 					href: "/steps/",
 				},
 			],
-		},
-		{
-			name: "Design Your Spa",
-			href: "https://artesianspas.com/design-your-spa/",
-			newTab: true,
 		},
 		{
 			name: "Financing",
