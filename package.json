@@ -8,7 +8,7 @@
     "css": "postcss src/css/*.css -u autoprefixer cssnano -r -m",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "sass --watch src/sass:src/css",
-    "vendor": "cat src/css/bootstrap.min.css src/css/owl.carousel.min.css src/css/owl.theme.default.min.css src/css/magnific-popup.min.css src/css/meanmenu.css > src/css/vendor.css",
+    "vendor": "cat src/css/bootstrap.min.css src/css/magnific-popup.min.css src/css/meanmenu.css > src/css/vendor.css",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all scss vendor --parallel watch:*",
     "build": "cross-env ELEVENTY_ENV=prod npm-run-all scss vendor --parallel build:eleventy css",
     "build:eleventy": "eleventy",

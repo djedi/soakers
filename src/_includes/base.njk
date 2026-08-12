@@ -5,15 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Preload critical font (Josefin Sans 700, Latin) -->
-    <link rel="preload" href="https://fonts.gstatic.com/s/josefinsans/v34/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XbMZhLybpUVzEEQ.woff2" as="font" type="font/woff2" crossorigin>
-    <!-- Google Fonts (moved from CSS @import for faster loading) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preload heading font (self-hosted, latin only) -->
+    <link rel="preload" href="/fonts/josefin-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- Vendor CSS (Bootstrap + Owl Carousel + Magnific Popup + Meanmenu) -->
+    <!-- Vendor CSS (Bootstrap + Magnific Popup + Meanmenu) -->
     <link rel="stylesheet" href="/css/vendor.css" />
     <!-- Flaticon CSS (kept separate — font paths are relative) -->
     <link rel="stylesheet" href="/fonts/flaticon.css" />
@@ -444,32 +439,20 @@
     {% endblock %}
     <!-- Footer Area End -->
 
-    <!-- Jquery Min JS -->
-    <script src="/js/jquery-3.7.1.min.js"></script>
-    <!-- Popper Min JS -->
-    <script src="/js/popper.min.js"></script>
-    <!-- Bootstrap Min JS -->
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="/js/owl.carousel.min.js"></script>
-    <!-- Magnific Popup JS -->
-    <script src="/js/jquery.magnific-popup.min.js"></script>
-    <!-- Meanmenu JS -->
-    <script src="/js/meanmenu.js"></script>
-    <!-- Removed: ajaxchimp, form-validator, contact-form (unused) -->
-    <!-- Custom JS -->
-    <script src="/js/custom.js"></script>
+    <script src="/js/jquery-3.7.1.min.js" defer></script>
+    <script src="/js/popper.min.js" defer></script>
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/js/jquery.magnific-popup.min.js" defer></script>
+    <script src="/js/meanmenu.js" defer></script>
+    <script src="/js/custom.js" defer></script>
 
     <!-- Clicky Analytics -->
     <script async data-id="101502556" src="//static.getclicky.com/js"></script>
     <!-- End Clicky Analytics -->
 
     <!-- Mobile sticky call button -->
-    <a href="tel:+18018387727" class="mobile-call-btn d-md-none" aria-label="Call Soakers at 801-838-7727"
-       style="position:fixed; bottom:20px; right:20px; z-index:9999; width:60px; height:60px; 
-              background:#f27127; border-radius:50%; display:flex; align-items:center; 
-              justify-content:center; box-shadow:0 4px 15px rgba(0,0,0,0.3); text-decoration:none;">
-      <i class="fas fa-phone-alt" style="color:white; font-size:24px;" aria-hidden="true"></i>
+    <a href="tel:+18018387727" class="mobile-call-btn d-md-none" aria-label="Call Soakers at 801-838-7727">
+      <i class="fas fa-phone-alt" aria-hidden="true"></i>
     </a>
 
     {% block postbody %}{% endblock %}

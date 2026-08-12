@@ -8,7 +8,15 @@ const Image = require("@11ty/eleventy-img");
 const path = require("path");
 const packageVersion = require("./package.json").version;
 
-async function imageShortcode(src, alt, sizes = "100vw", widths = [400, 800], cssClass = "") {
+async function imageShortcode(
+  src,
+  alt,
+  sizes = "100vw",
+  widths = [400, 800],
+  cssClass = "",
+  loading = "lazy",
+  fetchpriority = ""
+) {
   let inputPath = src.startsWith("/") ? path.join("src", src) : src;
   let metadata = await Image(inputPath, {
     widths: widths,
@@ -24,11 +32,14 @@ async function imageShortcode(src, alt, sizes = "100vw", widths = [400, 800], cs
   let imageAttributes = {
     alt,
     sizes,
-    loading: "lazy",
+    loading,
     decoding: "async",
   };
   if (cssClass) {
     imageAttributes.class = cssClass;
+  }
+  if (fetchpriority) {
+    imageAttributes.fetchpriority = fetchpriority;
   }
 
   return Image.generateHTML(metadata, imageAttributes);

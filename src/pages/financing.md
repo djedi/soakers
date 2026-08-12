@@ -6,10 +6,10 @@ permalink: /financing/
 ---
 
 <!-- Hero Banner -->
-<section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
+<section class="page-hero">
   <div class="container text-center">
-    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Financing Your Hot Tub</h1>
-    <p style="font-size: 18px; color: white; max-width: 600px; margin: 0 auto;">
+    <h1>Financing Your Hot Tub</h1>
+    <p>
       Affordable monthly payments make it easy to enjoy your dream spa today.
     </p>
   </div>
@@ -63,7 +63,7 @@ permalink: /financing/
 </section>
 
 <!-- Questions CTA -->
-<section class="pt-70 pb-70" style="background-color: #f27127; color: white;">
+<section class="site-cta">
   <div class="container text-center">
     <h2 style="color: white; margin-bottom: 15px;">Have Questions About Financing?</h2>
     <p style="font-size: 18px; max-width: 500px; margin: 0 auto 25px; color: rgba(255,255,255,0.9);">
