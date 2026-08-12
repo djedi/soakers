@@ -17,7 +17,7 @@ hideBreadcrumbs: true
   .og-card {
     width: 1200px;
     height: 630px;
-    background: linear-gradient(135deg, #f27127 0%, #d85a14 100%);
+    background: linear-gradient(135deg, #1168b7 0%, #0d5495 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ hideBreadcrumbs: true
   .og-divider {
     width: 60px;
     height: 4px;
-    background: #f27127;
+    background: #1168b7;
     margin: 0 auto 28px;
     border-radius: 2px;
   }
@@ -130,7 +130,7 @@ hideBreadcrumbs: true
   }
 
   .og-footer i {
-    color: #f27127;
+    color: #1168b7;
   }
 
   .og-stars {

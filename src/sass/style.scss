@@ -35,8 +35,10 @@
   --soakers-navy-800: #0e2430;
   --soakers-navy-700: #143545;
   --soakers-navy-600: #1b4658;
-  --soakers-orange: #f27127;
-  --soakers-orange-dark: #d85a14;
+  --soakers-blue: #1168b7;
+  --soakers-blue-dark: #0d5495;
+  --soakers-blue-deep: #0a4a85;
+  --soakers-teal: #178fa3;
   --soakers-gold: #e0a100;
   --soakers-cream: #f6f3ee;
   --soakers-ink: #22323c;
@@ -114,12 +116,12 @@ p {
 
 a {
   transition: color 0.2s ease;
-  color: var(--soakers-orange-dark);
+  color: var(--soakers-blue-dark);
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: var(--soakers-orange);
+    color: var(--soakers-blue);
     text-decoration: underline;
   }
 }
@@ -130,12 +132,12 @@ img {
 }
 
 ::selection {
-  background-color: var(--soakers-orange);
+  background-color: var(--soakers-blue);
   color: var(--soakers-white);
 }
 
 :focus-visible {
-  outline: 3px solid var(--soakers-orange);
+  outline: 3px solid var(--soakers-blue);
   outline-offset: 2px;
 }
 
@@ -287,7 +289,7 @@ img {
   > span {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--soakers-orange-dark);
+    color: var(--soakers-blue-dark);
     font-family: var(--soakers-font-display);
     font-size: 0.8125rem;
     font-weight: bold;
@@ -312,7 +314,7 @@ img {
 
 .eyebrow {
   display: block;
-  color: var(--soakers-orange);
+  color: var(--soakers-blue);
   font-family: var(--soakers-font-display);
   font-size: 0.8125rem;
   font-weight: bold;
@@ -359,17 +361,17 @@ img {
 }
 
 .btn-primary {
-  border-color: var(--soakers-orange);
-  background-color: var(--soakers-orange);
+  border-color: var(--soakers-blue);
+  background-color: var(--soakers-blue);
   color: var(--soakers-white);
-  box-shadow: 0 8px 20px rgb(242 113 39 / 28%);
+  box-shadow: 0 8px 20px rgb(17 104 183 / 28%);
 
   &:hover,
   &:focus {
-    border-color: var(--soakers-orange-dark);
-    background-color: var(--soakers-orange-dark);
+    border-color: var(--soakers-blue-dark);
+    background-color: var(--soakers-blue-dark);
     color: var(--soakers-white);
-    box-shadow: 0 10px 24px rgb(242 113 39 / 34%);
+    box-shadow: 0 10px 24px rgb(17 104 183 / 34%);
   }
 }
 
@@ -389,13 +391,13 @@ img {
 .btn-on-accent {
   border-color: var(--soakers-white);
   background-color: var(--soakers-white);
-  color: var(--soakers-orange-dark);
+  color: var(--soakers-blue-dark);
 
   &:hover,
   &:focus {
-    border-color: #fff7f2;
-    background-color: #fff7f2;
-    color: var(--soakers-orange-dark);
+    border-color: #eef4fb;
+    background-color: #eef4fb;
+    color: var(--soakers-blue-dark);
   }
 }
 
@@ -413,12 +415,12 @@ img {
 
 /* Legacy template button class */
 .default-btn1 {
-  background-color: var(--soakers-orange);
+  background-color: var(--soakers-blue);
   color: var(--soakers-white);
 
   &:hover,
   &:focus {
-    background-color: var(--soakers-orange-dark);
+    background-color: var(--soakers-blue-dark);
     color: var(--soakers-white);
   }
 }
@@ -465,7 +467,7 @@ img {
   gap: 0.375rem;
 
   i {
-    color: var(--soakers-orange);
+    color: var(--soakers-blue);
     font-size: 0.75rem;
   }
 }
@@ -527,12 +529,12 @@ img {
 
     &:hover,
     &:focus {
-      color: var(--soakers-orange-dark);
+      color: var(--soakers-blue-dark);
     }
   }
 
   .nav-item.active > .nav-link {
-    color: var(--soakers-orange-dark);
+    color: var(--soakers-blue-dark);
   }
 
   .nav-cta {
@@ -559,7 +561,7 @@ img {
     &:hover,
     &:focus {
       background-color: var(--soakers-cream);
-      color: var(--soakers-orange-dark);
+      color: var(--soakers-blue-dark);
     }
   }
 }
@@ -585,7 +587,7 @@ img {
   border-radius: var(--soakers-radius-sm);
 
   &:focus {
-    outline: 3px solid var(--soakers-orange);
+    outline: 3px solid var(--soakers-blue);
     outline-offset: 2px;
   }
 
@@ -600,7 +602,7 @@ img {
 .home-hero {
   background-color: var(--soakers-navy-800);
   background-image:
-    radial-gradient(700px 340px at 88% -10%, rgb(242 113 39 / 24%), transparent 60%),
+    radial-gradient(700px 340px at 88% -10%, rgb(23 143 163 / 30%), transparent 60%),
     radial-gradient(560px 320px at -10% 110%, rgb(27 70 88 / 65%), transparent 60%),
     linear-gradient(155deg, var(--soakers-navy-900) 0%, var(--soakers-navy-700) 60%, var(--soakers-navy-600) 100%);
   color: var(--soakers-white);
@@ -660,7 +662,7 @@ img {
     gap: 0.375rem;
 
     i {
-      color: var(--soakers-orange);
+      color: var(--soakers-blue);
       font-size: 0.8125rem;
     }
   }
@@ -747,8 +749,8 @@ img {
     height: 2.875rem;
     margin-bottom: 1rem;
     border-radius: 0.75rem;
-    background-color: #fff1e8;
-    color: var(--soakers-orange);
+    background-color: #e8f1fb;
+    color: var(--soakers-blue);
     font-size: 1.125rem;
   }
 
@@ -794,7 +796,7 @@ img {
   &:hover,
   &:focus {
     transform: translateY(-2px);
-    border-color: var(--soakers-orange);
+    border-color: var(--soakers-blue);
     color: var(--soakers-ink);
     text-decoration: none;
     box-shadow: var(--soakers-shadow-md);
@@ -889,8 +891,9 @@ img {
    ============================================== */
 .site-cta {
   padding: 4.5rem 1.25rem;
-  background-color: var(--soakers-orange);
-  background-image: linear-gradient(135deg, #e4661c 0%, var(--soakers-orange) 60%, var(--soakers-orange-dark) 100%);
+  background-color: var(--soakers-blue);
+  background-image:
+    linear-gradient(135deg, var(--soakers-blue-deep) 0%, var(--soakers-blue) 55%, var(--soakers-teal) 100%);
   color: var(--soakers-white);
   text-align: center;
 
@@ -924,7 +927,7 @@ img {
   padding-bottom: 4rem;
   background-color: var(--soakers-navy-800);
   background-image:
-    radial-gradient(900px 280px at 85% -20%, rgb(242 113 39 / 22%), transparent 55%),
+    radial-gradient(900px 280px at 85% -20%, rgb(23 143 163 / 28%), transparent 55%),
     radial-gradient(520px 300px at 0% 110%, rgb(27 70 88 / 55%), transparent 60%),
     linear-gradient(135deg, var(--soakers-navy-900) 0%, var(--soakers-navy-700) 55%, var(--soakers-navy-600) 100%);
   color: var(--soakers-white);
@@ -981,7 +984,7 @@ img {
 
     &:hover,
     &:focus {
-      color: var(--soakers-orange-dark);
+      color: var(--soakers-blue-dark);
     }
   }
 
@@ -1069,7 +1072,7 @@ table {
 blockquote {
   margin: 1.5rem 0;
   padding: 1.25rem 1.5rem;
-  border-left: 4px solid var(--soakers-orange);
+  border-left: 4px solid var(--soakers-blue);
   border-radius: 0 var(--soakers-radius-sm) var(--soakers-radius-sm) 0;
   background-color: var(--soakers-cream);
   color: var(--soakers-ink);
@@ -1107,7 +1110,7 @@ blockquote {
       flex-shrink: 0;
       margin-left: 1rem;
       transition: transform 0.2s ease;
-      color: var(--soakers-orange);
+      color: var(--soakers-blue);
       font-family: "Font Awesome 5 Free", sans-serif;
       font-weight: bold;
       content: "\f078";
@@ -1161,7 +1164,7 @@ blockquote {
 
 .map-facade__kicker {
   margin-bottom: 0.375rem;
-  color: var(--soakers-orange-dark);
+  color: var(--soakers-blue-dark);
   font-family: var(--soakers-font-display);
   font-size: 0.8125rem;
   font-weight: bold;
@@ -1246,7 +1249,7 @@ blockquote {
   i {
     width: 1.125rem;
     margin-right: 0.375rem;
-    color: var(--soakers-orange);
+    color: var(--soakers-blue);
     text-align: center;
   }
 }
@@ -1268,8 +1271,8 @@ blockquote {
 
     &:hover,
     &:focus {
-      border-color: var(--soakers-orange);
-      background-color: var(--soakers-orange);
+      border-color: var(--soakers-blue);
+      background-color: var(--soakers-blue);
       color: var(--soakers-white);
     }
   }
@@ -1321,7 +1324,7 @@ blockquote {
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 50%;
-  background-color: var(--soakers-orange);
+  background-color: var(--soakers-blue);
   color: var(--soakers-white);
   font-size: 1.375rem;
   text-decoration: none;
@@ -1330,7 +1333,7 @@ blockquote {
 
   &:hover,
   &:focus {
-    background-color: var(--soakers-orange-dark);
+    background-color: var(--soakers-blue-dark);
     color: var(--soakers-white);
     text-decoration: none;
   }
@@ -1369,7 +1372,7 @@ blockquote {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 999px;
-  background-color: var(--soakers-orange);
+  background-color: var(--soakers-blue);
   color: var(--soakers-white);
   font-family: var(--soakers-font-display);
   font-weight: bold;

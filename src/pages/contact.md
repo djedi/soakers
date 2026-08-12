@@ -23,11 +23,11 @@ permalink: /contact/
         <div class="card border-0 shadow-sm h-100 text-center p-4">
           <div class="card-body">
             <div class="mb-3">
-              <i class="fas fa-phone-alt fa-3x" style="color: #f27127;"></i>
+              <i class="fas fa-phone-alt fa-3x" style="color: #1168b7;"></i>
             </div>
             <h4>Call Us</h4>
             <p class="mb-0">
-              <a href="tel:+18018387727" style="font-size: 20px; font-weight: 700; color: #d85a14;">
+              <a href="tel:+18018387727" style="font-size: 20px; font-weight: 700; color: #0d5495;">
                 801-838-SPAS (7727)
               </a>
             </p>
@@ -38,11 +38,11 @@ permalink: /contact/
         <div class="card border-0 shadow-sm h-100 text-center p-4">
           <div class="card-body">
             <div class="mb-3">
-              <i class="fas fa-envelope fa-3x" style="color: #f27127;"></i>
+              <i class="fas fa-envelope fa-3x" style="color: #1168b7;"></i>
             </div>
             <h4>Email Us</h4>
             <p class="mb-0">
-              <a href="mailto:service@soakers.biz" style="font-size: 18px; font-weight: 700; color: #d85a14;">
+              <a href="mailto:service@soakers.biz" style="font-size: 18px; font-weight: 700; color: #0d5495;">
                 service@soakers.biz
               </a>
             </p>
@@ -53,7 +53,7 @@ permalink: /contact/
         <div class="card border-0 shadow-sm h-100 text-center p-4">
           <div class="card-body">
             <div class="mb-3">
-              <i class="fas fa-map-marker-alt fa-3x" style="color: #f27127;"></i>
+              <i class="fas fa-map-marker-alt fa-3x" style="color: #1168b7;"></i>
             </div>
             <h4>Visit Us</h4>
             <p style="font-size: 16px; margin-bottom: 5px;">

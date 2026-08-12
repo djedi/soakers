@@ -44,27 +44,27 @@ permalink: /hydrotherapy-jets/
       </div>
       <div class="col-lg-6 mb-4">
         <div class="mb-4">
-          <h4 style="color: #f27127;">2" H2O PowerFlow Direct</h4>
+          <h4 style="color: #1168b7;">2" H2O PowerFlow Direct</h4>
           <p>Hand jets located at seat bases, designed for directional flow control to relieve muscle tension.</p>
         </div>
         <div class="mb-4">
-          <h4 style="color: #f27127;">3" H2O PowerFlow Mini Roto</h4>
+          <h4 style="color: #1168b7;">3" H2O PowerFlow Mini Roto</h4>
           <p>Features fully-rotational helix flow for back and leg tension relief.</p>
         </div>
         <div class="mb-4">
-          <h4 style="color: #f27127;">3" H2O PowerFlow Mini Massage</h4>
+          <h4 style="color: #1168b7;">3" H2O PowerFlow Mini Massage</h4>
           <p>Fixed massaging jet targeting neck muscles through multiple orifices.</p>
         </div>
         <div class="mb-4">
-          <h4 style="color: #f27127;">5" H2O PowerFlow Roto</h4>
+          <h4 style="color: #1168b7;">5" H2O PowerFlow Roto</h4>
           <p>High-pressure jets for deep lower back aches and tension.</p>
         </div>
         <div class="mb-4">
-          <h4 style="color: #f27127;">5" H2O PowerFlow Hydro Extreme</h4>
+          <h4 style="color: #1168b7;">5" H2O PowerFlow Hydro Extreme</h4>
           <p>Whirlpool jets with "eyeball" design for middle back targeting.</p>
         </div>
         <div>
-          <h4 style="color: #f27127;">7" H2O PowerFlow Footblaster</h4>
+          <h4 style="color: #1168b7;">7" H2O PowerFlow Footblaster</h4>
           <p>Your feet work hard for you every day. High-pressure foot massage jets deliver the relief they deserve.</p>
         </div>
       </div>
@@ -152,7 +152,7 @@ permalink: /hydrotherapy-jets/
       Learn more about all available hydrotherapy jet options from Artesian Spas.
     </p>
     <div>
-      <a href="https://artesianspas.com/features-and-accessories/jets/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+      <a href="https://artesianspas.com/features-and-accessories/jets/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #1168b7; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
         View on Artesian Spas <i class="fas fa-external-link-alt"></i>
       </a>
       <a href="/contact/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
