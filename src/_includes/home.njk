@@ -1,6 +1,10 @@
 ---
 layout: base.njk
 ---
+{% block posthead %}
+    <!-- Preload the LCP hero image (avif; skipped by browsers without avif support) -->
+    <link rel="preload" as="image" type="image/avif" imagesrcset="/img/optimized/storefront-480w.avif 480w, /img/optimized/storefront-720w.avif 720w, /img/optimized/storefront-1100w.avif 1100w, /img/optimized/storefront-1600w.avif 1600w" imagesizes="(max-width: 900px) 100vw, 56vw">
+{% endblock %}
 
 <section class="home-hero">
   <div class="home-hero__inner">
@@ -22,7 +26,7 @@ layout: base.njk
       </p>
     </div>
     <div class="home-hero__media">
-      {% image "/img/gallery/storefront.jpg", "Soakers storefront in Midvale, Utah with the Wasatch mountains behind the shop", "(max-width: 900px) 100vw, 56vw", [720, 1100, 1600], "home-hero__img", "eager", "high" %}
+      {% image "/img/gallery/storefront.jpg", "Soakers storefront in Midvale, Utah with the Wasatch mountains behind the shop", "(max-width: 900px) 100vw, 56vw", [480, 720, 1100, 1600], "home-hero__img", "eager", "high" %}
       <div class="home-hero__badge">
         <i class="fas fa-star" aria-hidden="true"></i>
         <div>

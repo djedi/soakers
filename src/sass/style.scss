@@ -1312,6 +1312,66 @@ blockquote {
 }
 
 /* ==============================================
+   Lightbox (vanilla replacement for Magnific)
+   ============================================== */
+.lightbox {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
+  background-color: rgb(7 20 28 / 92%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2000;
+}
+
+.lightbox--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox__img {
+  display: block;
+  max-width: 92vw;
+  max-height: 86vh;
+  border-radius: var(--soakers-radius);
+  box-shadow: var(--soakers-shadow-lg);
+}
+
+.lightbox__close {
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgb(255 255 255 / 40%);
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--soakers-white);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(255 255 255 / 12%);
+    color: var(--soakers-white);
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* ==============================================
    Floating helpers
    ============================================== */
 .mobile-call-btn {

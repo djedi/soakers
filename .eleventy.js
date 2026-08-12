@@ -20,7 +20,7 @@ async function imageShortcode(
   let inputPath = src.startsWith("/") ? path.join("src", src) : src;
   let metadata = await Image(inputPath, {
     widths: widths,
-    formats: ["webp", "jpeg"],
+    formats: ["avif", "webp"],
     outputDir: "./public/img/optimized/",
     urlPath: "/img/optimized/",
     filenameFormat: function (id, src, width, format) {
