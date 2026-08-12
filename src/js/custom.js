@@ -1,23 +1,15 @@
 (function ($) {
     'use strict';
 
-    jQuery('.mean-menu').meanmenu({
-        meanScreenWidth: "991"
-    });
-    var $meanToggle = $('.meanmenu-reveal');
-    $meanToggle.attr({ 'role': 'button', 'aria-label': 'Toggle navigation', 'aria-expanded': 'false' });
-    $meanToggle.on('click', function () {
-        var expanded = $(this).attr('aria-expanded') === 'true';
-        $(this).attr('aria-expanded', String(!expanded));
-    });
-
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 150) {
-            $('.navbar-area').addClass("sticky-nav");
-        } else {
-            $('.navbar-area').removeClass("sticky-nav");
-        }
-    });
+    // Sticky nav shadow once the topbar scrolls away
+    var $siteNav = $('.site-nav');
+    if ($siteNav.length) {
+        var onScroll = function () {
+            $siteNav.toggleClass('is-stuck', window.scrollY > 120);
+        };
+        $(window).on('scroll', onScroll);
+        onScroll();
+    }
 
     if ($.fn.magnificPopup && $('.gallery-view').length) {
         $('.gallery-view').magnificPopup({
@@ -52,7 +44,7 @@
         g.preventDefault();
     });
 
-    $('body').append('<div id="toTop" class="top-btn" role="button" aria-label="Back to top" tabindex="0"><i class="fas fa-chevron-up" aria-hidden="true"></i></div>');
+    $('body').append('<div id="toTop" class="to-top" role="button" aria-label="Back to top" tabindex="0"><i class="fas fa-chevron-up" aria-hidden="true"></i></div>');
     $(window).on('scroll', function () {
         if ($(this).scrollTop() !== 0) {
             $('#toTop').fadeIn();

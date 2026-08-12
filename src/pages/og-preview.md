@@ -17,7 +17,7 @@ hideBreadcrumbs: true
   .og-card {
     width: 1200px;
     height: 630px;
-    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    background: linear-gradient(135deg, #f27127 0%, #d85a14 100%);
     display: flex;
     align-items: center;
     justify-content: center;

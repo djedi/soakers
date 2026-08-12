@@ -5,13 +5,18 @@
 	},
 
 	{
-   "title":"About Our Midvale Hot&nbsp;Tub&nbsp;Dealership",
-   "slug":"about-our-midvale-hot-tub-dealership"
+   "title":"Privacy Policy",
+   "slug":"privacy-policy"
 	},
 
 	{
-   "title":"Contact Our&nbsp;Midvale&nbsp;Showroom",
-   "slug":"contact-our-midvale-showroom"
+   "title":"Terms&nbsp;and&nbsp;Conditions",
+   "slug":"terms-and-conditions"
+	},
+
+	{
+   "title":"About Our Midvale Hot&nbsp;Tub&nbsp;Dealership",
+   "slug":"about-our-midvale-hot-tub-dealership"
 	},
 
 	{
@@ -125,12 +130,7 @@
 	},
 
 	{
-   "title":"Privacy Policy",
-   "slug":"privacy-policy"
-	},
-
-	{
-   "title":"Terms&nbsp;and&nbsp;Conditions",
-   "slug":"terms-and-conditions"
+   "title":"Contact Our&nbsp;Midvale&nbsp;Showroom",
+   "slug":"contact-our-midvale-showroom"
 	}
 ]

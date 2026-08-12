@@ -27,7 +27,7 @@ permalink: /contact/
             </div>
             <h4>Call Us</h4>
             <p class="mb-0">
-              <a href="tel:+18018387727" style="font-size: 20px; font-weight: 600; color: #1a73e8;">
+              <a href="tel:+18018387727" style="font-size: 20px; font-weight: 700; color: #d85a14;">
                 801-838-SPAS (7727)
               </a>
             </p>
@@ -42,7 +42,7 @@ permalink: /contact/
             </div>
             <h4>Email Us</h4>
             <p class="mb-0">
-              <a href="mailto:service@soakers.biz" style="font-size: 18px; font-weight: 600; color: #1a73e8;">
+              <a href="mailto:service@soakers.biz" style="font-size: 18px; font-weight: 700; color: #d85a14;">
                 service@soakers.biz
               </a>
             </p>
