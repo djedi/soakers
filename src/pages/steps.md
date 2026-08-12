@@ -6,10 +6,10 @@ permalink: /steps/
 ---
 
 <!-- Hero Banner -->
-<section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
+<section class="page-hero">
   <div class="container text-center">
-    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Hot Tub Steps: Safety &amp; Style</h1>
-    <p style="font-size: 18px; color: white; max-width: 650px; margin: 0 auto;">
+    <h1>Hot Tub Steps: Safety &amp; Style</h1>
+    <p>
       Durable accessories built to last in any weather
     </p>
   </div>
@@ -86,7 +86,7 @@ permalink: /steps/
 </section>
 
 <!-- CTA / Link to Artesian -->
-<section class="pt-70 pb-70" style="background-color: #f27127; color: white;">
+<section class="site-cta">
   <div class="container text-center">
     <h2 style="color: white; margin-bottom: 15px;">Explore All Step Options</h2>
     <p style="font-size: 18px; max-width: 600px; margin: 0 auto 25px; color: rgba(255,255,255,0.9);">

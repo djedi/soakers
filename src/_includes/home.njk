@@ -1,180 +1,97 @@
 ---
 layout: base.njk
 ---
-{% block posthead %}
-    <!-- Preload LCP hero image -->
-    <link rel="preload" href="/img/home-1/slider2.webp" as="image" type="image/webp">
-{% endblock %}
 
-<h1 class="sr-only">Hot Tubs and Swim Spas in Midvale, Utah</h1>
-
-<!-- Home Slider -->
-<div class="home-slider">
-  <div class="slider-area owl-carousel owl-theme">
-    <div class="slider-item slider-bg2">
-      <div class="d-table">
-        <div class="d-table-cell">
-          <div class="container">
-            <div class="slider-text">
-              <h2>Island Spas</h2>
-              <p>
-                Designed for any lifestyle. Choose from three trim levels — 
-                Essential, Luxury, and Elite. Select the perfect size, pick 
-                your ideal seat configuration, and choose the trim that best 
-                suits your lifestyle, from thoughtful essentials to ultimate 
-                indulgence.
-              </p>
-
-              <div class="slider-btn">
-                <a href="/spa-models/island-spas/" class="default-btn1">Explore Island Spas</a>
-              </div>
-            </div>
-          </div>
-        </div>
+<section class="home-hero">
+  <div class="home-hero__inner">
+    <div class="home-hero__copy">
+      <p class="home-hero__eyebrow">Family-owned · Midvale, Utah</p>
+      <h1>Hot tubs and swim spas for Utah homes</h1>
+      <p class="home-hero__lede">
+        Sales, service, and honest advice from Harvey, Wendy, and family.
+        Come sit in the models — no pressure, just the right tub for your backyard.
+      </p>
+      <div class="home-hero__actions">
+        <a href="/spa-models/" class="btn-primary">Browse spa models</a>
+        <a href="tel:+18018387727" class="btn-ghost">Call 801-838-SPAS</a>
       </div>
+      <p class="home-hero__trust">
+        <span>4.8★ on Google</span>
+        <span>94 reviews</span>
+        <span>Open Mon–Sat, 10–5</span>
+      </p>
     </div>
-
-    <div class="slider-item slider-bg3">
-      <div class="d-table">
-        <div class="d-table-cell">
-          <div class="container">
-            <div class="slider-text">
-              <h2>TidalFit Swim Spas</h2>
-              <p>
-                A pool, hot tub and aquatic gym all-in-one! Have all the 
-                benefits of a full size pool with less cost, less space 
-                and less maintenance. It meets the needs of both fitness 
-                enthusiasts and those wanting an alternative to a traditional 
-                swimming pool for fun and relaxation.
-              </p>
-
-              <div class="slider-btn">
-                <a href="/spa-models/swim-spas/" class="default-btn1">Explore Swim Spas</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="slider-item slider-bg1">
-      <div class="d-table">
-        <div class="d-table-cell">
-          <div class="container">
-            <div class="slider-text">
-              <h2>Artesian Elite</h2>
-              <p>
-                ARTESIAN ELITE features spacious and elegantly designed spas, all equipped 
-                with our patented DIRECTFLOW Personal Control® System, allowing for a 
-                fully-customizable spa experience.
-              </p>
-
-              <div class="slider-btn">
-                <a href="/spa-models/artesian-elite/" class="default-btn1">Explore Artesian Elite</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="home-hero__media">
+      {% image "/img/gallery/storefront.jpg", "Soakers storefront in Midvale, Utah with the Wasatch mountains behind the shop", "(max-width: 900px) 100vw, 56vw", [720, 1100, 1600], "home-hero__img", "eager", "high" %}
     </div>
   </div>
-</div>
-<!-- Home Slider End -->
+</section>
 
-<!-- Why Soakers -->
-<section class="service-area pt-100 pb-70">
+<section class="upgrade-section">
   <div class="container">
     <div class="scetion-title text-center mb-50">
       <span>Why Choose Us</span>
-      <h2>Your Neighborhood Hot Tub Experts</h2>
+      <h2>Your neighborhood hot tub experts</h2>
       <p>
-        Family-owned and operated in Midvale, Utah. We don't just sell hot tubs — we service them too.
+        Family-owned and operated in Midvale. We don't just sell hot tubs — we service them too.
       </p>
     </div>
 
-    <div class="row text-center">
+    <div class="row">
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="p-4">
-          <i class="fas fa-users fa-3x mb-3" style="color: #f27127;"></i>
-          <h3>Family Owned</h3>
+        <div class="feature-card">
+          <i class="fas fa-users" aria-hidden="true"></i>
+          <h3>Family owned</h3>
           <p>Harvey, Wendy, and family have been helping Utahns find their perfect spa for years.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="p-4">
-          <i class="fas fa-wrench fa-3x mb-3" style="color: #f27127;"></i>
-          <h3>Sales &amp; Service</h3>
+        <div class="feature-card">
+          <i class="fas fa-wrench" aria-hidden="true"></i>
+          <h3>Sales &amp; service</h3>
           <p>We service what we sell — and hot tubs we didn't sell. <a href="/services/">Repairs, maintenance, and parts</a>.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="p-4">
-          <i class="fas fa-star fa-3x mb-3" style="color: #f27127;"></i>
+        <div class="feature-card">
+          <i class="fas fa-star" aria-hidden="true"></i>
           <h3>4.8★ on Google</h3>
           <p>94 reviews and counting. Our customers love us — read what they have to say below.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
-        <div class="p-4">
-          <i class="fas fa-dollar-sign fa-3x mb-3" style="color: #f27127;"></i>
-          <h3>Financing Available</h3>
+        <div class="feature-card">
+          <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+          <h3>Financing available</h3>
           <p>Affordable monthly payments through Mountain America Credit Union. <a href="/financing/">Apply in-store or online</a>.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- Why Soakers End -->
 
-<!-- Brands We Carry -->
-<section class="pb-50" style="background-color: #f8f9fa;">
+<section class="upgrade-section upgrade-section--muted">
   <div class="container">
     <div class="scetion-title text-center mb-4">
       <span>Our Brands</span>
-      <h2>Authorized Dealer</h2>
+      <h2>Authorized dealer</h2>
     </div>
-    <div class="row text-center align-items-center justify-content-center">
-      <div class="col-6 col-md-4 col-lg-2 mb-3">
-        <a href="/spa-models/island-spas/" class="d-block p-3" style="font-weight:700; color:#333; font-size:14px;">
-          Artesian<br>Spas
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-3">
-        <a href="/spa-models/nordic-luxury/" class="d-block p-3" style="font-weight:700; color:#333; font-size:14px;">
-          Nordic<br>Hot Tubs
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-3">
-        <a href="/spa-models/swim-spas/" class="d-block p-3" style="font-weight:700; color:#333; font-size:14px;">
-          TidalFit<br>Swim Spas
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-3">
-        <a href="/spa-models/south-seas-spas/" class="d-block p-3" style="font-weight:700; color:#333; font-size:14px;">
-          South Seas<br>Spas
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-3">
-        <a href="/spa-models/garden-spas/" class="d-block p-3" style="font-weight:700; color:#333; font-size:14px;">
-          Garden<br>Spas
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-3">
-        <a href="/covana/" class="d-block p-3" style="font-weight:700; color:#333; font-size:14px;">
-          Covana<br>Gazebos
-        </a>
-      </div>
+    <div class="brand-grid">
+      <a href="/spa-models/island-spas/" class="brand-chip">Artesian Spas</a>
+      <a href="/spa-models/nordic-luxury/" class="brand-chip">Nordic Hot Tubs</a>
+      <a href="/spa-models/swim-spas/" class="brand-chip">TidalFit Swim Spas</a>
+      <a href="/spa-models/south-seas-spas/" class="brand-chip">South Seas Spas</a>
+      <a href="/spa-models/garden-spas/" class="brand-chip">Garden Spas</a>
+      <a href="/covana/" class="brand-chip">Covana Gazebos</a>
     </div>
   </div>
 </section>
-<!-- Brands End -->
 
-<!-- Gallery Area -->
-<section class="pt-100 pb-70">
+<section class="upgrade-section">
   <div class="container">
     <div class="scetion-title text-center mb-50">
       <span>Gallery</span>
-      <h2>Our Showroom &amp; Installations</h2>
+      <h2>Our showroom &amp; installations</h2>
       <p>
         See our store and some of the beautiful hot tub installations by our customers.
       </p>
@@ -247,38 +164,20 @@ layout: base.njk
     </div>
   </div>
 </section>
-<!-- Gallery Area End -->
 
 {% include "testimonials.njk" %}
 
-<!-- CTA Section -->
-<section class="pt-70 pb-70" style="background-color: #f27127; color: white;">
-  <div class="container text-center">
-    <h2 style="color: white; margin-bottom: 15px;">Ready to Find Your Perfect Hot Tub?</h2>
-    <p style="font-size: 18px; max-width: 600px; margin: 0 auto 25px; color: rgba(255,255,255,0.9);">
-      Visit our showroom in Midvale, UT or give us a call. No pressure — just friendly, honest advice from people who love what they do.
+<section class="site-cta">
+  <div class="container">
+    <h2>Ready to find your perfect hot tub?</h2>
+    <p>
+      Visit our showroom in Midvale or give us a call. No pressure — just friendly, honest advice from people who love what they do.
     </p>
-    <div>
-      <a href="tel:+18018387727" class="default-btn1" style="background: white; color: #f27127; margin: 5px;">
-        <i class="fas fa-phone-alt"></i> Call 801-838-SPAS
-      </a>
-      <a href="/contact/" class="default-btn1" style="border: 2px solid white; background: transparent; color: white; margin: 5px;">
-        Get Directions
-      </a>
+    <div class="site-cta__actions">
+      <a href="tel:+18018387727" class="btn-on-accent">Call 801-838-SPAS</a>
+      <a href="/contact/" class="btn-on-accent-ghost">Get directions</a>
     </div>
   </div>
 </section>
-<!-- CTA Section End -->
 
-<!-- Google Map Start -->
-<div class="mapouter">
-  <div class="gmap_canvas">
-    <iframe width="100%" height="500" id="gmap_canvas" title="Map to Soakers hot tub store in Midvale, Utah" src="https://maps.google.com/maps?q=soakers%20midvale%20utah&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy"></iframe>
-  </div>
-  <style>
-    .mapouter{position:relative;text-align:right;height:500px;width:100%;}
-    .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}
-  </style>
-</div>
-<!-- Google Map End -->
-
+{% include "map-embed.njk" %}

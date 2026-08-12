@@ -6,11 +6,11 @@ permalink: /faq/
 ---
 
 <!-- Hero Banner -->
-<section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
+<section class="page-hero">
   <div class="container text-center">
-    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Hot Tub FAQs</h1>
-    <p style="font-size: 18px; color: white; max-width: 650px; margin: 0 auto;">
-      Everything you need to know before buying a hot tub. Don't see your question? <a href="/contact/" style="color: #f8f9fa; text-decoration: underline;">Get in touch</a> — we're happy to help.
+    <h1>Hot Tub FAQs</h1>
+    <p>
+      Everything you need to know before buying a hot tub. Don't see your question? <a href="/contact/">Get in touch</a> — we're happy to help.
     </p>
   </div>
 </section>
@@ -119,7 +119,7 @@ permalink: /faq/
 </section>
 
 <!-- CTA -->
-<section style="background: linear-gradient(135deg, #f27127 0%, #e55d0f 100%); padding: 50px 0;">
+<section class="site-cta">
   <div class="container text-center">
     <h2 style="color: white; margin-bottom: 15px;">Still Have Questions?</h2>
     <p style="color: white; font-size: 18px; margin-bottom: 25px;">

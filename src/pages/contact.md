@@ -6,10 +6,10 @@ permalink: /contact/
 ---
 
 <!-- Hero Banner -->
-<section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
+<section class="page-hero">
   <div class="container text-center">
-    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Contact Soakers in Midvale</h1>
-    <p style="font-size: 18px; color: white; max-width: 600px; margin: 0 auto;">
+    <h1>Contact Soakers in Midvale</h1>
+    <p>
       Have questions about a hot tub, need service, or want to schedule a showroom visit? We'd love to hear from you.
     </p>
   </div>
@@ -70,15 +70,4 @@ permalink: /contact/
   </div>
 </section>
 
-<!-- Map Section -->
-<section class="pb-0">
-  <div class="mapouter">
-    <div class="gmap_canvas">
-      <iframe width="100%" height="450" title="Map to Soakers hot tub store in Midvale, Utah" src="https://maps.google.com/maps?q=soakers%20midvale%20utah&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" style="display:block;"></iframe>
-    </div>
-  </div>
-  <style>
-    .mapouter{position:relative;text-align:right;width:100%;}
-    .gmap_canvas {overflow:hidden;background:none!important;width:100%;}
-  </style>
-</section>
+{% include "map-embed.njk" %}
