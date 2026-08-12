@@ -1,5 +1,7 @@
 const emojiRegex = require("emoji-regex");
 const slugify = require("slugify");
+const crypto = require("crypto");
+const fs = require("fs");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const markdownIt = require("markdown-it");
@@ -64,6 +66,19 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
+  // Content-hash cache busting: ?v=<md5-8> of the built asset, so browsers
+  // and CDNs never serve stale CSS/JS after a deploy. Hashes the file in
+  // src (the build input) — deterministic across rebuilds of the same code.
+  eleventyConfig.addShortcode("assetHash", (assetPath) => {
+    try {
+      const rel = assetPath.replace(/^\//, "");
+      const file = path.join("src", rel);
+      const data = fs.readFileSync(file);
+      return crypto.createHash("md5").update(data).digest("hex").slice(0, 8);
+    } catch (e) {
+      return "";
+    }
+  });
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addFilter("slug", (str) => {
