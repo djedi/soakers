@@ -1,14 +1,19 @@
-const emojiRegex = require("emoji-regex");
-const slugify = require("slugify");
-const crypto = require("crypto");
-const fs = require("fs");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const Image = require("@11ty/eleventy-img");
-const path = require("path");
-const packageVersion = require("./package.json").version;
+import emojiRegex from "emoji-regex";
+import slugify from "slugify";
+import crypto from "crypto";
+import fs from "fs";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+import Image from "@11ty/eleventy-img";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const packageVersion = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "package.json"), "utf8")
+).version;
 
 async function imageShortcode(
   src,
@@ -47,7 +52,7 @@ async function imageShortcode(
   return Image.generateHTML(metadata, imageAttributes);
 }
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
 
@@ -79,7 +84,6 @@ module.exports = function (eleventyConfig) {
       return "";
     }
   });
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addFilter("slug", (str) => {
     if (!str) {
@@ -133,4 +137,4 @@ module.exports = function (eleventyConfig) {
       output: "public",
     },
   };
-};
+}

@@ -1,25 +1,10 @@
 extends:
   - stylelint-config-standard
-  - stylelint-config-prettier
 plugins:
   - stylelint-scss
   - stylelint-order
 customSyntax: postcss-scss
 rules:
-  # Wrap lines greater than 120 characters
-  max-line-length: 120
-  # Override stylelint-config-standard - we only use CSS comments for annotations that don't warrant an empty line
-  comment-empty-line-before: null
-  # Follow best practices
-  font-family-name-quotes: always-where-recommended
-  # https://stackoverflow.com/a/34383157/467582
-  function-url-quotes: always
-  # https://www.w3.org/TR/selectors/#attribute-selectors
-  # http://stackoverflow.com/q/3851091
-  selector-attribute-quotes: always
-  # Double-quotes are our convention throughout our codebase within (S)CSS. They also reflect how
-  # attribute strings are normally quoted within the DOM.
-  string-quotes: double
   order/order:
     - - type: at-rule
         hasBlock: false
@@ -253,8 +238,6 @@ rules:
         - contain
   # There is no reason that a specific ID would be needed for UI components
   selector-max-id: 0
-  # Names are more semantic than numbers
-  font-weight-notation: named-where-possible
   # BEM-style naming used across the site: block, block__element, block--modifier
   selector-class-pattern:
     - ^[a-z]+(?:-[a-z0-9]+)*(?:__[a-z0-9]+(?:-[a-z0-9]+)*)*(?:--[a-z0-9]+(?:-[a-z0-9]+)*)*$
@@ -269,26 +252,3 @@ rules:
     - - /^TODO:/
       - /^FIXME:/
     - severity: warning
-  # Part of google's style guide
-  number-leading-zero: always
-  at-rule-empty-line-before:
-    - always
-    - except:
-        - blockless-after-blockless
-        - first-nested
-      ignore:
-        - after-comment
-      ignoreAtRules:
-        - else
-  declaration-empty-line-before:
-    - always
-    - except:
-        - after-declaration
-        - first-nested
-      ignore:
-        - after-comment
-  block-closing-brace-newline-after:
-    - always
-    - ignoreAtRules:
-        - if
-        - else
