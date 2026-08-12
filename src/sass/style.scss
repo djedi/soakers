@@ -1001,7 +1001,8 @@ Home Slider
       padding: 30px 40px;
       border-radius: 8px;
       display: inline-block;
-      h1 {
+      h1,
+      h2 {
         font-size: 60px;
         color: $color-white;
         max-width: 735px;
@@ -1105,7 +1106,8 @@ Home Slider
   .slider-text {
     padding: 20px 25px !important;
   }
-  .slider-text h1 {
+  .slider-text h1,
+  .slider-text h2 {
     font-size: 24px !important;
     line-height: 1.2 !important;
     margin-bottom: 10px;
@@ -4715,6 +4717,50 @@ Skip Navigation Link (Accessibility)
   &:focus {
     top: 0;
   }
+}
+
+/*==================================
+Breadcrumbs
+=====================================*/
+.seo-breadcrumbs {
+  background: #f8f9fa;
+  padding: 10px 0;
+  font-size: 14px;
+
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    color: #555;
+
+    &:not(:last-child)::after {
+      content: "/";
+      margin-left: 6px;
+      color: #999;
+    }
+  }
+
+  a {
+    color: #1a73e8;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.service-area h3 {
+  font-size: 22px;
 }
 
 /*==================================

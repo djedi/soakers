@@ -1,6 +1,6 @@
 ---
 title: "Health & Wellness Benefits of Hot Tubs"
-description: "Discover the many health benefits of owning a hot tub — from stress relief and better sleep to pain management and improved circulation."
+description: "How hot tubs help with stress relief, sleep, pain, and circulation. Advice from Soakers, a family-owned hot tub dealer in Midvale, UT."
 layout: base.njk
 permalink: /health-wellness/
 ---

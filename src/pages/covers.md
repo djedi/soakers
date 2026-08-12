@@ -1,6 +1,6 @@
 ---
 title: "Protective Hot Tub Covers"
-description: "Protect your hot tub with premium vinyl covers, the All Seasons Shield Cover, and hydraulic or manual cover lifters from Artesian Spas."
+description: "Shop hot tub covers and lifters at Soakers in Midvale, UT. Vinyl covers, All Seasons Shield, and hydraulic or manual cover lifters."
 layout: base.njk
 permalink: /covers/
 ---

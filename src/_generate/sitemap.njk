@@ -5,6 +5,7 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for page in collections.all %}
+{%- if not page.data.robots or 'noindex' not in page.data.robots %}
   {% set absoluteUrl %}{{ page.url | url | absoluteUrl(meta.url) }}{% endset %}
   <url>
     <loc>{{ absoluteUrl }}</loc>
@@ -14,5 +15,6 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ page.date | rssDate }}</lastmod>
 		{% endif %}
   </url>
+{%- endif %}
 {%- endfor %}
 </urlset>

@@ -79,6 +79,8 @@ module.exports = function (eleventyConfig) {
     return title;
   });
 
+  eleventyConfig.addFilter("tojson", (value) => JSON.stringify(value ?? ""));
+
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,

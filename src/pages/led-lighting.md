@@ -1,6 +1,6 @@
 ---
 title: "Hot Tub LED Lighting"
-description: "Explore LED lighting options for your hot tub — Midnight Glow, DynaBrite, DynaStar, Kick Rail LED, and more to curate the perfect atmosphere."
+description: "Explore hot tub LED lighting at Soakers in Midvale, UT — Midnight Glow, DynaBrite, DynaStar, and Kick Rail LED to set the mood."
 layout: base.njk
 permalink: /led-lighting/
 ---

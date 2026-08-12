@@ -1,6 +1,6 @@
 ---
-title: "Frequently Asked Questions"
-description: "Answers to common questions about hot tubs — costs, electricity, maintenance, sizing, and more. Family-owned hot tub dealer in Midvale, UT."
+title: "Hot Tub FAQs for Utah Buyers"
+description: "Answers to common hot tub questions — cost, electricity, maintenance, sizing, and winter use. From Soakers, a family-owned dealer in Midvale, UT."
 layout: base.njk
 permalink: /faq/
 ---
@@ -8,7 +8,7 @@ permalink: /faq/
 <!-- Hero Banner -->
 <section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
   <div class="container text-center">
-    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Frequently Asked Questions</h1>
+    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Hot Tub FAQs</h1>
     <p style="font-size: 18px; color: white; max-width: 650px; margin: 0 auto;">
       Everything you need to know before buying a hot tub. Don't see your question? <a href="/contact/" style="color: #f8f9fa; text-decoration: underline;">Get in touch</a> — we're happy to help.
     </p>
@@ -136,6 +136,22 @@ permalink: /faq/
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What brands do you carry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We're authorized dealers for Island Spas, Artesian Elite, South Seas Spas, Garden Spas, and the full Nordic Hot Tubs lineup. We also carry TidalFit Swim Spas and Covana automated covers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer financing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We offer financing options to help make your hot tub purchase more affordable. Visit our financing page to learn more or apply, or ask us in-store for details."
+      }
+    },
     {
       "@type": "Question",
       "name": "How much does a hot tub cost?",

@@ -1,6 +1,6 @@
 ---
-title: "Rejuvenating Hydrotherapy Jets"
-description: "Discover our wide variety of hydrotherapy jet options — from H2O PowerFlow to Helix jets, footblasters, and neck jets for a remarkable massage experience."
+title: "Hot Tub Hydrotherapy Jets"
+description: "Compare hydrotherapy jet options at Soakers in Midvale, UT — Helix jets, footblasters, neck jets, and H2O PowerFlow for a custom massage."
 layout: base.njk
 permalink: /hydrotherapy-jets/
 ---
@@ -8,7 +8,7 @@ permalink: /hydrotherapy-jets/
 <!-- Hero Banner -->
 <section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
   <div class="container text-center">
-    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Rejuvenating Hydrotherapy Jets</h1>
+    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Hot Tub Hydrotherapy Jets</h1>
     <p style="font-size: 18px; color: white; max-width: 650px; margin: 0 auto;">
       For a remarkable hydrotherapy massage
     </p>
