@@ -3,7 +3,7 @@ module.exports = {
 		// { name: "Home", slug: "" },
 		{
 			name: "Spa Models",
-			href: "#",
+			href: "/spa-models/",
 			pages: [
 				{
 					name: "Island Spas",
@@ -94,7 +94,7 @@ module.exports = {
 		{
 			name: "Design Your Spa",
 			href: "https://artesianspas.com/design-your-spa/",
-			framed: true,
+			newTab: true,
 		},
 		{
 			name: "Financing",

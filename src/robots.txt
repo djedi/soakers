@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+Disallow: /framed/
+Disallow: /blank/
+Disallow: /og-preview/
+Disallow: /helloworld/
+
 Sitemap: https://soakers.biz/sitemap.xml

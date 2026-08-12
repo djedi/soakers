@@ -2,6 +2,7 @@
 title: "Hello World"
 description: 'A demo of the "Page" template and kitchen sink sample of styled elements.'
 eleventyExcludeFromCollections: true
+robots: noindex, nofollow
 ---
 
 > Credit for the kitchen sink elements to the ["Just the Docs"](https://github.com/pmarsceill/just-the-docs) project by [pmarsceill](https://github.com/pmarsceill).

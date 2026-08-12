@@ -1,6 +1,6 @@
 ---
-title: "Financing"
-description: "Affordable hot tub financing through Mountain America Credit Union. Low monthly payments make it easy to bring home the spa of your dreams."
+title: "Hot Tub Financing in Utah"
+description: "Finance a hot tub in Utah through Mountain America Credit Union. Apply online or in our Midvale showroom. Flexible monthly payments."
 layout: base.njk
 permalink: /financing/
 ---

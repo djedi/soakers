@@ -1,6 +1,6 @@
 ---
-title: "Contact Us"
-description: "Get in touch with Soakers — your hot tub dealership in Midvale, Utah. Call, email, or visit our showroom."
+title: "Contact Our Midvale Showroom"
+description: "Visit Soakers at 6905 S State St, Suite A, Midvale, UT. Call 801-838-SPAS or email service@soakers.biz. Open Monday–Saturday, 10 AM–5 PM."
 layout: base.njk
 permalink: /contact/
 ---
@@ -8,7 +8,7 @@ permalink: /contact/
 <!-- Hero Banner -->
 <section style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; padding: 60px 0;">
   <div class="container text-center">
-    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Contact Us</h1>
+    <h1 style="color: white; font-size: 42px; margin-bottom: 15px;">Contact Soakers in Midvale</h1>
     <p style="font-size: 18px; color: white; max-width: 600px; margin: 0 auto;">
       Have questions about a hot tub, need service, or want to schedule a showroom visit? We'd love to hear from you.
     </p>
@@ -74,7 +74,7 @@ permalink: /contact/
 <section class="pb-0">
   <div class="mapouter">
     <div class="gmap_canvas">
-      <iframe width="100%" height="450" src="https://maps.google.com/maps?q=soakers%20midvale%20utah&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" style="display:block;"></iframe>
+      <iframe width="100%" height="450" title="Map to Soakers hot tub store in Midvale, Utah" src="https://maps.google.com/maps?q=soakers%20midvale%20utah&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" style="display:block;"></iframe>
     </div>
   </div>
   <style>

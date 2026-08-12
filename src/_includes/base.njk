@@ -22,14 +22,16 @@
     <!-- Font Awesome (subset — 24 icons only) -->
     <link rel="stylesheet" href="/fonts/fontawesome-subset.css" />
 
-    <!-- Title -->
-    {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
-    <title>{{pageTitle}}</title>
-    {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
-        <meta
-      name="description"
-      content="{{pageDescription}}"
-    />
+    <!-- Title (output once so Nunjucks does not double-escape &) -->
+    {%- if title -%}
+    <title>{{ title }} | {{ meta.siteName }}</title>
+    {%- else -%}
+    <title>{{ meta.siteName }}</title>
+    {%- endif -%}
+    <meta name="description" content="{{ description or meta.siteDescription }}" />
+    {% if robots %}
+    <meta name="robots" content="{{ robots }}" />
+    {% endif %}
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -50,83 +52,132 @@
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    {%- if page.url != '/404.html' and (not robots or 'noindex' not in robots) -%}
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ meta.url }}{{ page.url }}" />
+    {%- endif %}
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="{{ meta.siteName }}" />
-    <meta property="og:title" content="{{pageTitle}}" />
-    <meta property="og:description" content="{{pageDescription}}" />
+    {%- if title %}
+    <meta property="og:title" content="{{ title }} | {{ meta.siteName }}" />
+    {%- else %}
+    <meta property="og:title" content="{{ meta.siteName }}" />
+    {%- endif %}
+    <meta property="og:description" content="{{ description or meta.siteDescription }}" />
     <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
     {%- set socialImg %}{% if pageSocialImg %}{{ pageSocialImg }}{% else %}/img/og.png{% endif %}{% endset -%}
     <meta property="og:image" content="{{ meta.url }}{{ socialImg }}" />
+    <meta property="og:image:alt" content="{{ title or meta.siteName }} — hot tub dealer in Midvale, Utah" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     {% if meta.twitterUsername %}
+      <meta name="twitter:site" content="@{{ meta.twitterUsername }}" />
       <meta name="twitter:creator" content="@{{ meta.twitterUsername }}" />
     {% endif %}
-    <meta name="twitter:title" content="{{pageTitle}}" />
-    <meta name="twitter:description" content="{{pageDescription}}" />
+    {%- if title %}
+    <meta name="twitter:title" content="{{ title }} | {{ meta.siteName }}" />
+    {%- else %}
+    <meta name="twitter:title" content="{{ meta.siteName }}" />
+    {%- endif %}
+    <meta name="twitter:description" content="{{ description or meta.siteDescription }}" />
     <meta name="twitter:image" content="{{ meta.url }}{{ socialImg }}" />
+    <meta name="twitter:image:alt" content="{{ title or meta.siteName }} — hot tub dealer in Midvale, Utah" />
 
 {% block posthead %}{% endblock %}
 
-    <!-- LocalBusiness Structured Data -->
+    <!-- LocalBusiness + WebSite Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "HotTubStore",
-      "name": "Soakers",
-      "url": "https://soakers.biz",
-      "logo": "https://soakers.biz/img/logo.png",
-      "image": "https://soakers.biz/img/og.png",
-      "description": "Family-owned hot tub dealer in Midvale, UT. Authorized dealer for Artesian Spas, Nordic Hot Tubs, TidalFit Swim Spas, Covana, and more. Sales and service.",
-      "telephone": "+1-801-838-7727",
-      "email": "service@soakers.biz",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "6905 S State St",
-        "addressLocality": "Midvale",
-        "addressRegion": "UT",
-        "postalCode": "84047",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 40.6253922,
-        "longitude": -111.8898613
-      },
-      "openingHoursSpecification": [
+      "@graph": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "10:00",
-          "closes": "17:00"
+          "@type": "HotTubStore",
+          "@id": "https://soakers.biz/#business",
+          "name": "Soakers",
+          "url": "https://soakers.biz",
+          "logo": "https://soakers.biz/img/logo.png",
+          "image": "https://soakers.biz/img/og.png",
+          "description": "Family-owned hot tub dealer in Midvale, UT. Authorized dealer for Artesian Spas, Nordic Hot Tubs, TidalFit Swim Spas, Covana, and more. Sales and service.",
+          "telephone": "+1-801-838-7727",
+          "email": "service@soakers.biz",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6905 S State St, Suite A",
+            "addressLocality": "Midvale",
+            "addressRegion": "UT",
+            "postalCode": "84047",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.6253922,
+            "longitude": -111.8898613
+          },
+          "hasMap": "https://www.google.com/maps/place/Soakers/@40.6253922,-111.8898613,16z",
+          "openingHours": "Mo-Sa 10:00-17:00",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "10:00",
+              "closes": "17:00"
+            }
+          ],
+          "areaServed": [
+            { "@type": "City", "name": "Midvale" },
+            { "@type": "City", "name": "Salt Lake City" },
+            { "@type": "City", "name": "Sandy" },
+            { "@type": "City", "name": "Murray" },
+            { "@type": "City", "name": "West Jordan" },
+            { "@type": "City", "name": "South Jordan" },
+            { "@type": "City", "name": "Draper" },
+            { "@type": "AdministrativeArea", "name": "Salt Lake County" },
+            { "@type": "State", "name": "Utah" }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "94",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "sameAs": [
+            "https://www.facebook.com/Soakers-210242449012689",
+            "https://www.google.com/maps/place/Soakers/@40.6253922,-111.8898613,16z",
+            "https://www.yelp.com/biz/soakers-midvale",
+            "https://www.bbb.org/us/ut/midvale/profile/hot-tubs-and-spas/soakers-llc-1166-90025172"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Hot Tubs & Swim Spas",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Artesian Spas" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Nordic Hot Tubs" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Island Spas" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Garden Spas" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "South Seas Spas" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "TidalFit Swim Spas" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Covana Automated Covers" } }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://soakers.biz/#website",
+          "url": "https://soakers.biz",
+          "name": "Soakers",
+          "description": "Family-owned hot tub and swim spa dealer in Midvale, Utah.",
+          "publisher": { "@id": "https://soakers.biz/#business" },
+          "inLanguage": "en-US"
         }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/Soakers-210242449012689",
-        "https://www.yelp.com/biz/soakers-midvale",
-        "https://www.bbb.org/us/ut/midvale/profile/hot-tubs-and-spas/soakers-llc-1166-90025172"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Hot Tubs & Swim Spas",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Artesian Spas" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Nordic Hot Tubs" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Island Spas" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Garden Spas" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "South Seas Spas" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "TidalFit Swim Spas" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Covana Automated Covers" } }
-        ]
-      }
+      ]
     }
     </script>
   </head>
@@ -215,6 +266,9 @@
 
 
     <main id="main-content">
+    {% if page.url != '/' and page.url != '/404.html' and not hideBreadcrumbs %}
+      {% include 'breadcrumbs.njk' %}
+    {% endif %}
     {% block content %}
     {{ content | safe }}
     {% endblock %}
@@ -236,7 +290,7 @@
                     style="margin-left: 15px; background-color: #ffffff; box-shadow: 0 0 10px 15px #ffffff;" width="143" height="50"
                   /></a>
                   <p>
-
+                    Family-owned hot tub dealer in Midvale, Utah. Sales, service, and financing for Artesian, Nordic, TidalFit, and Covana.
                   </p>
                 </div>
 
@@ -292,16 +346,28 @@
                 <h3>Quick Links</h3>
                 <ul>
                   <li>
+                    <a href="/spa-models/">Spa Models</a>
+                  </li>
+                  <li>
+                    <a href="/services/">Services</a>
+                  </li>
+                  <li>
+                    <a href="/financing/">Financing</a>
+                  </li>
+                  <li>
+                    <a href="/faq/">FAQ</a>
+                  </li>
+                  <li>
                     <a href="/about/">About Us</a>
                   </li>
                   <li>
                     <a href="/contact/">Contact Us</a>
                   </li>
                   <li>
-                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/privacy-policy/">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+                    <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
                   </li>
                 </ul>
               </div>
@@ -399,11 +465,11 @@
     <!-- End Clicky Analytics -->
 
     <!-- Mobile sticky call button -->
-    <a href="tel:+18018387727" class="mobile-call-btn d-md-none" 
+    <a href="tel:+18018387727" class="mobile-call-btn d-md-none" aria-label="Call Soakers at 801-838-7727"
        style="position:fixed; bottom:20px; right:20px; z-index:9999; width:60px; height:60px; 
               background:#f27127; border-radius:50%; display:flex; align-items:center; 
               justify-content:center; box-shadow:0 4px 15px rgba(0,0,0,0.3); text-decoration:none;">
-      <i class="fas fa-phone-alt" style="color:white; font-size:24px;"></i>
+      <i class="fas fa-phone-alt" style="color:white; font-size:24px;" aria-hidden="true"></i>
     </a>
 
     {% block postbody %}{% endblock %}

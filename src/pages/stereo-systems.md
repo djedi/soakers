@@ -1,6 +1,6 @@
 ---
 title: "Hot Tub Stereo Systems"
-description: "Maximize your hot tub entertainment with Bluetooth stereo systems, speakers, and subwoofers — available on Artesian Elite, Island Spas, South Seas, and TidalFit."
+description: "Bluetooth hot tub stereos, speakers, and subwoofers at Soakers in Midvale, UT. Available on Artesian Elite, Island Spas, South Seas, and TidalFit."
 layout: base.njk
 permalink: /stereo-systems/
 ---

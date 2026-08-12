@@ -5,6 +5,8 @@ layout: base.njk
 permalink: /og-preview/
 excludeFromNav: true
 eleventyExcludeFromCollections: true
+robots: noindex, nofollow
+hideBreadcrumbs: true
 ---
 
 <style>

@@ -1,6 +1,6 @@
 ---
 title: "Hot Tub Steps: Safety & Style"
-description: "Durable hot tub step accessories — Monarch Elite Steps, Modular Steps, and TidalFit 5-Steps built to withstand any weather condition."
+description: "Shop durable hot tub steps at Soakers in Midvale, UT — Monarch Elite, Modular Steps, and TidalFit 5-Steps built for any weather."
 layout: base.njk
 permalink: /steps/
 ---

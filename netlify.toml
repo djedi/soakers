@@ -35,6 +35,37 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
+# Keep thin / utility URLs out of the index
+[[headers]]
+  for = "/framed/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/framed/"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/blank/"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/og-preview/"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/helloworld/"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/404.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, follow"
+
 # Security headers for all pages
 [[headers]]
   for = "/*"

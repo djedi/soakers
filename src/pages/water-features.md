@@ -1,6 +1,6 @@
 ---
 title: "Hot Tub Water Features"
-description: "Enhance relaxation and meditation with soothing water features — PillowFalls, Cascade Falls, AllegroFalls, and BellagioFalls for your hot tub."
+description: "Shop hot tub water features at Soakers in Midvale, UT — PillowFalls, Cascade Falls, AllegroFalls, and BellagioFalls for a calmer soak."
 layout: base.njk
 permalink: /water-features/
 ---

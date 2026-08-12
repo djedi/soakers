@@ -4,7 +4,7 @@ title: "Terms and Conditions"
 description: "Terms and conditions for Soakers, LLC — your hot tub dealer in Midvale, UT."
 ---
 
-<h2><strong>Terms and Conditions</strong></h2>
+<h1>Terms and Conditions</h1>
 
 <p>Welcome to Soakers.biz!</p>
 
