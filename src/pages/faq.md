@@ -125,7 +125,7 @@ permalink: /faq/
     <p style="color: white; font-size: 18px; margin-bottom: 25px;">
       Visit our showroom or give us a call — we love helping people find the right hot tub.
     </p>
-    <a href="/contact/" class="default-btn1" style="background:white; color:#f27127; margin-right:10px;">Contact Us</a>
+    <a href="/contact/" class="default-btn1" style="background:white; color:#1168b7; margin-right:10px;">Contact Us</a>
     <a href="tel:+18018387727" class="default-btn1" style="background:transparent; border:2px solid white; color:white;">Call 801-838-SPAS</a>
   </div>
 </section>

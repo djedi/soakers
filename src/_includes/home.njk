@@ -1,11 +1,15 @@
 ---
 layout: base.njk
 ---
+{% block posthead %}
+    <!-- Preload the LCP hero image (avif; skipped by browsers without avif support) -->
+    <link rel="preload" as="image" type="image/avif" imagesrcset="/img/optimized/storefront-480w.avif 480w, /img/optimized/storefront-720w.avif 720w, /img/optimized/storefront-1100w.avif 1100w, /img/optimized/storefront-1600w.avif 1600w" imagesizes="(max-width: 900px) 100vw, 56vw">
+{% endblock %}
 
 <section class="home-hero">
   <div class="home-hero__inner">
     <div class="home-hero__copy">
-      <p class="home-hero__eyebrow">Family-owned · Midvale, Utah</p>
+      <p class="eyebrow">Family-owned · Midvale, Utah</p>
       <h1>Hot tubs and swim spas for Utah homes</h1>
       <p class="home-hero__lede">
         Sales, service, and honest advice from Harvey, Wendy, and family.
@@ -16,13 +20,20 @@ layout: base.njk
         <a href="tel:+18018387727" class="btn-ghost">Call 801-838-SPAS</a>
       </div>
       <p class="home-hero__trust">
-        <span>4.8★ on Google</span>
-        <span>94 reviews</span>
-        <span>Open Mon–Sat, 10–5</span>
+        <span><i class="fas fa-star" aria-hidden="true"></i> 4.8 on Google</span>
+        <span><i class="fas fa-shield-alt" aria-hidden="true"></i> BBB-accredited</span>
+        <span><i class="fas fa-clock" aria-hidden="true"></i> Open Mon–Sat, 10–5</span>
       </p>
     </div>
     <div class="home-hero__media">
-      {% image "/img/gallery/storefront.jpg", "Soakers storefront in Midvale, Utah with the Wasatch mountains behind the shop", "(max-width: 900px) 100vw, 56vw", [720, 1100, 1600], "home-hero__img", "eager", "high" %}
+      {% image "/img/gallery/storefront.jpg", "Soakers storefront in Midvale, Utah with the Wasatch mountains behind the shop", "(max-width: 900px) 100vw, 56vw", [480, 720, 1100, 1600], "home-hero__img", "eager", "high" %}
+      <div class="home-hero__badge">
+        <i class="fas fa-star" aria-hidden="true"></i>
+        <div>
+          <strong>4.8 out of 5</strong>
+          <small>94 Google reviews</small>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -55,7 +66,7 @@ layout: base.njk
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="feature-card">
           <i class="fas fa-star" aria-hidden="true"></i>
-          <h3>4.8★ on Google</h3>
+          <h3>4.8 on Google</h3>
           <p>94 reviews and counting. Our customers love us — read what they have to say below.</p>
         </div>
       </div>

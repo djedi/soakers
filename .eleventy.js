@@ -20,7 +20,7 @@ async function imageShortcode(
   let inputPath = src.startsWith("/") ? path.join("src", src) : src;
   let metadata = await Image(inputPath, {
     widths: widths,
-    formats: ["webp", "jpeg"],
+    formats: ["avif", "webp"],
     outputDir: "./public/img/optimized/",
     urlPath: "/img/optimized/",
     filenameFormat: function (id, src, width, format) {
@@ -60,6 +60,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/favicon.png");
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
+  eleventyConfig.addPassthroughCopy("./src/llms.txt");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);

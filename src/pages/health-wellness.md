@@ -58,7 +58,7 @@ permalink: /health-wellness/
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;"><i class="fas fa-bone"></i> Arthritis & Joint Pain</h4>
+            <h4 style="color: #1168b7;"><i class="fas fa-bone"></i> Arthritis & Joint Pain</h4>
             <p>Warm water reduces joint stiffness and inflammation. Buoyancy takes weight off sore joints, allowing for greater range of motion and less pain during movement.</p>
           </div>
         </div>
@@ -66,7 +66,7 @@ permalink: /health-wellness/
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;"><i class="fas fa-running"></i> Muscle Soreness</h4>
+            <h4 style="color: #1168b7;"><i class="fas fa-running"></i> Muscle Soreness</h4>
             <p>Whether you're an athlete or a weekend warrior, hot water increases blood flow to tired muscles, flushing out lactic acid and reducing recovery time after workouts.</p>
           </div>
         </div>
@@ -74,7 +74,7 @@ permalink: /health-wellness/
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;"><i class="fas fa-spine"></i> Back & Neck Pain</h4>
+            <h4 style="color: #1168b7;"><i class="fas fa-spine"></i> Back & Neck Pain</h4>
             <p>Targeted hydrotherapy jets deliver deep-tissue massage to the back, neck, and shoulders — the areas where most people carry tension and chronic pain.</p>
           </div>
         </div>
@@ -82,7 +82,7 @@ permalink: /health-wellness/
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;"><i class="fas fa-hand-paper"></i> Fibromyalgia</h4>
+            <h4 style="color: #1168b7;"><i class="fas fa-hand-paper"></i> Fibromyalgia</h4>
             <p>Studies have shown that regular warm water therapy can reduce fibromyalgia symptoms, including widespread pain, fatigue, and stiffness.</p>
           </div>
         </div>
@@ -90,7 +90,7 @@ permalink: /health-wellness/
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;"><i class="fas fa-headache"></i> Headache Relief</h4>
+            <h4 style="color: #1168b7;"><i class="fas fa-headache"></i> Headache Relief</h4>
             <p>Tension headaches and migraines are often triggered by muscle tightness. Hot water relaxes the muscles in your neck, shoulders, and head that contribute to headache pain.</p>
           </div>
         </div>
@@ -98,7 +98,7 @@ permalink: /health-wellness/
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;"><i class="fas fa-heartbeat"></i> Injury Rehabilitation</h4>
+            <h4 style="color: #1168b7;"><i class="fas fa-heartbeat"></i> Injury Rehabilitation</h4>
             <p>Hydrotherapy is widely used in physical therapy. The buoyancy of water supports your body weight, making gentle exercises easier and safer during recovery.</p>
           </div>
         </div>
@@ -173,7 +173,7 @@ permalink: /health-wellness/
       Visit our showroom to experience the therapeutic benefits of a hot tub firsthand. Our team will help you find the perfect spa for your health and wellness goals.
     </p>
     <div>
-      <a href="tel:+18018387727" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+      <a href="tel:+18018387727" style="display: inline-block; background: white; color: #1168b7; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
         <i class="fas fa-phone-alt"></i> 801-838-SPAS
       </a>
       <a href="/contact/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">

@@ -43,7 +43,7 @@ permalink: /steps/
         <div class="card border-0 shadow-sm h-100">
           <img src="/img/steps/monarch-mocha.jpg" alt="Monarch Elite Steps in Mocha" class="card-img-top" width="3428" height="2085" />
           <div class="card-body">
-            <h4 style="color: #f27127;">Mocha</h4>
+            <h4 style="color: #1168b7;">Mocha</h4>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@ permalink: /steps/
         <div class="card border-0 shadow-sm h-100">
           <img src="/img/steps/monarch-smoke.jpg" alt="Monarch Elite Steps in Smoke" class="card-img-top" width="500" height="304" />
           <div class="card-body">
-            <h4 style="color: #f27127;">Smoke</h4>
+            <h4 style="color: #1168b7;">Smoke</h4>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@ permalink: /steps/
         <div class="card border-0 shadow-sm h-100">
           <img src="/img/steps/monarch-noir.jpg" alt="Monarch Elite Steps in Noir" class="card-img-top" width="3428" height="2085" />
           <div class="card-body">
-            <h4 style="color: #f27127;">Noir</h4>
+            <h4 style="color: #1168b7;">Noir</h4>
           </div>
         </div>
       </div>
@@ -73,12 +73,12 @@ permalink: /steps/
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 text-center">
         <img src="/img/steps/modular-black.png" alt="Modular Step in Black" class="img-fluid rounded shadow" width="668" height="460" />
-        <h4 style="color: #f27127; margin-top: 15px;">Modular Step</h4>
+        <h4 style="color: #1168b7; margin-top: 15px;">Modular Step</h4>
         <p style="font-size: 14px; color: #888;">Available for all lines &middot; Black</p>
       </div>
       <div class="col-lg-6 mb-4 text-center">
         <img src="/img/steps/5-steps.jpg" alt="5-Steps for TidalFit" class="img-fluid rounded shadow" width="300" height="300" />
-        <h4 style="color: #f27127; margin-top: 15px;">5-Steps</h4>
+        <h4 style="color: #1168b7; margin-top: 15px;">5-Steps</h4>
         <p style="font-size: 14px; color: #888;">Available for TidalFit &middot; Black</p>
       </div>
     </div>
@@ -93,7 +93,7 @@ permalink: /steps/
       Learn more about all available step accessories from Artesian Spas.
     </p>
     <div>
-      <a href="https://artesianspas.com/features-and-accessories/steps/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+      <a href="https://artesianspas.com/features-and-accessories/steps/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #1168b7; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
         View on Artesian Spas <i class="fas fa-external-link-alt"></i>
       </a>
       <a href="/contact/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">

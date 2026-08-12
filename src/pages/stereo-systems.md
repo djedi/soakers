@@ -44,7 +44,7 @@ permalink: /stereo-systems/
       <div class="col-lg-6 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;">BBA&trade;2 Audio</h4>
+            <h4 style="color: #1168b7;">BBA&trade;2 Audio</h4>
             <p style="font-size: 14px; color: #888; margin-bottom: 10px;">Available on Artesian Elite &amp; TidalFit</p>
             <ul class="text-start" style="font-size: 16px; line-height: 2;">
               <li>Fully integrated Bluetooth audio streaming</li>
@@ -57,7 +57,7 @@ permalink: /stereo-systems/
       <div class="col-lg-6 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;">Bluetooth Audio</h4>
+            <h4 style="color: #1168b7;">Bluetooth Audio</h4>
             <p style="font-size: 14px; color: #888; margin-bottom: 10px;">Available on Island Spas</p>
             <ul class="text-start" style="font-size: 16px; line-height: 2;">
               <li>Bluetooth Streaming</li>
@@ -71,7 +71,7 @@ permalink: /stereo-systems/
       <div class="col-lg-6 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;">Bluetooth&reg; Music Experience</h4>
+            <h4 style="color: #1168b7;">Bluetooth&reg; Music Experience</h4>
             <p style="font-size: 14px; color: #888; margin-bottom: 10px;">Available on South Seas &amp; TidalFit</p>
             <ul class="text-start" style="font-size: 16px; line-height: 2;">
               <li>Bluetooth Receiver</li>
@@ -87,7 +87,7 @@ permalink: /stereo-systems/
       <div class="col-lg-6 col-md-6 mb-4">
         <div class="card border-0 shadow-sm h-100 p-4">
           <div class="card-body">
-            <h4 style="color: #f27127;">AUX Input &amp; Bluetooth Media Locker</h4>
+            <h4 style="color: #1168b7;">AUX Input &amp; Bluetooth Media Locker</h4>
             <p style="font-size: 14px; color: #888; margin-bottom: 10px;">Available on South Seas</p>
             <ul class="text-start" style="font-size: 16px; line-height: 2;">
               <li>Bluetooth Receiver</li>
@@ -110,7 +110,7 @@ permalink: /stereo-systems/
       Learn more about all available stereo systems from Artesian Spas.
     </p>
     <div>
-      <a href="https://artesianspas.com/features-and-accessories/stereo/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #f27127; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+      <a href="https://artesianspas.com/features-and-accessories/stereo/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: white; color: #1168b7; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
         View on Artesian Spas <i class="fas fa-external-link-alt"></i>
       </a>
       <a href="/contact/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
