@@ -150,6 +150,25 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("tojson", (value) => JSON.stringify(value ?? ""));
 
+  // "October 9, 2026" for visible "Updated" lines on guides
+  eleventyConfig.addFilter("dateReadable", (d) =>
+    new Date(d).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "America/Denver",
+    })
+  );
+
+  // Guides and service-area pages (hubs list these; sorted by `order`)
+  const byOrder = (a, b) => (a.data.order || 99) - (b.data.order || 99);
+  eleventyConfig.addCollection("guides", (api) =>
+    api.getFilteredByGlob("./src/pages/guides/*.md").sort(byOrder)
+  );
+  eleventyConfig.addCollection("serviceAreas", (api) =>
+    api.getFilteredByGlob("./src/pages/service-areas/*.md").sort(byOrder)
+  );
+
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,

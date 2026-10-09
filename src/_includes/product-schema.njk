@@ -1,0 +1,31 @@
+{#- Product JSON-LD for the models listed in a model page's `products` front
+    matter ({ name, seats }). No offers/prices or ratings on purpose: we only
+    publish facts that are on the page (see issue #37). -#}
+{%- if products and products.length %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ (productLine + " models at Soakers") | tojson | safe }},
+  "itemListElement": [
+    {%- for p in products %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "Product",
+        "name": {{ (productLine + " " + p.name) | tojson | safe }},
+        "category": {{ (productCategory or "Hot tub") | tojson | safe }},
+        "brand": { "@type": "Brand", "name": {{ productLine | tojson | safe }} },
+        "manufacturer": { "@type": "Organization", "name": {{ manufacturerName | tojson | safe }} },
+        {%- if p.seats %}
+        "description": {{ (p.seats + ". " + (p.note or "")) | trim | tojson | safe }},
+        {%- endif %}
+        "url": "{{ meta.url }}{{ page.url }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}

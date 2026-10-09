@@ -1,0 +1,78 @@
+---
+layout: base.njk
+parent: { name: "Guides", url: "/guides/" }
+---
+{#- Guide article layout. Front matter: title, description, heading, lede,
+    published (YYYY-MM-DD), pageFaqs, relatedLinks [{ name, url }]. -#}
+<section class="page-hero">
+  <div class="container text-center">
+    <h1>{{ heading or title }}</h1>
+    {%- if lede %}
+    <p>{{ lede }}</p>
+    {%- endif %}
+  </div>
+</section>
+
+<article class="pt-70 pb-30">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 guide-body">
+        <p class="guide-meta">
+          By the team at Soakers, Midvale, UT &middot; Updated {{ page.date | dateReadable }}
+        </p>
+        {{ content | safe }}
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include "page-faqs.njk" %}
+
+<section class="pt-70 pb-70">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <h2 style="font-size: 24px;">Keep reading</h2>
+        <ul>
+          {%- for item in collections.guides %}
+          {%- if item.url != page.url %}
+          <li><a href="{{ item.url }}">{{ item.data.heading or item.data.title }}</a></li>
+          {%- endif %}
+          {%- endfor %}
+          <li><a href="/faq/">Hot tub FAQs for Utah buyers</a></li>
+          <li><a href="/service-areas/">Areas we serve around Salt Lake City</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-cta">
+  <div class="container text-center">
+    <h2 style="color: white; margin-bottom: 15px;">Questions? Ask Us in Person</h2>
+    <p style="font-size: 18px; max-width: 600px; margin: 0 auto 25px; color: rgba(255,255,255,0.9);">
+      Visit our Midvale showroom Monday–Saturday, 10 AM–5 PM, or call 801-838-SPAS. No pressure, just straight answers.
+    </p>
+    <div>
+      <a href="/contact/" style="display: inline-block; background: white; color: #1168b7; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">Get a Quote</a>
+      <a href="/spa-models/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">Browse Models</a>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "{{ meta.url }}{{ page.url }}#article",
+  "headline": {{ (heading or title) | tojson | safe }},
+  "description": {{ description | tojson | safe }},
+  "image": "{{ meta.url }}/img/og.jpg",
+  "datePublished": "{{ published }}",
+  "dateModified": "{{ page.date | dateToRfc3339 }}",
+  "author": { "@id": "{{ meta.url }}/#business" },
+  "publisher": { "@id": "{{ meta.url }}/#business" },
+  "mainEntityOfPage": "{{ meta.url }}{{ page.url }}",
+  "inLanguage": "en-US"
+}
+</script>

@@ -103,10 +103,23 @@ module.exports = {
 		{
 			name: "Services",
 			href: "/services/",
+			pages: [
+				{ name: "Repair & Service", href: "/services/" },
+				{ name: "Service Areas", href: "/service-areas/" },
+			],
 		},
 		{
-			name: "FAQ",
-			href: "/faq/",
+			name: "Guides",
+			href: "/guides/",
+			pages: [
+				{ name: "All Guides", href: "/guides/" },
+				{ name: "Hot Tub Cost in Utah", href: "/guides/hot-tub-cost-utah/" },
+				{ name: "110V vs 240V Hot Tubs", href: "/guides/110v-vs-240v-hot-tubs/" },
+				{ name: "Hot Tubs in Utah Winters", href: "/guides/hot-tub-utah-winter/" },
+				{ name: "Swim Spa vs Pool", href: "/guides/swim-spa-vs-pool-utah/" },
+				{ name: "Compare Our Brands", href: "/guides/hot-tub-brands-compared/" },
+				{ name: "FAQ", href: "/faq/" },
+			],
 		},
 		{
 			name: "About",

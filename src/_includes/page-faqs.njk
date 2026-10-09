@@ -1,0 +1,36 @@
+{#- Visible FAQ list + matching FAQPage JSON-LD from the `pageFaqs` front-matter
+    list ({ q, a }). Answers may contain simple HTML links; the schema copy is
+    plain text so it always matches what's on the page. -#}
+{%- if pageFaqs and pageFaqs.length %}
+<section class="pt-70 pb-70 page-faqs"{% if faqBg %} style="background-color: #f8f9fa;"{% endif %}>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <h2 class="mb-30">{{ faqHeading or "Frequently Asked Questions" }}</h2>
+        {%- for f in pageFaqs %}
+        <div class="page-faq">
+          <h3>{{ f.q }}</h3>
+          <p>{{ f.a | safe }}</p>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ meta.url }}{{ page.url }}#faq",
+  "mainEntity": [
+    {%- for f in pageFaqs %}
+    {
+      "@type": "Question",
+      "name": {{ f.q | tojson | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | striptags | tojson | safe }} }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
