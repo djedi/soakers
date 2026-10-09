@@ -1,0 +1,8 @@
+---
+# IndexNow ownership key file, served at /<key>.txt (https://www.indexnow.org/documentation).
+# The key itself lives in src/_data/indexnow.json, which the IndexNow build plugin
+# (netlify/plugins/indexnow) also reads. The key is public by design.
+permalink: "/{{ indexnow.key }}.txt"
+eleventyExcludeFromCollections: true
+---
+{{ indexnow.key }}
