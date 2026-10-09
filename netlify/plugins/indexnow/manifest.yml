@@ -1,0 +1,8 @@
+name: netlify-plugin-indexnow-local
+inputs:
+  - name: host
+    description: Site host submitted to IndexNow
+    default: soakers.biz
+  - name: endpoint
+    description: IndexNow endpoint (shares submissions with all participating engines)
+    default: https://api.indexnow.org/indexnow
