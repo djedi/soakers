@@ -48,17 +48,21 @@ src/
 
 ```sh
 npm install      # install dependencies
-npm start        # dev server at http://localhost:8080 (Eleventy + Sass watch)
+npm start        # dev server (Eleventy + Sass watch); the URL is printed on startup
 ```
 
 `npm start` runs the Eleventy dev server with live reload and watches Sass in
-parallel. Edit `src/sass/` or any file under `src/` and the browser refreshes.
+parallel. Eleventy uses port 8080 when it is free and otherwise picks the next
+open port, so use the URL it prints. `make dev` does the same and opens the
+browser for you; `make open` reopens that URL later.
+
+Edit `src/sass/` or any file under `src/` and the browser refreshes.
 
 ## Scripts
 
 | Script       | What it does |
 |--------------|--------------|
-| `npm start`  | Dev server + Sass watch (port 8080) |
+| `npm start`  | Dev server + Sass watch (8080, or the next free port) |
 | `npm run build` | Production build into `public/` |
 | `npm run lint` / `npm run lint:fix` | Stylelint 17 on `src/sass/` (BEM naming, SMACSS property order) |
 | `npm run purge` | Purge + minify vendored CSS (`public/css/vendor.css`) |
