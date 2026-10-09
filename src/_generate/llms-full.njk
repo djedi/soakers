@@ -5,6 +5,14 @@ eleventyExcludeFromCollections: true
 # Soakers — full site text
 
 > Plain-text copy of the main pages on soakers.biz for AI assistants and LLMs. See https://soakers.biz/llms.txt for a summary.
+
+---
+
+## {{ meta.siteName }} — Home
+
+URL: {{ meta.url }}/
+
+{{ "{{HOMEPAGE_TEXT}}" }}
 {% for item in collections.all | sort(false, false, "url") %}
 {%- if item.url not in ["/404.html", "/privacy-policy/", "/terms-and-conditions/"] and (not item.data.robots or "noindex" not in item.data.robots) %}
 {%- set text = item.content | plainText %}

@@ -1,10 +1,5 @@
 [
 	{
-   "title":"Hot Tubs & Swim Spas in Salt&nbsp;Lake&nbsp;City",
-   "slug":"hot-tubs-and-swim-spas-in-salt-lake-city"
-	},
-
-	{
    "title":"Privacy Policy",
    "slug":"privacy-policy"
 	},
@@ -15,8 +10,23 @@
 	},
 
 	{
-   "title":"Hot Tubs & Swim Spas for Sale in Salt&nbsp;Lake&nbsp;City",
-   "slug":"hot-tubs-and-swim-spas-for-sale-in-salt-lake-city"
+   "title":"Hot Tub FAQs for&nbsp;Utah&nbsp;Buyers",
+   "slug":"hot-tub-faqs-for-utah-buyers"
+	},
+
+	{
+   "title":"Hot Tub Financing&nbsp;in&nbsp;Utah",
+   "slug":"hot-tub-financing-in-utah"
+	},
+
+	{
+   "title":"Health & Wellness Benefits of&nbsp;Hot&nbsp;Tubs",
+   "slug":"health-and-wellness-benefits-of-hot-tubs"
+	},
+
+	{
+   "title":"Hot Tubs & Swim Spas in Salt&nbsp;Lake&nbsp;City",
+   "slug":"hot-tubs-and-swim-spas-in-salt-lake-city"
 	},
 
 	{
@@ -40,21 +50,6 @@
 	},
 
 	{
-   "title":"Hot Tub FAQs for&nbsp;Utah&nbsp;Buyers",
-   "slug":"hot-tub-faqs-for-utah-buyers"
-	},
-
-	{
-   "title":"Hot Tub Financing&nbsp;in&nbsp;Utah",
-   "slug":"hot-tub-financing-in-utah"
-	},
-
-	{
-   "title":"Health & Wellness Benefits of&nbsp;Hot&nbsp;Tubs",
-   "slug":"health-and-wellness-benefits-of-hot-tubs"
-	},
-
-	{
    "title":"Hot Tub&nbsp;Hydrotherapy&nbsp;Jets",
    "slug":"hot-tub-hydrotherapy-jets"
 	},
@@ -65,6 +60,11 @@
 	},
 
 	{
+   "title":"Hot Tub Repair & Service in Salt&nbsp;Lake&nbsp;City",
+   "slug":"hot-tub-repair-and-service-in-salt-lake-city"
+	},
+
+	{
    "title":"Artesian Elite&nbsp;Hot&nbsp;Tubs",
    "slug":"artesian-elite-hot-tubs"
 	},
@@ -72,6 +72,11 @@
 	{
    "title":"Garden Spas Plug-and-Play&nbsp;Hot&nbsp;Tubs",
    "slug":"garden-spas-plug-and-play-hot-tubs"
+	},
+
+	{
+   "title":"Hot Tubs & Swim Spas for Sale in Salt&nbsp;Lake&nbsp;City",
+   "slug":"hot-tubs-and-swim-spas-for-sale-in-salt-lake-city"
 	},
 
 	{
@@ -127,10 +132,5 @@
 	{
    "title":"Hot Tub&nbsp;Water&nbsp;Features",
    "slug":"hot-tub-water-features"
-	},
-
-	{
-   "title":"Hot Tub Repair & Service in Salt&nbsp;Lake&nbsp;City",
-   "slug":"hot-tub-repair-and-service-in-salt-lake-city"
 	}
 ]
