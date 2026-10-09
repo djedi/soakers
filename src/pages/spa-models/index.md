@@ -83,3 +83,40 @@ permalink: /spa-models/
     </p>
   </div>
 </section>
+
+<!-- Comparison table: facts from each model page and manufacturer spec pages (see /guides/hot-tub-brands-compared/). -->
+<section class="pt-70 pb-70" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 guide-body">
+        <h2>Compare Every Line at a Glance</h2>
+        <p>
+          Two things narrow the choice fastest: how many people will soak, and what electrical service you have or are willing to add.
+          Plug-and-play spas use a standard outlet. Full-size spas need a dedicated 240V circuit but heat much faster in a Utah winter.
+        </p>
+        <table>
+          <thead>
+            <tr><th>Line</th><th>Maker</th><th>Seats</th><th>Electrical</th><th>Best for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><a href="/spa-models/artesian-elite/">Artesian Elite</a></td><td>Artesian</td><td>4–9</td><td>240V, 5.5 kW heater</td><td>Maximum hydrotherapy, DIRECTFLOW personal jet control</td></tr>
+            <tr><td><a href="/spa-models/island-spas/">Island Spas</a></td><td>Artesian</td><td>Up to 9</td><td>240V, 5.5 kW heater</td><td>Choosing your size first, then Essential, Luxury or Elite trim</td></tr>
+            <tr><td><a href="/spa-models/south-seas-spas/">South Seas Spas</a></td><td>Artesian</td><td>3–8</td><td>Mostly 240V; the 519P plugs into 120V</td><td>Lots of shapes and jet layouts at accessible prices</td></tr>
+            <tr><td><a href="/spa-models/garden-spas/">Garden Spas</a></td><td>Artesian</td><td>2–6</td><td>120V/15A plug-and-play</td><td>Condos, townhomes and small patios</td></tr>
+            <tr><td><a href="/spa-models/swim-spas/">TidalFit</a></td><td>Artesian</td><td>3–4 (exercise pools)</td><td>240V, 5.5 kW heater</td><td>Year-round swimming and exercise</td></tr>
+            <tr><td><a href="/spa-models/nordic-luxury/">Nordic Luxury</a></td><td>Nordic</td><td>6–8</td><td>220V (Encore LS: 50A)</td><td>Feature-rich family spas at a value price</td></tr>
+            <tr><td><a href="/spa-models/nordic-sport/">Nordic Sport</a></td><td>Nordic</td><td>2–6</td><td>220V/40A (models we checked)</td><td>Recovery jets for active people</td></tr>
+            <tr><td><a href="/spa-models/nordic-modern/">Nordic Modern</a></td><td>Nordic</td><td>2–6</td><td>110V/220V convertible</td><td>Contemporary looks; the Bella MS fits most doorways</td></tr>
+            <tr><td><a href="/spa-models/nordic-classic/">Nordic Classic</a></td><td>Nordic</td><td>5–6</td><td>Most 110V/220V convertible</td><td>Round tubs with multi-level seating</td></tr>
+            <tr><td><a href="/spa-models/nordic-all-in-110v/">Nordic ALL-IN-110V</a></td><td>Nordic</td><td>2–6</td><td>110V plug-and-play</td><td>No electrical work, with Nordic Wrap and ozone standard</td></tr>
+          </tbody>
+        </table>
+        <p>
+          Go deeper with our guides: <a href="/guides/hot-tub-brands-compared/">Artesian, Nordic &amp; TidalFit compared</a>,
+          <a href="/guides/110v-vs-240v-hot-tubs/">110V vs 240V hot tubs</a>, and
+          <a href="/guides/hot-tub-cost-utah/">what a hot tub costs in Utah</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

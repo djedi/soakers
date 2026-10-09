@@ -1,0 +1,74 @@
+---
+title: "Hot Tub Buying Guides for Utah"
+breadcrumb: "Guides"
+description: "Straight answers for Utah hot tub shoppers: real costs, 110V vs 240V, winter use, swim spas vs pools, and how Artesian and Nordic spas compare."
+layout: base.njk
+permalink: /guides/
+---
+
+<section class="page-hero">
+  <div class="container text-center">
+    <h1>Hot Tub Guides for Utah Homeowners</h1>
+    <p>Practical, no-pressure advice from the family behind Soakers in Midvale</p>
+  </div>
+</section>
+
+<section class="pt-70 pb-70">
+  <div class="container">
+    <div class="row justify-content-center mb-50">
+      <div class="col-lg-9 guide-body">
+        <p>
+          We've helped Salt Lake Valley families choose, install and repair hot tubs since 2011. These guides cover the questions we hear most in our Midvale showroom:
+          what a hot tub really costs, which electrical setup you need, how to run a spa through a Utah winter, and how the brands we carry compare.
+          Where we quote costs, we say where the numbers come from.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      {%- for g in collections.guides %}
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="guide-card">
+          <h2><a href="{{ g.url }}">{{ g.data.heading or g.data.title }}</a></h2>
+          <p>{{ g.data.description }}</p>
+          <a href="{{ g.url }}">Read the guide →</a>
+        </div>
+      </div>
+      {%- endfor %}
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="guide-card">
+          <h2><a href="/faq/">Hot Tub FAQs</a></h2>
+          <p>Quick answers on sizing, electricity, maintenance, placement and health benefits.</p>
+          <a href="/faq/">See the FAQs →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-cta">
+  <div class="container text-center">
+    <h2 style="color: white; margin-bottom: 15px;">Rather Talk It Through?</h2>
+    <p style="font-size: 18px; max-width: 600px; margin: 0 auto 25px; color: rgba(255,255,255,0.9);">
+      Stop by 6905 S State St in Midvale, Monday–Saturday 10 AM–5 PM, or call 801-838-SPAS.
+    </p>
+    <div>
+      <a href="/contact/" style="display: inline-block; background: white; color: #1168b7; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ meta.url }}{{ page.url }}#page",
+  "name": "Hot Tub Guides for Utah Homeowners",
+  "url": "{{ meta.url }}{{ page.url }}",
+  "publisher": { "@id": "{{ meta.url }}/#business" },
+  "hasPart": [
+    {%- for g in collections.guides %}
+    { "@id": "{{ meta.url }}{{ g.url }}#article" }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>

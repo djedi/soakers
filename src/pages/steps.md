@@ -4,6 +4,8 @@ description: "Shop durable hot tub steps at Soakers in Midvale, UT — Monarch E
 layout: base.njk
 templateEngineOverride: njk,md
 permalink: /steps/
+faqHeading: "Spa Step FAQs"
+pageFaqs: [{"q": "Do I need steps for my hot tub?", "a": "For most spas, yes. Full-size hot tubs commonly stand around 3 feet tall (the Island Spas Grand Bahama is 36 inches and the Artesian Elite Quail Ridge is 42 inches), and swim spas are taller still. Steps make getting in and out safer, especially on wet or icy evenings."}, {"q": "Which steps fit my spa?", "a": "The Modular Step is available for all lines. Monarch Elite Steps are an option for the Artesian Elite, in Mocha, Smoke or Noir. TidalFit swim spas have a 5-Step unit."}, {"q": "Will spa steps hold up to Utah winters?", "a": "Our optional step accessories are made of a durable synthetic material built to withstand snow, humidity, rain, sleet and heat. Keep them clear of snow and ice so the treads stay safe."}]
 ---
 
 <!-- Hero Banner -->
@@ -85,6 +87,30 @@ permalink: /steps/
     </div>
   </div>
 </section>
+
+<!-- Buying guide. Spa heights: artesianspas.com spec pages (Grand Bahama 36 in, Quail Ridge 42 in,
+     Garden Spas Plume 34 in, TidalFit Active EP-12 45 in, Pro EP-15 60 in). -->
+<section class="pt-70 pb-30">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 guide-body">
+        <h2>Why Steps Matter</h2>
+        <p>Hot tubs sit higher than most people expect. The Garden Spas Plume stands about 34 inches tall, the Island Spas Grand Bahama about 36 inches, and the Artesian Elite Quail Ridge about 42 inches. Swim spas are taller still: about 45 inches for the TidalFit Active EP-12 and 60 inches for the Pro EP-15. Climbing over that cabinet with wet feet is how slips happen. A solid set of steps gives you a stable, even platform to get in and out.</p>
+        <h2>Choosing the Right Steps</h2>
+        <ul class="guide-list">
+          <li><strong>Match the line.</strong> The Modular Step works with all the lines we carry. <a href="/spa-models/artesian-elite/">Artesian Elite</a> owners can choose Monarch Elite Steps in Mocha, Smoke or Noir. <a href="/spa-models/swim-spas/">TidalFit swim spas</a> use a taller 5-Step unit.</li>
+          <li><strong>Plan placement with the cover.</strong> Put the steps on the side you'll enter from, and make sure they don't block the cover or <a href="/covers/">cover lifter</a> from opening fully.</li>
+          <li><strong>Think about who's soaking.</strong> Kids, older family members and anyone with limited mobility benefit most from a wide, stable step.</li>
+        </ul>
+        <h2>Winter Safety on the Steps</h2>
+        <p>In a Utah winter, steps get wet, then cold, then icy. Brush snow off before you soak, keep a towel or mat at the top, and put ice melt on the path to the spa rather than right next to the cabinet. Our <a href="/guides/hot-tub-utah-winter/">winter guide</a> covers more cold-weather tips.</p>
+        <p>Not sure which steps fit your spa? Bring your model name to our Midvale showroom or <a href="/contact/">ask us</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "page-faqs.njk" %}
 
 {% include "related-links.njk" %}
 

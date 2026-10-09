@@ -1,0 +1,95 @@
+---
+layout: base.njk
+parent: { name: "Service Areas", url: "/service-areas/" }
+---
+{#- Service-area landing page. Front matter: city, county, title, description,
+    lede, miles, minutes, elevation, nearby [{ name, url }], pageFaqs.
+    Distances/drive times: OSRM routing from the showroom (6905 S State St) to
+    the city centre (OpenStreetMap/Nominatim), light-traffic estimate.
+    Elevations: USGS Elevation Point Query Service at the same point. -#}
+<section class="page-hero">
+  <div class="container text-center">
+    <h1>{{ heading }}</h1>
+    {%- if lede %}
+    <p>{{ lede }}</p>
+    {%- endif %}
+  </div>
+</section>
+
+<section class="pt-70 pb-30">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 guide-body">
+        {{ content | safe }}
+      </div>
+      <div class="col-lg-4">
+        <aside class="quick-facts">
+          <h2>{{ city }} at a glance</h2>
+          <ul>
+            <li><strong>From our showroom:</strong> about {{ miles }} miles, roughly {{ minutes }} minutes in light traffic</li>
+            <li><strong>Elevation (city center):</strong> about {{ elevation }} ft</li>
+            <li><strong>Showroom:</strong> 6905 S State St, Suite A, Midvale</li>
+            <li><strong>Hours:</strong> Mon–Sat, 10 AM–5 PM</li>
+            <li><strong>Phone:</strong> <a href="tel:+18018387727">801-838-SPAS (7727)</a></li>
+          </ul>
+          <p class="mb-0"><a href="/contact/">Request a quote or service visit →</a></p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-70 pb-70" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <h2>What we do for {{ city }} homeowners</h2>
+        <ul class="guide-list">
+          <li><a href="/spa-models/">Hot tub and swim spa sales</a> — Artesian (Island Spas, Artesian Elite, South Seas, Garden Spas), Nordic Hot Tubs, and TidalFit swim spas, on display in Midvale.</li>
+          <li><a href="/services/">Repair and maintenance for every brand</a> — pumps, heaters, jets, circuit boards, and plumbing, whether or not you bought the tub from us.</li>
+          <li>Delivery and installation — we place, level, fill, and start up your spa.</li>
+          <li>Parts, filters, covers, and chemicals, plus free water testing when you bring a sample to the showroom.</li>
+          <li><a href="/financing/">Financing</a> through Mountain America Credit Union.</li>
+        </ul>
+        {%- if nearby %}
+        <p class="mb-0">Nearby:
+          {%- for n in nearby %} <a href="{{ n.url }}">{{ n.name }}</a>{% if not loop.last %} &middot;{% endif %}{% endfor %}
+          &middot; <a href="/service-areas/">All service areas</a>
+        </p>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "page-faqs.njk" %}
+
+<section class="site-cta">
+  <div class="container text-center">
+    <h2 style="color: white; margin-bottom: 15px;">Hot Tubs for {{ city }}, From Midvale</h2>
+    <p style="font-size: 18px; max-width: 600px; margin: 0 auto 25px; color: rgba(255,255,255,0.9);">
+      Sit in the display models, bring your yard measurements, and get a straight answer on what will work at your home.
+    </p>
+    <div>
+      <a href="/contact/" style="display: inline-block; background: white; color: #1168b7; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">Get a Quote</a>
+      <a href="tel:+18018387727" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">Call 801-838-SPAS</a>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ meta.url }}{{ page.url }}#service",
+  "name": {{ ("Hot tub sales, installation and repair in " + city + ", UT") | tojson | safe }},
+  "serviceType": "Hot tub and swim spa sales, delivery, installation, repair and maintenance",
+  "provider": { "@id": "{{ meta.url }}/#business" },
+  "areaServed": {
+    "@type": "City",
+    "name": {{ city | tojson | safe }},
+    "containedInPlace": { "@type": "AdministrativeArea", "name": {{ (county + ", Utah") | tojson | safe }} }
+  },
+  "url": "{{ meta.url }}{{ page.url }}"
+}
+</script>

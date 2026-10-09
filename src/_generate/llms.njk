@@ -40,5 +40,20 @@ eleventyExcludeFromCollections: true
 - [Steps](https://soakers.biz/steps/): Spa steps for safe entry and exit.
 - [About](https://soakers.biz/about/): Story of the family-owned dealership.
 - [Contact](https://soakers.biz/contact/): Showroom location, phone, and email.
+- [Service Areas](https://soakers.biz/service-areas/): Cities served from the Midvale showroom, with drive times and elevations.
+- [Hot Tub Guides](https://soakers.biz/guides/): Buying guides for Utah homeowners.
+
+## Guides
+
+{% for g in collections.guides -%}
+- [{{ g.data.heading or g.data.title }}](https://soakers.biz{{ g.url }}): {{ g.data.description }}
+{% endfor %}
+## Service areas
+
+{% for c in collections.serviceAreas -%}
+- [{{ c.data.city }}, UT](https://soakers.biz{{ c.url }}): About {{ c.data.miles }} miles ({{ c.data.minutes }} min) from the Midvale showroom; {{ c.data.lede }}
+{% endfor %}
+## More
+
 - [Full site text](https://soakers.biz/llms-full.txt): Plain-text copy of the key pages above.
 - [Design Your Spa](https://artesianspas.com/design-your-spa/): Build a custom Artesian spa (external).
