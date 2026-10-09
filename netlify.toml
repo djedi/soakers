@@ -3,12 +3,30 @@
   # eleventy-img 7 requires node >=22; the build image's default (18) breaks
   # sass 1.102's CJS shim (chokidar 4 is ESM-only, require(esm) needs >=22.12).
   # A bare major ("22") is ignored by Netlify — use a full version.
-  command = "npm run build"
+  # Unshallow first: page dates (sitemap <lastmod>) come from each file's last
+  # git commit, which a shallow clone doesn't have. No-op on a full clone.
+  command = "git fetch --unshallow --quiet 2>/dev/null; npm run build"
   # Deterministic install; keeps devDependencies (the whole toolchain lives there)
   install_command = "npm ci --include=dev"
 
 [build.environment]
   NODE_VERSION = "22.20.0"
+
+# /index.html duplicates / — send it to the canonical URL. Must stay above
+# the /* catch-all.
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# Default social image moved from og.png (2.4 MB) to og.jpg; keep cached
+# share previews working.
+[[redirects]]
+  from = "/img/og.png"
+  to = "/img/og.jpg"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/*"

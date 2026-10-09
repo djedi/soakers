@@ -1,0 +1,33 @@
+{%- set rel = related[page.url] -%}
+{%- if rel %}
+<!-- Related models & features (src/_data/related.js) -->
+<section class="pt-70 pb-70">
+  <div class="container">
+    <div class="row justify-content-center">
+      {%- if rel.models %}
+      <div class="col-lg-5 col-md-6 mb-4">
+        <h2 style="font-size: 24px;">{% if rel.modelsHeading %}{{ rel.modelsHeading }}{% elif page.url.startsWith("/spa-models/") %}Compare related models{% else %}Available on these models{% endif %}</h2>
+        <ul>
+          {%- for m in rel.models %}
+          <li><a href="{{ m.url }}">{{ m.name }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+      {%- if rel.features %}
+      <div class="col-lg-5 col-md-6 mb-4">
+        <h2 style="font-size: 24px;">{% if page.url.startsWith("/spa-models/") %}Features &amp; accessories{% else %}Related options{% endif %}</h2>
+        <ul>
+          {%- for f in rel.features %}
+          <li><a href="{{ f.url }}">{{ f.name }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+    </div>
+    <p class="text-center mb-0">
+      Not sure which is right for you? See it in person at our Midvale showroom, check <a href="/financing/">financing options</a>, or <a href="/contact/">request a quote</a>.
+    </p>
+  </div>
+</section>
+{%- endif %}

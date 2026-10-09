@@ -1,6 +1,6 @@
 ---
-title: "Hot Tub Repair & Service in Midvale, UT"
-description: "Hot tub sales, repair, maintenance, delivery, and installation in Midvale, Utah. We service all brands — not just the ones we sell. Call 801-838-7727."
+title: "Hot Tub Repair & Service in Salt Lake City"
+description: "Hot tub repair, maintenance, sales, delivery, and installation in Salt Lake City, Sandy, and Midvale. We service all brands. Call 801-838-7727."
 layout: base.njk
 permalink: /services/
 ---
@@ -128,7 +128,7 @@ permalink: /services/
         <div class="d-flex align-items-start">
           <div style="font-size: 32px; margin-right: 20px; min-width: 40px;"><i class="fas fa-star" aria-hidden="true"></i></div>
           <div>
-            <h4 style="font-size: 18px; margin-bottom: 8px;">4.8 Stars from 94 Google Reviews</h4>
+            <h4 style="font-size: 18px; margin-bottom: 8px;">{{ reviews.rating }} Stars from {{ reviews.count }} Google Reviews</h4>
             <p style="font-size: 15px; line-height: 1.7; color: #555;">
               Our customers love us — and they're not shy about saying so. Read what they have to say on 
               <a href="https://www.google.com/maps/place/Soakers/@40.6253922,-111.8898613,16z" target="_blank" rel="noopener noreferrer">Google</a> or 
@@ -386,20 +386,7 @@ permalink: /services/
   "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": "Hot Tub Sales, Repair & Maintenance",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Soakers",
-    "url": "https://soakers.biz",
-    "telephone": "+1-801-838-7727",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "6905 S State St, Suite A",
-      "addressLocality": "Midvale",
-      "addressRegion": "UT",
-      "postalCode": "84047",
-      "addressCountry": "US"
-    }
-  },
+  "provider": { "@id": "https://soakers.biz/#business" },
   "areaServed": {
     "@type": "State",
     "name": "Utah"

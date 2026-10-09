@@ -2,6 +2,7 @@
 title: "Hot Tub Steps: Safety & Style"
 description: "Shop durable hot tub steps at Soakers in Midvale, UT — Monarch Elite, Modular Steps, and TidalFit 5-Steps built for any weather."
 layout: base.njk
+templateEngineOverride: njk,md
 permalink: /steps/
 ---
 
@@ -84,6 +85,8 @@ permalink: /steps/
     </div>
   </div>
 </section>
+
+{% include "related-links.njk" %}
 
 <!-- CTA / Link to Artesian -->
 <section class="site-cta">

@@ -1596,3 +1596,53 @@ blockquote {
     transition: none;
   }
 }
+
+/* ==============================================
+   Quote / service request form (contact page)
+   ============================================== */
+.quote-form {
+  padding: 2rem;
+  border: 1px solid var(--soakers-line);
+  border-radius: var(--soakers-radius);
+  background-color: var(--soakers-white);
+  box-shadow: var(--soakers-shadow-sm);
+
+  label {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--soakers-ink);
+    font-weight: 600;
+  }
+
+  input,
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--soakers-line);
+    border-radius: var(--soakers-radius-sm);
+    background-color: var(--soakers-white);
+    color: var(--soakers-ink);
+    font: inherit;
+
+    &:focus {
+      border-color: var(--soakers-blue);
+      outline: 2px solid rgb(17 104 183 / 25%);
+    }
+  }
+
+  button {
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.quote-form__field {
+  margin-bottom: 1.25rem;
+}
+
+.quote-form__honeypot {
+  position: absolute;
+  left: -9999px;
+}

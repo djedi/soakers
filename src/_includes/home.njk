@@ -9,10 +9,11 @@ layout: base.njk
 <section class="home-hero">
   <div class="home-hero__inner">
     <div class="home-hero__copy">
-      <p class="eyebrow">Family-owned · Midvale, Utah</p>
-      <h1>Hot tubs and swim spas for Utah homes</h1>
+      <p class="eyebrow">Family-owned since 2011 · Midvale, Utah</p>
+      <h1>Hot tubs and swim spas for Salt Lake City homes</h1>
       <p class="home-hero__lede">
         Sales, service, and honest advice from Harvey, Wendy, and family.
+        Our Midvale showroom is minutes from Salt Lake City, Sandy, Murray, and Draper.
         Come sit in the models — no pressure, just the right tub for your backyard.
       </p>
       <div class="home-hero__actions">
@@ -20,8 +21,8 @@ layout: base.njk
         <a href="tel:+18018387727" class="btn-ghost">Call 801-838-SPAS</a>
       </div>
       <p class="home-hero__trust">
-        <span><i class="fas fa-star" aria-hidden="true"></i> 4.8 on Google</span>
-        <span><i class="fas fa-shield-alt" aria-hidden="true"></i> BBB-accredited</span>
+        <span><i class="fas fa-star" aria-hidden="true"></i> {{ reviews.rating }} on Google</span>
+        <span><i class="fas fa-shield-alt" aria-hidden="true"></i> A+ BBB rating</span>
         <span><i class="fas fa-clock" aria-hidden="true"></i> Open Mon–Sat, 10–5</span>
       </p>
     </div>
@@ -30,8 +31,8 @@ layout: base.njk
       <div class="home-hero__badge">
         <i class="fas fa-star" aria-hidden="true"></i>
         <div>
-          <strong>4.8 out of 5</strong>
-          <small>94 Google reviews</small>
+          <strong>{{ reviews.rating }} out of 5</strong>
+          <small>{{ reviews.count }} Google reviews</small>
         </div>
       </div>
     </div>
@@ -53,7 +54,7 @@ layout: base.njk
         <div class="feature-card">
           <i class="fas fa-users" aria-hidden="true"></i>
           <h3>Family owned</h3>
-          <p>Harvey, Wendy, and family have been helping Utahns find their perfect spa for years.</p>
+          <p>Harvey, Wendy, and family have been helping Utahns find their perfect spa since 2011.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
@@ -66,8 +67,8 @@ layout: base.njk
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="feature-card">
           <i class="fas fa-star" aria-hidden="true"></i>
-          <h3>4.8 on Google</h3>
-          <p>94 reviews and counting. Our customers love us — read what they have to say below.</p>
+          <h3>{{ reviews.rating }} on Google</h3>
+          <p>{{ reviews.count }} reviews and counting. Our customers love us — read what they have to say below.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
@@ -93,7 +94,7 @@ layout: base.njk
       <a href="/spa-models/swim-spas/" class="brand-chip">TidalFit Swim Spas</a>
       <a href="/spa-models/south-seas-spas/" class="brand-chip">South Seas Spas</a>
       <a href="/spa-models/garden-spas/" class="brand-chip">Garden Spas</a>
-      <a href="/covana/" class="brand-chip">Covana Gazebos</a>
+      <a href="/covana/" class="brand-chip">Covana Automated Covers</a>
     </div>
   </div>
 </section>

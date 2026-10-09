@@ -1,6 +1,6 @@
 ---
-title: "Hot Tub & Swim Spa Models"
-description: "Browse hot tubs and swim spas at Soakers in Midvale, UT. Authorized dealer for Artesian, Nordic, TidalFit, South Seas, Garden Spas, and more."
+title: "Hot Tubs & Swim Spas for Sale in Salt Lake City"
+description: "Browse hot tubs and swim spas for sale near Salt Lake City at our Midvale, UT showroom. Artesian, Nordic, TidalFit, South Seas & Garden Spas."
 layout: base.njk
 permalink: /spa-models/
 ---

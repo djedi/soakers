@@ -2,6 +2,7 @@
 title: "Hot Tub Stereo Systems"
 description: "Bluetooth hot tub stereos, speakers, and subwoofers at Soakers in Midvale, UT. Available on Artesian Elite, Island Spas, South Seas, and TidalFit."
 layout: base.njk
+templateEngineOverride: njk,md
 permalink: /stereo-systems/
 ---
 
@@ -101,6 +102,8 @@ permalink: /stereo-systems/
     </div>
   </div>
 </section>
+
+{% include "related-links.njk" %}
 
 <!-- CTA / Link to Artesian -->
 <section class="site-cta">
