@@ -61,7 +61,7 @@
     {%- endif %}
     <meta property="og:description" content="{{ description or meta.siteDescription }}" />
     <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
-    {%- set socialImg %}{% if pageSocialImg %}{{ pageSocialImg }}{% else %}/img/og.png{% endif %}{% endset -%}
+    {%- set socialImg %}{% if pageSocialImg %}{{ pageSocialImg }}{% else %}/img/og.jpg{% endif %}{% endset -%}
     <meta property="og:image" content="{{ meta.url }}{{ socialImg }}" />
     <meta property="og:image:alt" content="{{ title or meta.siteName }} — hot tub dealer in Midvale, Utah" />
     <meta property="og:image:width" content="1200" />
@@ -93,9 +93,11 @@
           "@type": "HotTubStore",
           "@id": "{{ meta.url }}/#business",
           "name": "Soakers",
+          "legalName": "Soakers, LLC",
+          "foundingDate": "2011-03-07",
           "url": "{{ meta.url }}",
           "logo": "{{ meta.url }}/img/logo.png",
-          "image": "{{ meta.url }}/img/og.png",
+          "image": "{{ meta.url }}/img/og.jpg",
           "description": "Family-owned hot tub dealer in Midvale, UT. Authorized dealer for Artesian Spas, Nordic Hot Tubs, TidalFit Swim Spas, Covana, and more. Sales and service.",
           "telephone": "+1-801-838-7727",
           "email": "service@soakers.biz",
@@ -131,16 +133,12 @@
             { "@type": "City", "name": "West Jordan" },
             { "@type": "City", "name": "South Jordan" },
             { "@type": "City", "name": "Draper" },
+            { "@type": "City", "name": "Cottonwood Heights" },
+            { "@type": "City", "name": "Holladay" },
+            { "@type": "City", "name": "Taylorsville" },
             { "@type": "AdministrativeArea", "name": "Salt Lake County" },
             { "@type": "State", "name": "Utah" }
           ],
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "94",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
           "sameAs": [
             "https://www.facebook.com/Soakers-210242449012689",
             "https://www.google.com/maps/place/Soakers/@40.6253922,-111.8898613,16z",
@@ -239,7 +237,7 @@
               <li><a href="/spa-models/nordic-luxury/">Nordic Hot Tubs</a></li>
               <li><a href="/spa-models/swim-spas/">TidalFit Swim Spas</a></li>
               <li><a href="/spa-models/south-seas-spas/">South Seas Spas</a></li>
-              <li><a href="/covana/">Covana Gazebos</a></li>
+              <li><a href="/covana/">Covana Automated Covers</a></li>
             </ul>
           </div>
 

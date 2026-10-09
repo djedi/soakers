@@ -2,6 +2,7 @@
 title: "Protective Hot Tub Covers"
 description: "Shop hot tub covers and lifters at Soakers in Midvale, UT. Vinyl covers, All Seasons Shield, and hydraulic or manual cover lifters."
 layout: base.njk
+templateEngineOverride: njk,md
 permalink: /covers/
 ---
 
@@ -133,6 +134,8 @@ permalink: /covers/
     </div>
   </div>
 </section>
+
+{% include "related-links.njk" %}
 
 <!-- CTA / Link to Artesian -->
 <section class="site-cta">

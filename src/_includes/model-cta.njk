@@ -1,0 +1,24 @@
+{% include "related-links.njk" %}
+
+<!-- CTA -->
+<section class="site-cta">
+  <div class="container text-center">
+    <h2 style="color: white; margin-bottom: 15px;">See {{ ctaName }} in Our Showroom</h2>
+    <p style="font-size: 18px; max-width: 600px; margin: 0 auto 25px; color: rgba(255,255,255,0.9);">
+      Sit in the models at our Midvale showroom, get a quote, and ask about financing — no pressure, just honest advice.
+    </p>
+    <div>
+      <a href="/contact/" style="display: inline-block; background: white; color: #1168b7; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+        Get a Quote
+      </a>
+      <a href="/financing/" style="display: inline-block; border: 2px solid white; background: transparent; color: white; margin: 5px; padding: 14px 30px 10px; font-size: 18px; font-weight: 500; border-radius: 5px; text-decoration: none;">
+        Financing Options
+      </a>
+    </div>
+    {%- if manufacturerUrl %}
+    <p style="font-size: 15px; margin: 20px auto 0;">
+      Full specs and brochures: <a href="{{ manufacturerUrl }}" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">{{ manufacturerName }} website <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+    </p>
+    {%- endif %}
+  </div>
+</section>

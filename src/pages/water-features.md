@@ -2,6 +2,7 @@
 title: "Hot Tub Water Features"
 description: "Shop hot tub water features at Soakers in Midvale, UT — PillowFalls, Cascade Falls, AllegroFalls, and BellagioFalls for a calmer soak."
 layout: base.njk
+templateEngineOverride: njk,md
 permalink: /water-features/
 ---
 
@@ -108,6 +109,8 @@ permalink: /water-features/
     </div>
   </div>
 </section>
+
+{% include "related-links.njk" %}
 
 <!-- CTA / Link to Artesian -->
 <section class="site-cta">

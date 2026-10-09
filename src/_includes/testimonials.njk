@@ -4,7 +4,7 @@
       <span>Testimonials</span>
       <h2>What our customers say</h2>
       <p>
-        4.8 stars from 94 reviews on Google — here's what people love about Soakers.
+        {{ reviews.rating }} stars from {{ reviews.count }} reviews on Google — here's what people love about Soakers.
       </p>
     </div>
 
@@ -42,7 +42,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <a href="https://maps.app.goo.gl/SjzYtgbit8ofnHEW8" target="_blank" rel="noopener noreferrer" class="btn-primary">Read all 94 reviews on Google</a>
+      <a href="{{ reviews.url }}" target="_blank" rel="noopener noreferrer" class="btn-primary">Read all {{ reviews.count }} reviews on Google</a>
     </div>
   </div>
 </section>

@@ -2,6 +2,7 @@
 title: "Hot Tub LED Lighting"
 description: "Explore hot tub LED lighting at Soakers in Midvale, UT — Midnight Glow, DynaBrite, DynaStar, and Kick Rail LED to set the mood."
 layout: base.njk
+templateEngineOverride: njk,md
 permalink: /led-lighting/
 ---
 
@@ -150,6 +151,8 @@ permalink: /led-lighting/
     </div>
   </div>
 </section>
+
+{% include "related-links.njk" %}
 
 <!-- CTA / Link to Artesian -->
 <section class="site-cta">

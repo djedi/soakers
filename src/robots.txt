@@ -1,9 +1,8 @@
 User-agent: *
 Allow: /
 
-Disallow: /framed/
-Disallow: /blank/
-Disallow: /og-preview/
-Disallow: /helloworld/
+# Utility pages (/framed/, /blank/, /og-preview/, /helloworld/) are not
+# disallowed here on purpose: they send noindex (meta + X-Robots-Tag), and
+# crawlers can only honor noindex on pages they are allowed to fetch.
 
 Sitemap: https://soakers.biz/sitemap.xml

@@ -2,6 +2,7 @@
 title: "Hot Tub Hydrotherapy Jets"
 description: "Compare hydrotherapy jet options at Soakers in Midvale, UT — Helix jets, footblasters, neck jets, and H2O PowerFlow for a custom massage."
 layout: base.njk
+templateEngineOverride: njk,md
 permalink: /hydrotherapy-jets/
 ---
 
@@ -143,6 +144,8 @@ permalink: /hydrotherapy-jets/
     </div>
   </div>
 </section>
+
+{% include "related-links.njk" %}
 
 <!-- CTA / Link to Artesian -->
 <section class="site-cta">
