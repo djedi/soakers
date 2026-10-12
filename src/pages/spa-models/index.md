@@ -3,6 +3,9 @@ title: "Hot Tubs & Swim Spas for Sale in Salt Lake City"
 description: "Browse hot tubs and swim spas for sale near Salt Lake City at our Midvale, UT showroom. Artesian, Nordic, TidalFit, South Seas & Garden Spas."
 layout: base.njk
 permalink: /spa-models/
+templateEngineOverride: njk,md
+faqHeading: "Hot Tub & Swim Spa Model FAQs"
+pageFaqs: [{"q": "Which hot tubs plug into a regular outlet?", "a": "<a href=\"/spa-models/garden-spas/\">Garden Spas</a>, the <a href=\"/spa-models/nordic-all-in-110v/\">Nordic ALL-IN-110V</a> series and the South Seas 519P are plug-and-play. The <a href=\"/spa-models/nordic-modern/\">Nordic Modern</a> and most <a href=\"/spa-models/nordic-classic/\">Nordic Classic</a> models are 110V/220V convertible, so you can start on a standard outlet and wire for 220V later. Most other models need a dedicated 220V/240V circuit."}, {"q": "Which hot tub is best for a Utah winter?", "a": "Any spa we carry can run year-round if it stays full, running and covered. A 240V spa recovers heat much faster after a long soak than a 110V plug-and-play model, and better insulation (such as Nordic Wrap) helps on the coldest nights. Our <a href=\"/guides/hot-tub-utah-winter/\">Utah winter guide</a> and <a href=\"/guides/110v-vs-240v-hot-tubs/\">110V vs 240V guide</a> go deeper."}, {"q": "Do you sell swim spas near Salt Lake City?", "a": "Yes. We carry <a href=\"/spa-models/swim-spas/\">TidalFit swim spas</a> (exercise pools about 12 and 15 feet long) at our Midvale showroom, and we deliver and install them across the Salt Lake area. See <a href=\"/guides/swim-spa-vs-pool-utah/\">Swim Spa vs Pool in Utah</a> to decide between the two."}, {"q": "Can I see these hot tubs in person?", "a": "Yes. Our showroom is at 6905 S State St, Ste A in Midvale, open Monday through Saturday, 10 AM to 5 PM. We keep display models from every brand we carry, but floor models change, so <a href=\"/contact/\">call or message us</a> if you want to sit in a specific model."}, {"q": "How much do these hot tubs cost?", "a": "It depends on the line, size and options. <a href=\"/contact/\">Ask us</a> for current pricing on the models you're considering, read <a href=\"/guides/hot-tub-cost-utah/\">what a hot tub costs in Utah</a> for typical ranges, and see our <a href=\"/financing/\">financing options</a> through Mountain America Credit Union."}]
 ---
 
 <section class="page-hero">
@@ -96,19 +99,19 @@ permalink: /spa-models/
         </p>
         <table>
           <thead>
-            <tr><th>Line</th><th>Maker</th><th>Seats</th><th>Electrical</th><th>Best for</th></tr>
+            <tr><th>Line</th><th>Maker</th><th>Seats</th><th>Electrical</th><th>110V option?</th><th>Best for</th></tr>
           </thead>
           <tbody>
-            <tr><td><a href="/spa-models/artesian-elite/">Artesian Elite</a></td><td>Artesian</td><td>4–9</td><td>240V, 5.5 kW heater</td><td>Maximum hydrotherapy, DIRECTFLOW personal jet control</td></tr>
-            <tr><td><a href="/spa-models/island-spas/">Island Spas</a></td><td>Artesian</td><td>Up to 9</td><td>240V, 5.5 kW heater</td><td>Choosing your size first, then Essential, Luxury or Elite trim</td></tr>
-            <tr><td><a href="/spa-models/south-seas-spas/">South Seas Spas</a></td><td>Artesian</td><td>3–8</td><td>Mostly 240V; the 519P plugs into 120V</td><td>Lots of shapes and jet layouts at accessible prices</td></tr>
-            <tr><td><a href="/spa-models/garden-spas/">Garden Spas</a></td><td>Artesian</td><td>2–6</td><td>120V/15A plug-and-play</td><td>Condos, townhomes and small patios</td></tr>
-            <tr><td><a href="/spa-models/swim-spas/">TidalFit</a></td><td>Artesian</td><td>3–4 (exercise pools)</td><td>240V, 5.5 kW heater</td><td>Year-round swimming and exercise</td></tr>
-            <tr><td><a href="/spa-models/nordic-luxury/">Nordic Luxury</a></td><td>Nordic</td><td>6–8</td><td>220V (Encore LS: 50A)</td><td>Feature-rich family spas at a value price</td></tr>
-            <tr><td><a href="/spa-models/nordic-sport/">Nordic Sport</a></td><td>Nordic</td><td>2–6</td><td>220V/40A (models we checked)</td><td>Recovery jets for active people</td></tr>
-            <tr><td><a href="/spa-models/nordic-modern/">Nordic Modern</a></td><td>Nordic</td><td>2–6</td><td>110V/220V convertible</td><td>Contemporary looks; the Bella MS fits most doorways</td></tr>
-            <tr><td><a href="/spa-models/nordic-classic/">Nordic Classic</a></td><td>Nordic</td><td>5–6</td><td>Most 110V/220V convertible</td><td>Round tubs with multi-level seating</td></tr>
-            <tr><td><a href="/spa-models/nordic-all-in-110v/">Nordic ALL-IN-110V</a></td><td>Nordic</td><td>2–6</td><td>110V plug-and-play</td><td>No electrical work, with Nordic Wrap and ozone standard</td></tr>
+            <tr><td><a href="/spa-models/artesian-elite/">Artesian Elite</a></td><td>Artesian</td><td>4–9</td><td>240V, 5.5 kW heater</td><td>No</td><td>Maximum hydrotherapy, DIRECTFLOW personal jet control</td></tr>
+            <tr><td><a href="/spa-models/island-spas/">Island Spas</a></td><td>Artesian</td><td>Up to 9</td><td>240V, 5.5 kW heater</td><td>No</td><td>Choosing your size first, then Essential, Luxury or Elite trim</td></tr>
+            <tr><td><a href="/spa-models/south-seas-spas/">South Seas Spas</a></td><td>Artesian</td><td>3–8</td><td>Mostly 240V; the 519P plugs into 120V</td><td>Yes (519P)</td><td>Lots of shapes and jet layouts at accessible prices</td></tr>
+            <tr><td><a href="/spa-models/garden-spas/">Garden Spas</a></td><td>Artesian</td><td>2–6</td><td>120V/15A plug-and-play</td><td>Yes</td><td>Condos, townhomes and small patios</td></tr>
+            <tr><td><a href="/spa-models/swim-spas/">TidalFit</a></td><td>Artesian</td><td>3–4 (exercise pools)</td><td>240V, 5.5 kW heater</td><td>No</td><td>Year-round swimming and exercise</td></tr>
+            <tr><td><a href="/spa-models/nordic-luxury/">Nordic Luxury</a></td><td>Nordic</td><td>6–8</td><td>220V (Encore LS: 50A)</td><td>No</td><td>Feature-rich family spas at a value price</td></tr>
+            <tr><td><a href="/spa-models/nordic-sport/">Nordic Sport</a></td><td>Nordic</td><td>2–6</td><td>220V/40A (models we checked)</td><td>No</td><td>Recovery jets for active people</td></tr>
+            <tr><td><a href="/spa-models/nordic-modern/">Nordic Modern</a></td><td>Nordic</td><td>2–6</td><td>110V/220V convertible</td><td>Yes (convertible)</td><td>Contemporary looks; the Bella MS fits most doorways</td></tr>
+            <tr><td><a href="/spa-models/nordic-classic/">Nordic Classic</a></td><td>Nordic</td><td>5–6</td><td>Most 110V/220V convertible</td><td>Yes (most, convertible)</td><td>Round tubs with multi-level seating</td></tr>
+            <tr><td><a href="/spa-models/nordic-all-in-110v/">Nordic ALL-IN-110V</a></td><td>Nordic</td><td>2–6</td><td>110V plug-and-play</td><td>Yes</td><td>No electrical work, with Nordic Wrap and ozone standard</td></tr>
           </tbody>
         </table>
         <p>
@@ -120,3 +123,5 @@ permalink: /spa-models/
     </div>
   </div>
 </section>
+
+{% include "page-faqs.njk" %}
