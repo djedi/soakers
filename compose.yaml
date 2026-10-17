@@ -1,0 +1,32 @@
+# Dev environment for `make up`: Eleventy + Sass watch with live reload.
+# The repo is bind-mounted so edits on the host trigger rebuilds; node_modules
+# lives in a named volume so the container gets Linux builds of native deps
+# (sharp for eleventy-img, sass) instead of the host's macOS ones.
+name: soakers
+
+services:
+  web:
+    # Full (non-slim) image: the build shells out to git for page dates.
+    image: node:22.20.0-bookworm
+    working_dir: /app
+    environment:
+      # The bind-mounted repo is owned by the host user; let git read it anyway.
+      GIT_CONFIG_COUNT: "1"
+      GIT_CONFIG_KEY_0: safe.directory
+      GIT_CONFIG_VALUE_0: /app
+      ELEVENTY_ENV: dev
+      PORT: ${PORT:-4817}
+      # Belt and braces for file watching across the macOS bind mount.
+      CHOKIDAR_USEPOLLING: "true"
+    command:
+      - sh
+      - -c
+      - npm ci --include=dev --no-audit --no-fund && npx npm-run-all scss vendor --parallel watch:sass "watch:eleventy -- --port=$${PORT}"
+    ports:
+      - "${PORT:-4817}:${PORT:-4817}"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+volumes:
+  node_modules:
