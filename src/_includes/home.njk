@@ -3,75 +3,131 @@ layout: base.njk
 ---
 {% block posthead %}
     <!-- Preload the LCP hero image (avif; skipped by browsers without avif support) -->
-    <link rel="preload" as="image" type="image/avif" imagesrcset="/img/optimized/storefront-480w.avif 480w, /img/optimized/storefront-720w.avif 720w, /img/optimized/storefront-1100w.avif 1100w, /img/optimized/storefront-1600w.avif 1600w" imagesizes="(max-width: 900px) 100vw, 56vw">
+    <link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="{% imageSrcset "/img/gallery/storefront-clean.jpg", [480, 768, 1100, 1536] %}" imagesizes="100vw">
 {% endblock %}
 
 <section class="home-hero">
-  <div class="home-hero__inner">
+  <div class="home-hero__media">
+    {% image "/img/gallery/storefront-clean.jpg", "Soakers storefront on State Street in Midvale, Utah", "100vw", [480, 768, 1100, 1536], "home-hero__img", "eager", "high" %}
+  </div>
+  <div class="container home-hero__inner">
     <div class="home-hero__copy">
-      <p class="eyebrow">Family-owned since 2011 · Midvale, Utah</p>
+      <p class="eyebrow eyebrow--light">Family-owned since 2011 · Midvale, Utah</p>
       <h1>Hot tubs and swim spas for Salt Lake City homes</h1>
       <p class="home-hero__lede">
         Sales, service, and honest advice from Harvey, Wendy, and family.
-        Our Midvale showroom is minutes from Salt Lake City, Sandy, Murray, and Draper.
-        Come sit in the models — no pressure, just the right tub for your backyard.
+        Come sit in the models at our Midvale showroom — no pressure, just the right tub for your backyard.
       </p>
       <div class="home-hero__actions">
         <a href="/spa-models/" class="btn-primary">Browse spa models</a>
-        <a href="tel:+18018387727" class="btn-ghost">Call 801-838-SPAS</a>
-      </div>
-      <p class="home-hero__trust">
-        <span><i class="fas fa-star" aria-hidden="true"></i> {{ reviews.rating }} on Google</span>
-        <span><i class="fas fa-shield-alt" aria-hidden="true"></i> A+ BBB rating</span>
-        <span><i class="fas fa-clock" aria-hidden="true"></i> Open Mon–Sat, 10–5</span>
-      </p>
-    </div>
-    <div class="home-hero__media">
-      {% image "/img/gallery/storefront.jpg", "Soakers storefront in Midvale, Utah with the Wasatch mountains behind the shop", "(max-width: 900px) 100vw, 56vw", [480, 720, 1100, 1600], "home-hero__img", "eager", "high" %}
-      <div class="home-hero__badge">
-        <i class="fas fa-star" aria-hidden="true"></i>
-        <div>
-          <strong>{{ reviews.rating }} out of 5</strong>
-          <small>{{ reviews.count }} Google reviews</small>
-        </div>
+        <a href="tel:+18018387727" class="btn-ghost"><i class="fas fa-phone-alt" aria-hidden="true"></i>&nbsp;801-838-SPAS</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="upgrade-section">
+<section class="stat-strip" aria-label="Soakers at a glance">
   <div class="container">
-    <div class="scetion-title text-center mb-50">
-      <span>Why Choose Us</span>
-      <h2>Your neighborhood hot tub experts</h2>
-      <p>
-        Family-owned and operated in Midvale. We don't just sell hot tubs — we service them too.
-      </p>
+    <ul class="stat-strip__list">
+      <li>
+        <strong><i class="fas fa-star" aria-hidden="true"></i> {{ reviews.rating }}</strong>
+        <span>{{ reviews.count }} Google reviews</span>
+      </li>
+      <li>
+        <strong>2011</strong>
+        <span>Family-owned since</span>
+      </li>
+      <li>
+        <strong>A+</strong>
+        <span>BBB rating</span>
+      </li>
+      <li>
+        <strong>Mon–Sat</strong>
+        <span>Showroom open 10–5</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="container">
+    <div class="section-title text-center">
+      <span>Shop &amp; service</span>
+      <h2>Everything for your backyard soak</h2>
+      <p>From your first test soak to the repair call ten years later, one local family has you covered.</p>
     </div>
 
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
+    <div class="category-grid">
+      <a href="/spa-models/" class="category-card">
+        {% image "/img/gallery/pergola-install.jpg", "", "(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 270px", [360, 540, 720], "category-card__img" %}
+        <span class="category-card__body">
+          <span class="category-card__title">Hot tubs</span>
+          <span class="category-card__text">Artesian, Nordic, Island, South Seas and Garden Spas — 110V plug-and-play to 8-seat flagships.</span>
+          <span class="category-card__link">See hot tubs <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+        </span>
+      </a>
+      <a href="/spa-models/swim-spas/" class="category-card category-card--product">
+        {% image "/img/spa-models/swim-spas/DT-19-500X500-2.jpg", "", "(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 270px", [360, 540, 720], "category-card__img" %}
+        <span class="category-card__body">
+          <span class="category-card__title">Swim spas</span>
+          <span class="category-card__text">TidalFit swim spas: swim, train, and soak year-round without a pool.</span>
+          <span class="category-card__link">See swim spas <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+        </span>
+      </a>
+      <a href="/covers/" class="category-card">
+        {% image "/img/gallery/mountain-view.jpg", "", "(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 270px", [360, 540, 720], "category-card__img" %}
+        <span class="category-card__body">
+          <span class="category-card__title">Covers &amp; lifters</span>
+          <span class="category-card__text">Replacement covers, cover lifters, and Covana automated covers that open at the turn of a key.</span>
+          <span class="category-card__link">See covers <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+        </span>
+      </a>
+      <a href="/services/" class="category-card">
+        {% image "/img/gallery/storefront1.jpg", "", "(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 270px", [360, 540, 720], "category-card__img" %}
+        <span class="category-card__body">
+          <span class="category-card__title">Service &amp; repair</span>
+          <span class="category-card__text">We fix what we sell — and hot tubs we didn't. Repairs, maintenance, and parts.</span>
+          <span class="category-card__link">See services <i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="home-section home-section--muted">
+  <div class="container">
+    <div class="split">
+      <div class="split__copy">
+        <p class="eyebrow">Why choose us</p>
+        <h2>Your neighborhood hot tub experts</h2>
+        <p class="split__lede">
+          Family-owned and operated in Midvale. We don't just sell hot tubs — we deliver them, set them up, and keep them running.
+        </p>
+        <div class="brand-list" aria-label="Authorized brands">
+          <a href="/spa-models/island-spas/">Artesian Spas</a>
+          <a href="/spa-models/nordic-luxury/">Nordic Hot Tubs</a>
+          <a href="/spa-models/swim-spas/">TidalFit</a>
+          <a href="/spa-models/south-seas-spas/">South Seas</a>
+          <a href="/spa-models/garden-spas/">Garden Spas</a>
+          <a href="/covana/">Covana</a>
+        </div>
+      </div>
+      <div class="feature-grid">
         <div class="feature-card">
           <i class="fas fa-users" aria-hidden="true"></i>
           <h3>Family owned</h3>
           <p>Harvey, Wendy, and family have been helping Utahns find their perfect spa since 2011.</p>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
         <div class="feature-card">
           <i class="fas fa-wrench" aria-hidden="true"></i>
           <h3>Sales &amp; service</h3>
-          <p>We service what we sell — and hot tubs we didn't sell. <a href="/services/">Repairs, maintenance, and parts</a>.</p>
+          <p>We service what we sell — and hot tubs we didn't. <a href="/services/">Repairs, maintenance, and parts</a>.</p>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
         <div class="feature-card">
           <i class="fas fa-star" aria-hidden="true"></i>
           <h3>{{ reviews.rating }} on Google</h3>
-          <p>{{ reviews.count }} reviews and counting. Our customers love us — read what they have to say below.</p>
+          <p>{{ reviews.count }} reviews and counting. Read what our customers say below.</p>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
         <div class="feature-card">
           <i class="fas fa-dollar-sign" aria-hidden="true"></i>
           <h3>Financing available</h3>
@@ -82,96 +138,80 @@ layout: base.njk
   </div>
 </section>
 
-<section class="upgrade-section upgrade-section--muted">
+<section class="home-section home-section--dark">
   <div class="container">
-    <div class="scetion-title text-center mb-4">
-      <span>Our Brands</span>
-      <h2>Authorized dealer</h2>
+    <div class="section-title section-title--light text-center">
+      <span>How it works</span>
+      <h2>From test soak to first soak</h2>
     </div>
-    <div class="brand-grid">
-      <a href="/spa-models/island-spas/" class="brand-chip">Artesian Spas</a>
-      <a href="/spa-models/nordic-luxury/" class="brand-chip">Nordic Hot Tubs</a>
-      <a href="/spa-models/swim-spas/" class="brand-chip">TidalFit Swim Spas</a>
-      <a href="/spa-models/south-seas-spas/" class="brand-chip">South Seas Spas</a>
-      <a href="/spa-models/garden-spas/" class="brand-chip">Garden Spas</a>
-      <a href="/covana/" class="brand-chip">Covana Automated Covers</a>
-    </div>
+    <ol class="steps">
+      <li class="steps__item">
+        <i class="fas fa-bath" aria-hidden="true"></i>
+        <h3>Try them out</h3>
+        <p>Visit the Midvale showroom and sit in the models. Bring a swimsuit if you want a wet test.</p>
+      </li>
+      <li class="steps__item">
+        <i class="fas fa-handshake" aria-hidden="true"></i>
+        <h3>Pick your fit</h3>
+        <p>We'll talk seating, jets, power, and budget — then help with <a href="/financing/">financing</a> if you need it.</p>
+      </li>
+      <li class="steps__item">
+        <i class="fas fa-truck" aria-hidden="true"></i>
+        <h3>Delivery &amp; setup</h3>
+        <p>We deliver, place, and start up your spa, and walk you through water care.</p>
+      </li>
+      <li class="steps__item">
+        <i class="fas fa-wrench" aria-hidden="true"></i>
+        <h3>Service for life</h3>
+        <p>Chemicals, parts, and repairs from the same local family that sold it to you.</p>
+      </li>
+    </ol>
   </div>
 </section>
 
-<section class="upgrade-section">
+<section class="home-section">
   <div class="container">
-    <div class="scetion-title text-center mb-50">
+    <div class="section-title text-center">
       <span>Gallery</span>
       <h2>Our showroom &amp; installations</h2>
-      <p>
-        See our store and some of the beautiful hot tub installations by our customers.
-      </p>
+      <p>See our store and some of the beautiful hot tub installations by our customers.</p>
     </div>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/storefront.jpg">
-            {% image "/img/gallery/storefront.jpg", "Soakers storefront in Midvale, Utah", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
+    <div class="bento">
+      <div class="gallery-view bento__item bento__item--wide">
+        <a href="/img/gallery/deck-install.jpg">
+          {% image "/img/gallery/deck-install.jpg", "Hot tub built into deck", "(max-width: 767px) 100vw, (max-width: 1199px) 64vw, 740px", [480, 740, 1100], "gallery-img" %}
+        </a>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/store-interior.jpg">
-            {% image "/img/gallery/store-interior.jpg", "Inside the Soakers showroom", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
+      <div class="gallery-view bento__item">
+        <a href="/img/gallery/store-interior.jpg">
+          {% image "/img/gallery/store-interior.jpg", "Inside the Soakers showroom", "(max-width: 767px) 100vw, (max-width: 1199px) 31vw, 360px", [360, 540, 720], "gallery-img" %}
+        </a>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/nordic-snow.jpg">
-            {% image "/img/gallery/nordic-snow.jpg", "Nordic hot tub in the snow", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
+      <div class="gallery-view bento__item">
+        <a href="/img/gallery/nordic-snow.jpg">
+          {% image "/img/gallery/nordic-snow.jpg", "Nordic hot tub in the snow", "(max-width: 767px) 100vw, (max-width: 1199px) 31vw, 360px", [360, 540, 720], "gallery-img" %}
+        </a>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/mountain-view.jpg">
-            {% image "/img/gallery/mountain-view.jpg", "Hot tub with mountain view", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
+      <div class="gallery-view bento__item">
+        <a href="/img/gallery/umbrella-spa.jpg">
+          {% image "/img/gallery/umbrella-spa.jpg", "Hot tub with umbrella accessory", "(max-width: 767px) 100vw, (max-width: 1199px) 31vw, 360px", [360, 540, 720], "gallery-img" %}
+        </a>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/umbrella-spa.jpg">
-            {% image "/img/gallery/umbrella-spa.jpg", "Hot tub with umbrella accessory", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
+      <div class="gallery-view bento__item">
+        <a href="/img/gallery/stone-surround.jpg">
+          {% image "/img/gallery/stone-surround.jpg", "Hot tub with stone surround on deck", "(max-width: 767px) 100vw, (max-width: 1199px) 31vw, 360px", [360, 540, 720], "gallery-img" %}
+        </a>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/pergola-install.jpg">
-            {% image "/img/gallery/pergola-install.jpg", "Hot tub under pergola", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
+      <div class="gallery-view bento__item bento__item--wide">
+        <a href="/img/gallery/gazebo-spa.jpg">
+          {% image "/img/gallery/gazebo-spa.jpg", "Hot tub under wooden gazebo", "(max-width: 767px) 100vw, (max-width: 1199px) 64vw, 740px", [480, 740, 1100], "gallery-img" %}
+        </a>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/deck-install.jpg">
-            {% image "/img/gallery/deck-install.jpg", "Hot tub built into deck", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/stone-surround.jpg">
-            {% image "/img/gallery/stone-surround.jpg", "Hot tub with stone surround on deck", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="gallery-view">
-          <a href="/img/gallery/gazebo-spa.jpg">
-            {% image "/img/gallery/gazebo-spa.jpg", "Hot tub under wooden gazebo", "(max-width: 768px) 100vw, 33vw", [400, 800], "img-fluid rounded shadow-sm gallery-img" %}
-          </a>
-        </div>
+      <div class="gallery-view bento__item">
+        <a href="/img/gallery/storefront-clean.jpg">
+          {% image "/img/gallery/storefront-clean.jpg", "Soakers storefront in Midvale, Utah", "(max-width: 767px) 100vw, (max-width: 1199px) 31vw, 360px", [360, 540, 720], "gallery-img" %}
+        </a>
       </div>
     </div>
   </div>

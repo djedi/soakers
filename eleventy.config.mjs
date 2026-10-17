@@ -15,6 +15,36 @@ const packageVersion = JSON.parse(
   fs.readFileSync(path.join(__dirname, "package.json"), "utf8")
 ).version;
 
+// Optimized variants are named <name>-<hash>-<width>w.<format>. The hash
+// changes when the source image changes, so /img/optimized/* can be cached
+// as immutable.
+function optimizeImage(src, widths) {
+  let inputPath = src.startsWith("/") ? path.join("src", src) : src;
+  return Image(inputPath, {
+    widths: widths,
+    formats: ["avif", "webp"],
+    outputDir: "./public/img/optimized/",
+    urlPath: "/img/optimized/",
+    filenameFormat: function (id, src, width, format) {
+      const name = path.basename(src, path.extname(src));
+      return `${name}-${id.slice(0, 8)}-${width}w.${format}`;
+    },
+  });
+}
+
+// srcset for one format, e.g. for <link rel="preload" imagesrcset>
+async function imageSrcsetShortcode(src, widths, format = "avif") {
+  const metadata = await optimizeImage(src, widths);
+  return metadata[format].map((img) => `${img.url} ${img.width}w`).join(", ");
+}
+
+// URL of a single-width variant, e.g. for CSS backgrounds. Plain args so it
+// works from Liquid templates too.
+async function imageUrlShortcode(src, width, format = "webp") {
+  const metadata = await optimizeImage(src, [width]);
+  return metadata[format][0].url;
+}
+
 async function imageShortcode(
   src,
   alt,
@@ -24,17 +54,7 @@ async function imageShortcode(
   loading = "lazy",
   fetchpriority = ""
 ) {
-  let inputPath = src.startsWith("/") ? path.join("src", src) : src;
-  let metadata = await Image(inputPath, {
-    widths: widths,
-    formats: ["avif", "webp"],
-    outputDir: "./public/img/optimized/",
-    urlPath: "/img/optimized/",
-    filenameFormat: function (id, src, width, format) {
-      const name = path.basename(src, path.extname(src));
-      return `${name}-${width}w.${format}`;
-    },
-  });
+  let metadata = await optimizeImage(src, widths);
 
   let imageAttributes = {
     alt,
@@ -78,6 +98,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("imageSrcset", imageSrcsetShortcode);
+  eleventyConfig.addAsyncShortcode("imageUrl", imageUrlShortcode);
 
   eleventyConfig.addWatchTarget("./src/sass/");
 
